@@ -69,7 +69,7 @@ export default async function AccountPage() {
           <div className="mt-6">
             <BillingButtons
               hasCustomer={Boolean(user?.stripeCustomerId)}
-              subscribed={subscribed}
+              subscribed={subscribed ?? false}
             />
           </div>
         </section>
