@@ -1,0 +1,927 @@
+{
+  "locale": "es",
+  "cues": [
+    {
+      "start": 102,
+      "end": 111.44,
+      "words": [
+        {
+          "t": "La",
+          "en": "The"
+        },
+        {
+          "t": "caridad",
+          "en": "charity"
+        },
+        {
+          "t": "que",
+          "en": "that"
+        },
+        {
+          "t": "practicamos",
+          "en": "we practice"
+        },
+        {
+          "t": "aquí",
+          "en": "here"
+        },
+        {
+          "t": "no",
+          "en": "not"
+        },
+        {
+          "t": "debe",
+          "en": "should"
+        },
+        {
+          "t": "ser",
+          "en": "be"
+        },
+        {
+          "t": "solo",
+          "en": "only"
+        },
+        {
+          "t": "abstracta.",
+          "en": "abstract."
+        }
+      ]
+    },
+    {
+      "start": 112.29,
+      "end": 122.52,
+      "words": [
+        {
+          "t": "Antes",
+          "en": "Before"
+        },
+        {
+          "t": "de",
+          "en": "of"
+        },
+        {
+          "t": "profesar,",
+          "en": "taking your vows,"
+        },
+        {
+          "t": "quiero",
+          "en": "I want"
+        },
+        {
+          "t": "que",
+          "en": "that"
+        },
+        {
+          "t": "cumplas",
+          "en": "you fulfill"
+        },
+        {
+          "t": "una",
+          "en": "a"
+        },
+        {
+          "t": "última",
+          "en": "final"
+        },
+        {
+          "t": "misión",
+          "en": "mission"
+        },
+        {
+          "t": "de",
+          "en": "of"
+        },
+        {
+          "t": "caridad.",
+          "en": "charity."
+        }
+      ]
+    },
+    {
+      "start": 123.37,
+      "end": 132.09,
+      "words": [
+        {
+          "t": "Debes",
+          "en": "You must"
+        },
+        {
+          "t": "ir",
+          "en": "go"
+        },
+        {
+          "t": "a",
+          "en": "to"
+        },
+        {
+          "t": "la",
+          "en": "the"
+        },
+        {
+          "t": "finca",
+          "en": "estate"
+        },
+        {
+          "t": "de",
+          "en": "of"
+        },
+        {
+          "t": "tu",
+          "en": "your"
+        },
+        {
+          "t": "tío",
+          "en": "uncle"
+        },
+        {
+          "t": "don",
+          "en": "Don"
+        },
+        {
+          "t": "Jaime.",
+          "en": "Jaime."
+        }
+      ]
+    },
+    {
+      "start": 133.94,
+      "end": 143.56,
+      "words": [
+        {
+          "t": "Él",
+          "en": "He"
+        },
+        {
+          "t": "te",
+          "en": "to you"
+        },
+        {
+          "t": "ha",
+          "en": "has"
+        },
+        {
+          "t": "pedido",
+          "en": "asked"
+        },
+        {
+          "t": "que",
+          "en": "that"
+        },
+        {
+          "t": "vayas",
+          "en": "you go"
+        },
+        {
+          "t": "antes",
+          "en": "before"
+        },
+        {
+          "t": "de",
+          "en": "of"
+        },
+        {
+          "t": "tomar",
+          "en": "taking"
+        },
+        {
+          "t": "los",
+          "en": "the"
+        },
+        {
+          "t": "votos.",
+          "en": "vows."
+        }
+      ]
+    },
+    {
+      "start": 144.41,
+      "end": 149.6,
+      "words": [
+        {
+          "t": "No",
+          "en": "I don't"
+        },
+        {
+          "t": "quiero",
+          "en": "want"
+        },
+        {
+          "t": "verlo,",
+          "en": "to see him,"
+        },
+        {
+          "t": "madre.",
+          "en": "Mother."
+        }
+      ]
+    },
+    {
+      "start": 150.45,
+      "end": 158.02,
+      "words": [
+        {
+          "t": "Es",
+          "en": "It is"
+        },
+        {
+          "t": "un",
+          "en": "a"
+        },
+        {
+          "t": "acto",
+          "en": "act"
+        },
+        {
+          "t": "de",
+          "en": "of"
+        },
+        {
+          "t": "humildad",
+          "en": "humility"
+        },
+        {
+          "t": "y",
+          "en": "and"
+        },
+        {
+          "t": "de",
+          "en": "of"
+        },
+        {
+          "t": "perdón.",
+          "en": "forgiveness."
+        }
+      ]
+    },
+    {
+      "start": 159.87,
+      "end": 167.63,
+      "words": [
+        {
+          "t": "Tu",
+          "en": "Your"
+        },
+        {
+          "t": "tío",
+          "en": "uncle"
+        },
+        {
+          "t": "está",
+          "en": "is"
+        },
+        {
+          "t": "solo",
+          "en": "alone"
+        },
+        {
+          "t": "y",
+          "en": "and"
+        },
+        {
+          "t": "enfermo",
+          "en": "ill"
+        },
+        {
+          "t": "de",
+          "en": "with"
+        },
+        {
+          "t": "nostalgia.",
+          "en": "nostalgia."
+        }
+      ]
+    },
+    {
+      "start": 172.53,
+      "end": 178.47,
+      "words": [
+        {
+          "t": "Iré,",
+          "en": "I'll go,"
+        },
+        {
+          "t": "pero",
+          "en": "but"
+        },
+        {
+          "t": "solo",
+          "en": "only"
+        },
+        {
+          "t": "por",
+          "en": "because"
+        },
+        {
+          "t": "obediencia.",
+          "en": "of obedience."
+        }
+      ]
+    },
+    {
+      "start": 179.32,
+      "end": 188.02,
+      "words": [
+        {
+          "t": "La",
+          "en": "The"
+        },
+        {
+          "t": "obediencia",
+          "en": "obedience"
+        },
+        {
+          "t": "es",
+          "en": "is"
+        },
+        {
+          "t": "el",
+          "en": "the"
+        },
+        {
+          "t": "primer",
+          "en": "first"
+        },
+        {
+          "t": "paso",
+          "en": "step"
+        },
+        {
+          "t": "hacia",
+          "en": "toward"
+        },
+        {
+          "t": "la",
+          "en": "the"
+        },
+        {
+          "t": "perfección.",
+          "en": "perfection."
+        }
+      ]
+    },
+    {
+      "start": 189.87,
+      "end": 196.67,
+      "words": [
+        {
+          "t": "En",
+          "en": "In"
+        },
+        {
+          "t": "la",
+          "en": "the"
+        },
+        {
+          "t": "granja",
+          "en": "farm"
+        },
+        {
+          "t": "encontrarás",
+          "en": "you will find"
+        },
+        {
+          "t": "gente",
+          "en": "people"
+        },
+        {
+          "t": "sencilla.",
+          "en": "simple."
+        }
+      ]
+    },
+    {
+      "start": 197.52,
+      "end": 205.98,
+      "words": [
+        {
+          "t": "Ramona",
+          "en": "Ramona"
+        },
+        {
+          "t": "cuida",
+          "en": "takes care of"
+        },
+        {
+          "t": "la",
+          "en": "the"
+        },
+        {
+          "t": "casa,",
+          "en": "house,"
+        },
+        {
+          "t": "y",
+          "en": "and"
+        },
+        {
+          "t": "Jorge",
+          "en": "Jorge"
+        },
+        {
+          "t": "es",
+          "en": "is"
+        },
+        {
+          "t": "el",
+          "en": "the"
+        },
+        {
+          "t": "mayordomo.",
+          "en": "steward."
+        }
+      ]
+    },
+    {
+      "start": 206.83,
+      "end": 213.89,
+      "words": [
+        {
+          "t": "No",
+          "en": "Do not"
+        },
+        {
+          "t": "juzgues",
+          "en": "judge"
+        },
+        {
+          "t": "con",
+          "en": "with"
+        },
+        {
+          "t": "dureza",
+          "en": "harshness"
+        },
+        {
+          "t": "lo",
+          "en": "what"
+        },
+        {
+          "t": "que",
+          "en": "that"
+        },
+        {
+          "t": "veas.",
+          "en": "you see."
+        }
+      ]
+    },
+    {
+      "start": 215.74,
+      "end": 223.21,
+      "words": [
+        {
+          "t": "La",
+          "en": "The"
+        },
+        {
+          "t": "misericordia",
+          "en": "mercy"
+        },
+        {
+          "t": "debe",
+          "en": "must"
+        },
+        {
+          "t": "incluir",
+          "en": "include"
+        },
+        {
+          "t": "a",
+          "en": "to"
+        },
+        {
+          "t": "los",
+          "en": "the"
+        },
+        {
+          "t": "pecadores.",
+          "en": "sinners."
+        }
+      ]
+    },
+    {
+      "start": 224.06,
+      "end": 234.36,
+      "words": [
+        {
+          "t": "Don",
+          "en": "Don"
+        },
+        {
+          "t": "Jaime",
+          "en": "Jaime"
+        },
+        {
+          "t": "es",
+          "en": "is"
+        },
+        {
+          "t": "un",
+          "en": "a"
+        },
+        {
+          "t": "hombre",
+          "en": "man"
+        },
+        {
+          "t": "atribulado.",
+          "en": "tormented."
+        },
+        {
+          "t": "Prometo",
+          "en": "I promise"
+        },
+        {
+          "t": "ser",
+          "en": "to be"
+        },
+        {
+          "t": "paciente",
+          "en": "patient"
+        },
+        {
+          "t": "y",
+          "en": "and"
+        },
+        {
+          "t": "respetuosa.",
+          "en": "respectful."
+        }
+      ]
+    },
+    {
+      "start": 239.66,
+      "end": 246.19,
+      "words": [
+        {
+          "t": "Que",
+          "en": "May"
+        },
+        {
+          "t": "Dios",
+          "en": "God"
+        },
+        {
+          "t": "te",
+          "en": "you"
+        },
+        {
+          "t": "acompañe,",
+          "en": "go with you,"
+        },
+        {
+          "t": "hija.",
+          "en": "daughter."
+        },
+        {
+          "t": "Amén.",
+          "en": "Amen."
+        }
+      ]
+    },
+    {
+      "start": 248.04,
+      "end": 258.04,
+      "words": [
+        {
+          "t": "El",
+          "en": "The"
+        },
+        {
+          "t": "tren",
+          "en": "train"
+        },
+        {
+          "t": "llega",
+          "en": "arrives"
+        },
+        {
+          "t": "al",
+          "en": "at the"
+        },
+        {
+          "t": "atardecer.",
+          "en": "dusk."
+        },
+        {
+          "t": "El",
+          "en": "The"
+        },
+        {
+          "t": "paisaje",
+          "en": "landscape"
+        },
+        {
+          "t": "es",
+          "en": "is"
+        },
+        {
+          "t": "árido",
+          "en": "arid"
+        },
+        {
+          "t": "y",
+          "en": "and"
+        },
+        {
+          "t": "silencioso.",
+          "en": "silent."
+        }
+      ]
+    },
+    {
+      "start": 258.89,
+      "end": 266.17,
+      "words": [
+        {
+          "t": "Viridiana",
+          "en": "Viridiana"
+        },
+        {
+          "t": "camina",
+          "en": "walks"
+        },
+        {
+          "t": "hacia",
+          "en": "toward"
+        },
+        {
+          "t": "la",
+          "en": "the"
+        },
+        {
+          "t": "casa",
+          "en": "house"
+        },
+        {
+          "t": "de",
+          "en": "of"
+        },
+        {
+          "t": "campo.",
+          "en": "the country estate."
+        }
+      ]
+    },
+    {
+      "start": 267.02,
+      "end": 274.01,
+      "words": [
+        {
+          "t": "Buenas",
+          "en": "Good"
+        },
+        {
+          "t": "tardes,",
+          "en": "afternoon,"
+        },
+        {
+          "t": "soy",
+          "en": "I am"
+        },
+        {
+          "t": "Viridiana.",
+          "en": "Viridiana."
+        },
+        {
+          "t": "Pase,",
+          "en": "Come in,"
+        },
+        {
+          "t": "señorita.",
+          "en": "miss."
+        }
+      ]
+    },
+    {
+      "start": 275.86,
+      "end": 283.62,
+      "words": [
+        {
+          "t": "Don",
+          "en": "Don"
+        },
+        {
+          "t": "Jaime",
+          "en": "Jaime"
+        },
+        {
+          "t": "la",
+          "en": "her"
+        },
+        {
+          "t": "está",
+          "en": "is"
+        },
+        {
+          "t": "esperando",
+          "en": "waiting for"
+        },
+        {
+          "t": "en",
+          "en": "in"
+        },
+        {
+          "t": "el",
+          "en": "the"
+        },
+        {
+          "t": "salón.",
+          "en": "drawing room."
+        }
+      ]
+    },
+    {
+      "start": 284.47,
+      "end": 288.44,
+      "words": [
+        {
+          "t": "Gracias,",
+          "en": "Thank you,"
+        },
+        {
+          "t": "Ramona.",
+          "en": "Ramona."
+        }
+      ]
+    },
+    {
+      "start": 289.29,
+      "end": 297.53,
+      "words": [
+        {
+          "t": "Hace",
+          "en": "It has been"
+        },
+        {
+          "t": "años",
+          "en": "years"
+        },
+        {
+          "t": "desde",
+          "en": "since"
+        },
+        {
+          "t": "la",
+          "en": "the"
+        },
+        {
+          "t": "última",
+          "en": "last"
+        },
+        {
+          "t": "vez",
+          "en": "time"
+        },
+        {
+          "t": "que",
+          "en": "that"
+        },
+        {
+          "t": "te",
+          "en": "I"
+        },
+        {
+          "t": "vi.",
+          "en": "saw you."
+        }
+      ]
+    },
+    {
+      "start": 302.03,
+      "end": 309.64,
+      "words": [
+        {
+          "t": "Has",
+          "en": "You have"
+        },
+        {
+          "t": "crecido",
+          "en": "grown"
+        },
+        {
+          "t": "y",
+          "en": "and"
+        },
+        {
+          "t": "te",
+          "en": "you"
+        },
+        {
+          "t": "pareces",
+          "en": "look like"
+        },
+        {
+          "t": "a",
+          "en": "to"
+        },
+        {
+          "t": "tu",
+          "en": "your"
+        },
+        {
+          "t": "madre.",
+          "en": "mother."
+        }
+      ]
+    },
+    {
+      "start": 310.49,
+      "end": 318.59,
+      "words": [
+        {
+          "t": "Prefiero",
+          "en": "I prefer"
+        },
+        {
+          "t": "no",
+          "en": "not"
+        },
+        {
+          "t": "hablar",
+          "en": "to speak"
+        },
+        {
+          "t": "de",
+          "en": "of"
+        },
+        {
+          "t": "eso.",
+          "en": "that."
+        },
+        {
+          "t": "Como",
+          "en": "As"
+        },
+        {
+          "t": "quieras,",
+          "en": "you wish,"
+        },
+        {
+          "t": "sobrina.",
+          "en": "niece."
+        }
+      ]
+    },
+    {
+      "start": 319.44,
+      "end": 327.02,
+      "words": [
+        {
+          "t": "Esta",
+          "en": "This"
+        },
+        {
+          "t": "noche",
+          "en": "night"
+        },
+        {
+          "t": "descansarás",
+          "en": "you will rest"
+        },
+        {
+          "t": "en",
+          "en": "in"
+        },
+        {
+          "t": "tu",
+          "en": "your"
+        },
+        {
+          "t": "antigua",
+          "en": "old"
+        },
+        {
+          "t": "habitación.",
+          "en": "room."
+        }
+      ]
+    },
+    {
+      "start": 328.87,
+      "end": 334.89,
+      "words": [
+        {
+          "t": "Mañana",
+          "en": "Tomorrow"
+        },
+        {
+          "t": "hablaremos",
+          "en": "we will speak"
+        },
+        {
+          "t": "con",
+          "en": "with"
+        },
+        {
+          "t": "más",
+          "en": "more"
+        },
+        {
+          "t": "calma.",
+          "en": "calm."
+        }
+      ]
+    }
+  ]
+}

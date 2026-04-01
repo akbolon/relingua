@@ -1,0 +1,109 @@
+{
+  "locale": "ja",
+  "cues": [
+    {
+      "start": 78,
+      "end": 84.86,
+      "words": [
+        {
+          "t": "この",
+          "en": "this"
+        },
+        {
+          "t": "話は",
+          "en": "story (topic)"
+        },
+        {
+          "t": "本当か",
+          "en": "is it true?"
+        },
+        {
+          "t": "人間は",
+          "en": "people"
+        },
+        {
+          "t": "自分を",
+          "en": "themselves"
+        },
+        {
+          "t": "守るために",
+          "en": "to protect"
+        },
+        {
+          "t": "嘘をつく。",
+          "en": "tell lies."
+        }
+      ]
+    },
+    {
+      "start": 85.71,
+      "end": 91.46,
+      "words": [
+        {
+          "t": "森の中で",
+          "en": "in the forest"
+        },
+        {
+          "t": "何が",
+          "en": "what"
+        },
+        {
+          "t": "あったのか。",
+          "en": "happened?"
+        },
+        {
+          "t": "武士は",
+          "en": "the samurai"
+        },
+        {
+          "t": "死んでいた。",
+          "en": "was dead."
+        }
+      ]
+    },
+    {
+      "start": 92.31,
+      "end": 97.32,
+      "words": [
+        {
+          "t": "証言は",
+          "en": "the testimonies"
+        },
+        {
+          "t": "食い違う。",
+          "en": "conflict."
+        },
+        {
+          "t": "雨が",
+          "en": "rain"
+        },
+        {
+          "t": "降り続く。",
+          "en": "keeps falling."
+        }
+      ]
+    },
+    {
+      "start": 99.17,
+      "end": 104.28,
+      "words": [
+        {
+          "t": "門の下で",
+          "en": "under the gate"
+        },
+        {
+          "t": "話を聞く。",
+          "en": "we hear the tale."
+        },
+        {
+          "t": "真実など",
+          "en": "truth, such as it is,"
+        },
+        {
+          "t": "誰が知る。",
+          "en": "who knows it?"
+        }
+      ]
+    }
+  ]
+}

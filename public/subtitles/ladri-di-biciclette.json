@@ -1,0 +1,203 @@
+{
+  "locale": "it",
+  "cues": [
+    {
+      "start": 45,
+      "end": 54.25,
+      "words": [
+        {
+          "t": "Roma,",
+          "en": "Rome,"
+        },
+        {
+          "t": "dopo",
+          "en": "after"
+        },
+        {
+          "t": "la",
+          "en": "the"
+        },
+        {
+          "t": "guerra.",
+          "en": "war."
+        },
+        {
+          "t": "Ho",
+          "en": "I have"
+        },
+        {
+          "t": "bisogno",
+          "en": "need"
+        },
+        {
+          "t": "di",
+          "en": "of"
+        },
+        {
+          "t": "un",
+          "en": "a"
+        },
+        {
+          "t": "lavoro,",
+          "en": "job,"
+        },
+        {
+          "t": "subito.",
+          "en": "right away."
+        }
+      ]
+    },
+    {
+      "start": 55.1,
+      "end": 63.91,
+      "words": [
+        {
+          "t": "Senza",
+          "en": "Without"
+        },
+        {
+          "t": "la",
+          "en": "the"
+        },
+        {
+          "t": "bicicletta",
+          "en": "bicycle"
+        },
+        {
+          "t": "non",
+          "en": "not"
+        },
+        {
+          "t": "posso",
+          "en": "I can"
+        },
+        {
+          "t": "lavorare.",
+          "en": "work."
+        },
+        {
+          "t": "È",
+          "en": "It is"
+        },
+        {
+          "t": "stata",
+          "en": "been"
+        },
+        {
+          "t": "rubata.",
+          "en": "stolen."
+        }
+      ]
+    },
+    {
+      "start": 64.76,
+      "end": 73.17,
+      "words": [
+        {
+          "t": "Dobbiamo",
+          "en": "We must"
+        },
+        {
+          "t": "cercarla,",
+          "en": "look for it,"
+        },
+        {
+          "t": "Bruno.",
+          "en": "Bruno."
+        },
+        {
+          "t": "Andiamo",
+          "en": "Let's go"
+        },
+        {
+          "t": "in",
+          "en": "to"
+        },
+        {
+          "t": "piazza",
+          "en": "the square"
+        },
+        {
+          "t": "San",
+          "en": "Saint"
+        },
+        {
+          "t": "Giovanni.",
+          "en": "John."
+        }
+      ]
+    },
+    {
+      "start": 75.02,
+      "end": 83.12,
+      "words": [
+        {
+          "t": "La",
+          "en": "The"
+        },
+        {
+          "t": "povertà",
+          "en": "poverty"
+        },
+        {
+          "t": "non",
+          "en": "does not"
+        },
+        {
+          "t": "aspetta.",
+          "en": "wait."
+        },
+        {
+          "t": "Perché",
+          "en": "Why"
+        },
+        {
+          "t": "l'hai",
+          "en": "did you"
+        },
+        {
+          "t": "lasciata",
+          "en": "leave it"
+        },
+        {
+          "t": "lì?",
+          "en": "there?"
+        }
+      ]
+    },
+    {
+      "start": 83.97,
+      "end": 91.74,
+      "words": [
+        {
+          "t": "Dovevo",
+          "en": "I had to"
+        },
+        {
+          "t": "affiggere",
+          "en": "put up"
+        },
+        {
+          "t": "il",
+          "en": "the"
+        },
+        {
+          "t": "manifesto.",
+          "en": "poster."
+        },
+        {
+          "t": "Non",
+          "en": "Don't"
+        },
+        {
+          "t": "piangere,",
+          "en": "cry,"
+        },
+        {
+          "t": "piccolo.",
+          "en": "little one."
+        }
+      ]
+    }
+  ]
+}

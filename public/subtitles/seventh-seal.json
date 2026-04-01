@@ -1,0 +1,199 @@
+{
+  "locale": "sv",
+  "cues": [
+    {
+      "start": 52,
+      "end": 60.95,
+      "words": [
+        {
+          "t": "Jag",
+          "en": "I"
+        },
+        {
+          "t": "är",
+          "en": "am"
+        },
+        {
+          "t": "trött",
+          "en": "tired"
+        },
+        {
+          "t": "i",
+          "en": "in"
+        },
+        {
+          "t": "min",
+          "en": "my"
+        },
+        {
+          "t": "själ.",
+          "en": "soul."
+        },
+        {
+          "t": "Döden",
+          "en": "Death"
+        },
+        {
+          "t": "står",
+          "en": "stands"
+        },
+        {
+          "t": "där,",
+          "en": "there,"
+        },
+        {
+          "t": "tyst.",
+          "en": "silent."
+        }
+      ]
+    },
+    {
+      "start": 61.8,
+      "end": 68.77,
+      "words": [
+        {
+          "t": "Vi",
+          "en": "We"
+        },
+        {
+          "t": "ska",
+          "en": "shall"
+        },
+        {
+          "t": "spela",
+          "en": "play"
+        },
+        {
+          "t": "schack,",
+          "en": "chess,"
+        },
+        {
+          "t": "du",
+          "en": "you"
+        },
+        {
+          "t": "och",
+          "en": "and"
+        },
+        {
+          "t": "jag.",
+          "en": "I."
+        }
+      ]
+    },
+    {
+      "start": 69.62,
+      "end": 78.8,
+      "words": [
+        {
+          "t": "Om",
+          "en": "If"
+        },
+        {
+          "t": "jag",
+          "en": "I"
+        },
+        {
+          "t": "vinner,",
+          "en": "win,"
+        },
+        {
+          "t": "får",
+          "en": "get to"
+        },
+        {
+          "t": "jag",
+          "en": "I"
+        },
+        {
+          "t": "leva.",
+          "en": "live."
+        },
+        {
+          "t": "Pesten",
+          "en": "The plague"
+        },
+        {
+          "t": "går",
+          "en": "walks"
+        },
+        {
+          "t": "över",
+          "en": "over"
+        },
+        {
+          "t": "landet.",
+          "en": "the land."
+        }
+      ]
+    },
+    {
+      "start": 80.65,
+      "end": 88.3,
+      "words": [
+        {
+          "t": "Gud",
+          "en": "God"
+        },
+        {
+          "t": "är",
+          "en": "is"
+        },
+        {
+          "t": "tyst",
+          "en": "silent"
+        },
+        {
+          "t": "i",
+          "en": "in"
+        },
+        {
+          "t": "himlen.",
+          "en": "heaven."
+        },
+        {
+          "t": "Var",
+          "en": "Where"
+        },
+        {
+          "t": "är",
+          "en": "is"
+        },
+        {
+          "t": "trösten?",
+          "en": "the comfort?"
+        }
+      ]
+    },
+    {
+      "start": 89.15,
+      "end": 95.41,
+      "words": [
+        {
+          "t": "Min",
+          "en": "My"
+        },
+        {
+          "t": "tid",
+          "en": "time"
+        },
+        {
+          "t": "är",
+          "en": "is"
+        },
+        {
+          "t": "kort,",
+          "en": "short,"
+        },
+        {
+          "t": "säger",
+          "en": "says"
+        },
+        {
+          "t": "du.",
+          "en": "you."
+        }
+      ]
+    }
+  ]
+}
