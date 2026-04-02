@@ -18,11 +18,11 @@ const files = [
 ];
 
 const OFFSET = {
-  "viridiana.json": 102,
-  "ladri-di-biciclette.json": 45,
-  "rashomon.json": 78,
-  "pather-panchali.json": 225,
-  "seventh-seal.json": 52,
+  "viridiana.json": 108,
+  "ladri-di-biciclette.json": 57,
+  "rashomon.json": 118,
+  "pather-panchali.json": 245,
+  "seventh-seal.json": 72,
 };
 
 function round2(x) {

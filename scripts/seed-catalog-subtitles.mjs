@@ -80,7 +80,7 @@ function buildFile(locale, offset, rawCues) {
 const DATA = {
   "m-1931.json": {
     locale: "de",
-    offset: 88,
+    offset: 108,
     lines: [
       [
         ["Warte", "Wait"],
@@ -126,7 +126,7 @@ const DATA = {
   },
   "the-blue-angel.json": {
     locale: "de",
-    offset: 72,
+    offset: 94,
     lines: [
       [
         ["Herr", "Mr."],
