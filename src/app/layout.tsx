@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Relingua",
   description:
-    "Public-domain world cinema with subtitles and instant English glosses.",
+    "World cinema in the original language with subtitles and English glosses for language learners.",
 };
 
 export default async function RootLayout({

@@ -24,7 +24,7 @@ export default function HomePage() {
             Relingua
           </h1>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted">
-            Subtitles · hover a word for English.
+            Original-language dialogue · hover a word for an English gloss.
           </p>
           <HomeHeroCta />
         </section>
