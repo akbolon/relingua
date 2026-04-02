@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { SubtitleFile } from "@/types/subtitles";
+import type { SubtitleFile, SubWord } from "@/types/subtitles";
 
 /** HTML5 timeupdate can be sparse; sync subtitle cues more often while playing. */
 const TIME_SYNC_MS = 50;
@@ -13,6 +13,26 @@ type Props = {
   title: string;
   onPlayStart?: () => void;
 };
+
+/** Split legacy "English · [pron]" into separate lines when `pron` is absent. */
+function glossForWord(w: SubWord): { en: string; pron?: string } {
+  if (w.pron !== undefined && w.pron !== "") {
+    return { en: w.en, pron: w.pron };
+  }
+  const sep = " · ";
+  const i = w.en.indexOf(sep);
+  if (i >= 0) {
+    return { en: w.en.slice(0, i).trim(), pron: w.en.slice(i + sep.length).trim() };
+  }
+  const em = /\s+—\s+/.exec(w.en);
+  if (em && em.index > 0) {
+    return {
+      en: w.en.slice(0, em.index).trim(),
+      pron: w.en.slice(em.index + em[0].length).trim(),
+    };
+  }
+  return { en: w.en };
+}
 
 const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 2] as const;
 
@@ -38,9 +58,12 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
   const [rate, setRate] = useState(1);
   const [controlsVisible, setControlsVisible] = useState(true);
   const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const [tip, setTip] = useState<{ x: number; y: number; text: string } | null>(
-    null,
-  );
+  const [tip, setTip] = useState<{
+    x: number;
+    y: number;
+    en: string;
+    pron?: string;
+  } | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -197,20 +220,22 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
           aria-live="polite"
         >
           <div
-            className="glass-subtitle mx-auto inline-flex max-w-full flex-col items-center gap-1.5 rounded-2xl px-4 py-2.5 text-left drop-shadow-md"
+            className="glass-subtitle mx-auto inline-block max-w-full rounded-2xl px-4 py-2.5 text-center drop-shadow-md"
             style={{ pointerEvents: "auto" }}
           >
-            <p className="text-center text-base font-medium leading-snug tracking-tight text-white sm:text-[1.05rem] sm:leading-snug">
+            <p className="text-base font-medium leading-snug tracking-tight text-white sm:text-[1.05rem] sm:leading-snug">
               {activeCue.words.map((w, i) => (
                 <span key={`${activeCue.start}-${i}`} className="inline">
                   <span
                     className="cursor-help rounded px-0.5 transition-colors hover:bg-white/20"
                     onMouseEnter={(e) => {
                       const r = e.currentTarget.getBoundingClientRect();
+                      const g = glossForWord(w);
                       setTip({
                         x: r.left + r.width / 2,
                         y: r.top,
-                        text: w.en,
+                        en: g.en,
+                        pron: g.pron,
                       });
                     }}
                     onMouseLeave={() => setTip(null)}
@@ -221,21 +246,25 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
                 </span>
               ))}
             </p>
-            {activeCue.enLine ? (
-              <p className="max-w-prose text-center text-sm leading-snug text-white/80 sm:text-[0.9375rem]">
-                {activeCue.enLine}
-              </p>
-            ) : null}
           </div>
         </div>
       )}
 
       {tip ? (
         <div
-          className="pointer-events-none fixed z-[60] max-w-[min(90vw,20rem)] -translate-x-1/2 -translate-y-full rounded-md border border-white/35 bg-zinc-950/95 px-2.5 py-1.5 text-left text-xs font-normal leading-snug text-zinc-50 shadow-xl ring-1 ring-white/15 backdrop-blur-md dark:border-slate-400/30 dark:bg-slate-950/95 dark:text-slate-50 dark:ring-slate-500/25"
+          className="pointer-events-none fixed z-[60] max-w-[min(92vw,22rem)] -translate-x-1/2 -translate-y-full rounded-md border border-white/35 bg-zinc-950/95 px-3 py-2 text-left text-xs font-normal leading-snug text-zinc-50 shadow-xl ring-1 ring-white/15 backdrop-blur-md dark:border-slate-400/30 dark:bg-slate-950/95 dark:text-slate-50 dark:ring-slate-500/25"
           style={{ left: tip.x, top: tip.y - 8 }}
         >
-          {tip.text}
+          <p className="text-[0.7rem] font-semibold uppercase tracking-wide text-zinc-400">English</p>
+          <p className="mt-0.5 text-[0.8125rem] text-zinc-100">{tip.en}</p>
+          {tip.pron ? (
+            <>
+              <p className="mt-2 text-[0.7rem] font-semibold uppercase tracking-wide text-zinc-400">
+                Pronunciation
+              </p>
+              <p className="mt-0.5 text-[0.8125rem] text-zinc-200">{tip.pron}</p>
+            </>
+          ) : null}
         </div>
       ) : null}
 

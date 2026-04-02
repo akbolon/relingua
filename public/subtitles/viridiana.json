@@ -2,162 +2,177 @@
   "locale": "es",
   "cues": [
     {
-      "start": 119.5,
-      "end": 126.5,
-      "enLine": "Sister Viridiana.",
+      "start": 119.95,
+      "end": 120.88,
       "words": [
         {
           "t": "Hermana,",
-          "en": "Sister (title) · [air-MAH-nah]"
+          "en": "Sister — religious title for a nun (here, addressing you).",
+          "pron": "Spanish approx.: ayr-MAH-nah. Syllables: Her-ma-na; stress on -MAH-. H as a light aspiration in Spain; in many Americas it is silent (ear-MAH-nah). IPA-style: /eɾˈma.na/ (Spain) or /eɾˈma.na/ with silent h. Pause slightly after the comma before the name."
         },
         {
           "t": "Viridiana.",
-          "en": "Her name · [vee-ree-dee-AH-nah]"
+          "en": "Viridiana — the novice’s name.",
+          "pron": "Spanish approx.: vee-ree-DYAH-nah (Latin American) or bee-ree-DYAH-nah (Spain, soft b/v). Syllables: Vi-ri-dia-na; stress on -DIA-. IPA-style: /bi.ɾiˈðja.na/ or /bi.ɾiˈðja.na/; the ll/y sound is a short “y” glide in most dialects."
         }
       ]
     },
     {
-      "start": 126.5,
-      "end": 135.94,
-      "enLine": "The charity we practice here must not be merely abstract.",
+      "start": 125.84,
+      "end": 129.28,
       "words": [
         {
           "t": "La caridad que practicamos aquí",
-          "en": "The charity we practice here · [kah-ree-DAHD … ah-KEE]"
+          "en": "The charity that we practice here",
+          "pron": "lah kah-ree-DAHD keh prahk-tee-KAH-mohs ah-KEE. Word by word: la (LAH); caridad (kah-ree-DAHD, stress -DAD); que (keh, short); practicamos (prahk-tee-KAH-mos, stress -KAH-); aquí (ah-KEE, stress -KEE). Soft Spanish r in caridad; rolled or tapped r in practicamos (first r tapped, second often tapped in -mos)."
         },
         {
           "t": "no debe ser",
-          "en": "must not be · [noh DEH-beh sehr]"
+          "en": "must not be",
+          "pron": "noh DEH-beh sehr. debe (DEH-beh): e as in “bed”; stress on first syllable DE-. ser (sehr): one smooth syllable, Spanish e as in “bed”, rolled r at the end is light."
         },
         {
           "t": "solo abstracta.",
-          "en": "only abstract · [SOH-loh ahb-STRAHK-tah]"
+          "en": "only abstract.",
+          "pron": "SOH-loh ahb-STRAHK-tah. solo: stress OH; abstracta: stress STRAHK, final -ah clear; z/c before a/o in Latin America often like “s” (ahs-TRAK-tah)."
         }
       ]
     },
     {
-      "start": 136.44,
-      "end": 146.67,
-      "enLine": "Before you take your vows, I want you to fulfill one last mission of charity.",
+      "start": 134.47,
+      "end": 152.8,
       "words": [
         {
           "t": "Antes de profesar,",
-          "en": "Before taking vows · [AHN-tes de proh-feh-SAHR]"
+          "en": "Before you take (religious) vows / before professing",
+          "pron": "AHN-tes deh proh-feh-SAHR. Antes: stress AHN-. de: quick “deh”. profesar: stress -SAHR; r rolls lightly at the end; comma = short pause."
         },
         {
           "t": "quiero que cumplas",
-          "en": "I want you to fulfill · [KYEH-roh keh KOOM-plahs]"
+          "en": "I want you to fulfill (subjunctive)",
+          "pron": "KYEH-roh keh KOOM-plahs. quiero: stress KYEH-. que: keh. cumplas: KOOM-plahs, stress KOOM-, subjunctive of cumplir; final -s like “s”."
         },
         {
           "t": "una última misión de caridad.",
-          "en": "one last mission of charity · [mee-SYOHN]"
+          "en": "one last mission of charity.",
+          "pron": "OO-nah OOL-tee-mah mee-syOHN deh kah-ree-DAHD. última: stress OOL-; misión: stress syOHN with “y” glide; caridad again kah-ree-DAHD."
         }
       ]
     },
     {
-      "start": 147,
-      "end": 155.72,
-      "enLine": "You must go to your uncle Don Jaime’s country estate.",
+      "start": 155.34,
+      "end": 157.75,
       "words": [
         {
           "t": "Debes ir a la finca",
-          "en": "You must go to the estate · [DEH-bes eer ah lah FEEN-kah]"
+          "en": "You must go to the country estate / farm",
+          "pron": "DEH-bes eer ah lah FEEN-kah. Debes: stress DEH-. ir: eer (like “ear” shorter). a la: ah lah linked. finca: FEEN-kah, stress FEEN-, c like “k”."
         },
         {
           "t": "de tu tío don Jaime.",
-          "en": "of your uncle Don Jaime · [too TEE-oh dohn HY-meh]"
+          "en": "of your uncle Don Jaime.",
+          "pron": "deh too TEE-oh dohn HY-meh. tío: TEE-oh, stress TEE-, í is clear “ee”. don: dohn, low nasal vowel. Jaime: HY-meh (like English “high” without full diphthong + meh)."
         }
       ]
     },
     {
-      "start": 157.57,
-      "end": 167.19,
-      "enLine": "Your uncle has asked you to come before you take your vows — so he can see you before you profess.",
+      "start": 158.52,
+      "end": 162.97,
       "words": [
         {
           "t": "Él te ha pedido",
-          "en": "He has asked you · [ehl teh ah peh-DEE-doh]"
+          "en": "He has asked you",
+          "pron": "ehl teh ah peh-DEE-doh. Él: stress on ehl (accent shows it’s “he,” not “the”). te: teh. ha: ah. pedido: peh-DEE-doh, stress -DEE-, past participle of pedir."
         },
         {
           "t": "que vayas antes de tomar los votos.",
-          "en": "to come before you take your vows · [keh BAH-yahs AHN-tes de toh-MAHR lohs BOH-tohs]"
+          "en": "that you go before taking your vows.",
+          "pron": "keh BAH-yahs AHN-tes deh toh-MAHR lohs BOH-tohs. vayas: BAH-yahs, subjunctive of ir, stress BAH-. antes: AHN-tes. tomar: toh-MAHR, stress -MAR. los votos: lohs BOH-tohs; votos: BOH-tohs, stress BOH-, plural of voto."
         }
       ]
     },
     {
-      "start": 168.04,
-      "end": 173.23,
-      "enLine": "I don’t want to see him, Mother.",
+      "start": 165.66,
+      "end": 169.48,
       "words": [
         {
           "t": "No quiero verlo,",
-          "en": "I don’t want to see him · [noh KYEH-roh BEHR-loh]"
+          "en": "I don’t want to see him,",
+          "pron": "noh KYEH-roh BEHR-loh. verlo: BEHR-loh, proclitic lo attached to infinitive ver; r slightly rolled; stress BEHR-."
         },
         {
           "t": "madre.",
-          "en": "Mother (superior) · [MAH-dreh]"
+          "en": "Mother — here, the Mother Superior.",
+          "pron": "MAH-dreh. Stress MAH-; dreh with soft Spanish r (single flap) between vowels in many dialects: MAH-dreh."
         }
       ]
     },
     {
-      "start": 174.08,
-      "end": 181.65,
-      "enLine": "It is an act of humility and of forgiveness.",
+      "start": 173.09,
+      "end": 174.75,
       "words": [
         {
           "t": "Es un acto de humildad",
-          "en": "It is an act of humility · [ehs oon AHK-toh de oo-meel-DAHD]"
+          "en": "It is an act of humility",
+          "pron": "ehs oon AHK-toh deh oo-meel-DAHD. Es: ehs. un: oon. acto: AHK-toh, stress AHK-. humildad: oo-meel-DAHD, stress -DAHD, u like “oo” short."
         },
         {
           "t": "y de perdón.",
-          "en": "and of pardon · [ee de pehr-DOHN]"
+          "en": "and of forgiveness / pardon.",
+          "pron": "ee deh pehr-DOHN. y: ee (like “ee” in “see,” shorter). perdón: pehr-DOHN, stress -DOHN, ó clear oh, n nasal in many dialects."
         }
       ]
     },
     {
-      "start": 183.5,
-      "end": 191.26,
-      "enLine": "Your uncle is alone and ill with longing.",
+      "start": 175.95,
+      "end": 181.35,
       "words": [
         {
           "t": "Tu tío está solo",
-          "en": "Your uncle is alone · [too TEE-oh ehs-TAH SOH-loh]"
+          "en": "Your uncle is alone",
+          "pron": "too TEE-oh ehs-TAH SOH-loh. Tu: too. tío: TEE-oh. está: ehs-TAH, stress -TAH, for state/condition. solo: SOH-loh, stress OH."
         },
         {
           "t": "y enfermo de nostalgia.",
-          "en": "and sick with nostalgia · [ehn-FEHR-moh de nohs-tahl-HEE-ah]"
+          "en": "and ill with nostalgia / longing.",
+          "pron": "ee ehn-FEHR-moh deh nohs-tahl-HEE-ah. enfermo: ehn-FEHR-moh, stress -FEHR-. nostalgia: nohs-tahl-HEE-ah, stress -HEE-, written ll/y pronounced as “y” in most dialects."
         }
       ]
     },
     {
-      "start": 196.16,
-      "end": 202.1,
+      "start": 198.41,
+      "end": 201.55,
       "words": [
         {
           "t": "Iré,",
-          "en": "I’ll go — [ee-REH]. Future of ir (to go); first person."
+          "en": "I’ll go (future of ir).",
+          "pron": "ee-REH. Future tense, first person; stress REH; accent marks stress; comma = pause."
         },
         {
           "t": "pero",
-          "en": "but — [PEH-roh]. Contrast with what follows."
+          "en": "but",
+          "pron": "PEH-roh. Stress PEH-; rolled r light."
         },
         {
           "t": "solo",
-          "en": "only — [SOH-loh]. Sole reason: obedience alone."
+          "en": "only",
+          "pron": "SOH-loh. Stress OH."
         },
         {
           "t": "por",
-          "en": "because of / for — [pohr]. Cause: por obediencia."
+          "en": "for / because of",
+          "pron": "pohr. One syllable, Spanish o as in “more” (rounded)."
         },
         {
           "t": "obediencia.",
-          "en": "obedience — [oh-beh-DYEHN-thyah]. From obedecer; religious submission to rule."
+          "en": "obedience.",
+          "pron": "oh-beh-DYEHN-thyah (Spain, ce/ci = “th”) or oh-beh-DYEHN-syah (Latin America). Stress -DYEHN-; four syllables o-be-dien-cia."
         }
       ]
     },
     {
-      "start": 202.95,
-      "end": 211.65,
+      "start": 201.58,
+      "end": 206.08,
       "words": [
         {
           "t": "La",

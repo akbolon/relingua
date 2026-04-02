@@ -1,6 +1,6 @@
 /**
- * One-off: rebuild viridiana.json opening with Hermana Viridiana at ~2:00 and enriched glosses.
- * Run: node scripts/rebuild-viridiana-opening.mjs
+ * @deprecated Do not run — overwrites hand-synced timings for Internet Archive Viridiana.mp4.
+ * Kept for history only. Opening cues are aligned with ffmpeg silencedetect on that file.
  */
 import fs from "fs";
 import path from "path";

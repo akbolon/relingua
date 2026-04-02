@@ -10,7 +10,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const pub = path.join(__dirname, "..", "public", "subtitles");
 
 const files = [
-  "viridiana.json",
+  // viridiana.json — excluded: timings are aligned to Internet Archive Viridiana.mp4
+  // (silence-detect / manual anchors); reflow would destroy sync.
   "ladri-di-biciclette.json",
   "rashomon.json",
   "pather-panchali.json",
@@ -18,7 +19,6 @@ const files = [
 ];
 
 const OFFSET = {
-  "viridiana.json": 119,
   "ladri-di-biciclette.json": 57,
   "rashomon.json": 118,
   "pather-panchali.json": 245,
