@@ -4,304 +4,128 @@
     {
       "start": 119.5,
       "end": 126.5,
+      "enLine": "Sister Viridiana.",
       "words": [
         {
           "t": "Hermana,",
-          "en": "Sister (nun) — [air-MAH-nah]. Spanish for ‘Sister’ (religious); Italian cognate sorella = sister. Title used before a nun’s name, like ‘Sister Viridiana’ in English."
+          "en": "Sister (title) · [air-MAH-nah]"
         },
         {
           "t": "Viridiana.",
-          "en": "Viridiana — [vee-ree-dee-AH-nah]. Her given name, from Latin viridis (‘green’); used here with Hermana as ‘Sister Viridiana’."
+          "en": "Her name · [vee-ree-dee-AH-nah]"
         }
       ]
     },
     {
       "start": 126.5,
       "end": 135.94,
+      "enLine": "The charity we practice here must not be merely abstract.",
       "words": [
         {
-          "t": "La",
-          "en": "The — [lah]. Feminine singular article before caridad."
+          "t": "La caridad que practicamos aquí",
+          "en": "The charity we practice here · [kah-ree-DAHD … ah-KEE]"
         },
         {
-          "t": "caridad",
-          "en": "charity — [kah-ree-DAHD]. Christian love, almsgiving; not only ‘charity’ in the modern sense but concrete care for others."
+          "t": "no debe ser",
+          "en": "must not be · [noh DEH-beh sehr]"
         },
         {
-          "t": "que",
-          "en": "that / which — [keh]. Relative pronoun linking to practicamos."
-        },
-        {
-          "t": "practicamos",
-          "en": "we practice — [prahk-tee-KAH-mohs]. First-person plural of practicar (to practice, to carry out)."
-        },
-        {
-          "t": "aquí",
-          "en": "here — [ah-KEE]. Locative adverb: in this convent / this place."
-        },
-        {
-          "t": "no",
-          "en": "not — [noh]. Negation before debe ser."
-        },
-        {
-          "t": "debe",
-          "en": "must / ought to — [DEH-beh]. Third person of deber: it should, it must."
-        },
-        {
-          "t": "ser",
-          "en": "to be — [sehr]. Infinitive after debe (must be)."
-        },
-        {
-          "t": "solo",
-          "en": "only — [SOH-loh]. Restricts what charity should be."
-        },
-        {
-          "t": "abstracta.",
-          "en": "abstract — [ahb-STRAHK-tah]. Feminine singular adjective: not merely theoretical piety."
+          "t": "solo abstracta.",
+          "en": "only abstract · [SOH-loh ahb-STRAHK-tah]"
         }
       ]
     },
     {
       "start": 136.44,
       "end": 146.67,
+      "enLine": "Before you take your vows, I want you to fulfill one last mission of charity.",
       "words": [
         {
-          "t": "Antes",
-          "en": "Before — [AHN-tes]. Temporal adverb: prior to an event (here, before taking vows)."
+          "t": "Antes de profesar,",
+          "en": "Before taking vows · [AHN-tes de proh-feh-SAHR]"
         },
         {
-          "t": "de",
-          "en": "of / to — [deh]. Preposition linking to profesar."
+          "t": "quiero que cumplas",
+          "en": "I want you to fulfill · [KYEH-roh keh KOOM-plahs]"
         },
         {
-          "t": "profesar,",
-          "en": "taking your vows — [proh-feh-SAHR]. To profess (religious vows); gerund sense in context: before you profess."
-        },
-        {
-          "t": "quiero",
-          "en": "I want — [KYEH-roh]. First person of querer."
-        },
-        {
-          "t": "que",
-          "en": "that — [keh]. Subordinating conjunction introducing a wish."
-        },
-        {
-          "t": "cumplas",
-          "en": "you fulfill — [KOOM-plahs]. Subjunctive of cumplir: that you may fulfill."
-        },
-        {
-          "t": "una",
-          "en": "a — [OO-nah]. Indefinite article (feminine)."
-        },
-        {
-          "t": "última",
-          "en": "final — [OOL-tee-mah]. Last in a series."
-        },
-        {
-          "t": "misión",
-          "en": "mission — [mee-SYOHN]. Task or duty entrusted to her."
-        },
-        {
-          "t": "de",
-          "en": "of — [deh]."
-        },
-        {
-          "t": "caridad.",
-          "en": "charity — [kah-ree-DAHD]. Same root as earlier caridad; a mission of love / service."
+          "t": "una última misión de caridad.",
+          "en": "one last mission of charity · [mee-SYOHN]"
         }
       ]
     },
     {
       "start": 147,
       "end": 155.72,
+      "enLine": "You must go to your uncle Don Jaime’s country estate.",
       "words": [
         {
-          "t": "Debes",
-          "en": "You must — [DEH-bes]. Second person singular of deber (to owe / must); strong obligation."
+          "t": "Debes ir a la finca",
+          "en": "You must go to the estate · [DEH-bes eer ah lah FEEN-kah]"
         },
         {
-          "t": "ir",
-          "en": "to go — [eer]. Infinitive after debes."
-        },
-        {
-          "t": "a",
-          "en": "to — [ah]. Preposition: motion toward (ir a la finca)."
-        },
-        {
-          "t": "la",
-          "en": "the — [lah]. Feminine article before finca."
-        },
-        {
-          "t": "finca",
-          "en": "country estate / farm — [FEEN-kah]. Rural property; here Don Jaime’s house."
-        },
-        {
-          "t": "de",
-          "en": "of — [deh]. Possession: the estate of…"
-        },
-        {
-          "t": "tu",
-          "en": "your — [too]. Possessive with tío."
-        },
-        {
-          "t": "tío",
-          "en": "uncle — [TEE-oh]. Parent’s brother; Don Jaime."
-        },
-        {
-          "t": "don",
-          "en": "Don — [dohn]. Honorific title before a man’s first name (Spanish, like Italian Don)."
-        },
-        {
-          "t": "Jaime.",
-          "en": "Jaime — [HY-meh]. First name."
+          "t": "de tu tío don Jaime.",
+          "en": "of your uncle Don Jaime · [too TEE-oh dohn HY-meh]"
         }
       ]
     },
     {
       "start": 157.57,
       "end": 167.19,
+      "enLine": "Your uncle has asked you to come before you take your vows — so he can see you before you profess.",
       "words": [
         {
-          "t": "Él",
-          "en": "He — [ehl]. Subject pronoun (accent shows stress: not the article el)."
+          "t": "Él te ha pedido",
+          "en": "He has asked you · [ehl teh ah peh-DEE-doh]"
         },
         {
-          "t": "te",
-          "en": "to you — [teh]. Indirect object: he has asked you."
-        },
-        {
-          "t": "ha",
-          "en": "has — [ah]. Auxiliary in present perfect (ha pedido)."
-        },
-        {
-          "t": "pedido",
-          "en": "asked / requested — [peh-DEE-doh]. Past participle of pedir."
-        },
-        {
-          "t": "que",
-          "en": "that — [keh]. Subordinate clause: he has asked that you…"
-        },
-        {
-          "t": "vayas",
-          "en": "you go — [BAH-yahs]. Subjunctive of ir (vaya): may you go / that you go."
-        },
-        {
-          "t": "antes",
-          "en": "before — [AHN-tes]. Before taking vows."
-        },
-        {
-          "t": "de",
-          "en": "of — [deh]. Before infinitive tomar."
-        },
-        {
-          "t": "tomar",
-          "en": "to take — [toh-MAHR]. Tomar los votos: to take religious vows."
-        },
-        {
-          "t": "los",
-          "en": "the — [lohs]. Masculine plural article."
-        },
-        {
-          "t": "votos.",
-          "en": "vows — [BOH-tohs]. Religious promises (voto = vow)."
+          "t": "que vayas antes de tomar los votos.",
+          "en": "to come before you take your vows · [keh BAH-yahs AHN-tes de toh-MAHR lohs BOH-tohs]"
         }
       ]
     },
     {
       "start": 168.04,
       "end": 173.23,
+      "enLine": "I don’t want to see him, Mother.",
       "words": [
         {
-          "t": "No",
-          "en": "No / I don’t — [noh]. Negation: I don’t want to see him."
-        },
-        {
-          "t": "quiero",
-          "en": "I want — [KYEH-roh]. First person of querer."
-        },
-        {
-          "t": "verlo,",
-          "en": "to see him — [BEHR-loh]. Ver + lo (him): to see him (Don Jaime)."
+          "t": "No quiero verlo,",
+          "en": "I don’t want to see him · [noh KYEH-roh BEHR-loh]"
         },
         {
           "t": "madre.",
-          "en": "Mother — [MAH-dreh]. Address to the Mother Superior."
+          "en": "Mother (superior) · [MAH-dreh]"
         }
       ]
     },
     {
       "start": 174.08,
       "end": 181.65,
+      "enLine": "It is an act of humility and of forgiveness.",
       "words": [
         {
-          "t": "Es",
-          "en": "It is — [ehs]. Third person of ser."
+          "t": "Es un acto de humildad",
+          "en": "It is an act of humility · [ehs oon AHK-toh de oo-meel-DAHD]"
         },
         {
-          "t": "un",
-          "en": "a — [oon]. Masculine indefinite article."
-        },
-        {
-          "t": "acto",
-          "en": "act — [AHK-toh]. Deed, gesture."
-        },
-        {
-          "t": "de",
-          "en": "of — [deh]."
-        },
-        {
-          "t": "humildad",
-          "en": "humility — [oo-meel-DAHD]. Abstract noun; opposite of pride."
-        },
-        {
-          "t": "y",
-          "en": "and — [ee]."
-        },
-        {
-          "t": "de",
-          "en": "of — [deh]."
-        },
-        {
-          "t": "perdón.",
-          "en": "forgiveness / pardon — [pehr-DOHN]. From perdonar; also ‘excuse’ in other contexts."
+          "t": "y de perdón.",
+          "en": "and of pardon · [ee de pehr-DOHN]"
         }
       ]
     },
     {
       "start": 183.5,
       "end": 191.26,
+      "enLine": "Your uncle is alone and ill with longing.",
       "words": [
         {
-          "t": "Tu",
-          "en": "Your — [too]. Possessive (with accent in careful writing: tú = you)."
+          "t": "Tu tío está solo",
+          "en": "Your uncle is alone · [too TEE-oh ehs-TAH SOH-loh]"
         },
         {
-          "t": "tío",
-          "en": "uncle — [TEE-oh]."
-        },
-        {
-          "t": "está",
-          "en": "is — [ehs-TAH]. Third person of estar (state, location)."
-        },
-        {
-          "t": "solo",
-          "en": "alone — [SOH-loh]. By himself."
-        },
-        {
-          "t": "y",
-          "en": "and — [ee]."
-        },
-        {
-          "t": "enfermo",
-          "en": "ill — [ehn-FEHR-moh]. Sick; adjective with estar."
-        },
-        {
-          "t": "de",
-          "en": "with / from — [deh]. Enfermo de nostalgia: ill with longing."
-        },
-        {
-          "t": "nostalgia.",
-          "en": "nostalgia / longing — [nohs-tahl-HEE-ah]. Emotional ache for the past."
+          "t": "y enfermo de nostalgia.",
+          "en": "and sick with nostalgia · [ehn-FEHR-moh de nohs-tahl-HEE-ah]"
         }
       ]
     },

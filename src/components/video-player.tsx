@@ -193,39 +193,46 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
 
       {activeCue && (
         <div
-          className="pointer-events-auto absolute bottom-[4.5rem] left-1/2 z-10 w-[min(96%,48rem)] -translate-x-1/2 px-3 text-center"
+          className="pointer-events-auto absolute bottom-[4.5rem] left-1/2 z-10 w-[min(96%,42rem)] -translate-x-1/2 px-3 text-center"
           aria-live="polite"
         >
           <div
-            className="glass-subtitle inline-block rounded-2xl px-4 py-2 text-base leading-relaxed text-white drop-shadow-md sm:text-lg"
+            className="glass-subtitle mx-auto inline-flex max-w-full flex-col items-center gap-1.5 rounded-2xl px-4 py-2.5 text-left drop-shadow-md"
             style={{ pointerEvents: "auto" }}
           >
-            {activeCue.words.map((w, i) => (
-              <span key={`${activeCue.start}-${i}`} className="inline">
-                <span
-                  className="cursor-help rounded px-0.5 transition-colors hover:bg-white/20"
-                  onMouseEnter={(e) => {
-                    const r = e.currentTarget.getBoundingClientRect();
-                    setTip({
-                      x: r.left + r.width / 2,
-                      y: r.top,
-                      text: w.en,
-                    });
-                  }}
-                  onMouseLeave={() => setTip(null)}
-                >
-                  {w.t}
+            <p className="text-center text-base font-medium leading-snug tracking-tight text-white sm:text-[1.05rem] sm:leading-snug">
+              {activeCue.words.map((w, i) => (
+                <span key={`${activeCue.start}-${i}`} className="inline">
+                  <span
+                    className="cursor-help rounded px-0.5 transition-colors hover:bg-white/20"
+                    onMouseEnter={(e) => {
+                      const r = e.currentTarget.getBoundingClientRect();
+                      setTip({
+                        x: r.left + r.width / 2,
+                        y: r.top,
+                        text: w.en,
+                      });
+                    }}
+                    onMouseLeave={() => setTip(null)}
+                  >
+                    {w.t}
+                  </span>
+                  {i < activeCue.words.length - 1 ? " " : null}
                 </span>
-                {i < activeCue.words.length - 1 ? "\u00A0" : null}
-              </span>
-            ))}
+              ))}
+            </p>
+            {activeCue.enLine ? (
+              <p className="max-w-prose text-center text-sm leading-snug text-white/80 sm:text-[0.9375rem]">
+                {activeCue.enLine}
+              </p>
+            ) : null}
           </div>
         </div>
       )}
 
       {tip ? (
         <div
-          className="pointer-events-none fixed z-[60] -translate-x-1/2 -translate-y-full rounded-md border border-white/35 bg-zinc-950/95 px-2.5 py-1.5 text-xs font-medium text-zinc-50 shadow-xl ring-1 ring-white/15 backdrop-blur-md dark:border-slate-400/30 dark:bg-slate-950/95 dark:text-slate-50 dark:ring-slate-500/25"
+          className="pointer-events-none fixed z-[60] max-w-[min(90vw,20rem)] -translate-x-1/2 -translate-y-full rounded-md border border-white/35 bg-zinc-950/95 px-2.5 py-1.5 text-left text-xs font-normal leading-snug text-zinc-50 shadow-xl ring-1 ring-white/15 backdrop-blur-md dark:border-slate-400/30 dark:bg-slate-950/95 dark:text-slate-50 dark:ring-slate-500/25"
           style={{ left: tip.x, top: tip.y - 8 }}
         >
           {tip.text}
