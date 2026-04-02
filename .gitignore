@@ -8,3 +8,4 @@
 *.db-journal
 /prisma/migrations/**/migration_lock.toml
 .DS_Store
+/scripts/vir-silence-full.txt

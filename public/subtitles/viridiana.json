@@ -3,176 +3,176 @@
   "cues": [
     {
       "start": 119.95,
-      "end": 120.88,
+      "end": 120.4,
       "words": [
         {
           "t": "Hermana,",
           "en": "Sister — religious title for a nun (here, addressing you).",
-          "pron": "Spanish approx.: ayr-MAH-nah. Syllables: Her-ma-na; stress on -MAH-. H as a light aspiration in Spain; in many Americas it is silent (ear-MAH-nah). IPA-style: /eɾˈma.na/ (Spain) or /eɾˈma.na/ with silent h. Pause slightly after the comma before the name."
+          "pron": "air-MAH-nah; stress on -MAH-. (Spain: light /h/; Americas: often silent.)"
         },
         {
           "t": "Viridiana.",
           "en": "Viridiana — the novice’s name.",
-          "pron": "Spanish approx.: vee-ree-DYAH-nah (Latin American) or bee-ree-DYAH-nah (Spain, soft b/v). Syllables: Vi-ri-dia-na; stress on -DIA-. IPA-style: /bi.ɾiˈðja.na/ or /bi.ɾiˈðja.na/; the ll/y sound is a short “y” glide in most dialects."
+          "pron": "vee-ree-DYAH-nah; stress on -DYAH- (Spain: bee- with soft b/v)."
         }
       ]
     },
     {
-      "start": 125.84,
-      "end": 129.28,
+      "start": 120.72,
+      "end": 121.17,
       "words": [
         {
           "t": "La caridad que practicamos aquí",
           "en": "The charity that we practice here",
-          "pron": "lah kah-ree-DAHD keh prahk-tee-KAH-mohs ah-KEE. Word by word: la (LAH); caridad (kah-ree-DAHD, stress -DAD); que (keh, short); practicamos (prahk-tee-KAH-mos, stress -KAH-); aquí (ah-KEE, stress -KEE). Soft Spanish r in caridad; rolled or tapped r in practicamos (first r tapped, second often tapped in -mos)."
+          "pron": "lah kah-ree-DAHD … prahk-tee-KAH-mohs ah-KEE; stress on -DAHD and -KAH-."
         },
         {
           "t": "no debe ser",
           "en": "must not be",
-          "pron": "noh DEH-beh sehr. debe (DEH-beh): e as in “bed”; stress on first syllable DE-. ser (sehr): one smooth syllable, Spanish e as in “bed”, rolled r at the end is light."
+          "pron": "noh DEH-beh sehr; stress DEH- on debe."
         },
         {
           "t": "solo abstracta.",
           "en": "only abstract.",
-          "pron": "SOH-loh ahb-STRAHK-tah. solo: stress OH; abstracta: stress STRAHK, final -ah clear; z/c before a/o in Latin America often like “s” (ahs-TRAK-tah)."
+          "pron": "SOH-loh ahb-STRAHK-tah; stress STRAHK."
         }
       ]
     },
     {
-      "start": 134.47,
-      "end": 152.8,
+      "start": 121.85,
+      "end": 124.25,
       "words": [
         {
           "t": "Antes de profesar,",
           "en": "Before you take (religious) vows / before professing",
-          "pron": "AHN-tes deh proh-feh-SAHR. Antes: stress AHN-. de: quick “deh”. profesar: stress -SAHR; r rolls lightly at the end; comma = short pause."
+          "pron": "AHN-tes deh proh-feh-SAHR; stress -SAHR; pause after comma."
         },
         {
           "t": "quiero que cumplas",
           "en": "I want you to fulfill (subjunctive)",
-          "pron": "KYEH-roh keh KOOM-plahs. quiero: stress KYEH-. que: keh. cumplas: KOOM-plahs, stress KOOM-, subjunctive of cumplir; final -s like “s”."
+          "pron": "KYEH-roh keh KOOM-plahs; stress KOOM- (subjunctive)."
         },
         {
           "t": "una última misión de caridad.",
           "en": "one last mission of charity.",
-          "pron": "OO-nah OOL-tee-mah mee-syOHN deh kah-ree-DAHD. última: stress OOL-; misión: stress syOHN with “y” glide; caridad again kah-ree-DAHD."
+          "pron": "OOL-tee-mah mee-syOHN … kah-ree-DAHD; stress syOHN."
         }
       ]
     },
     {
-      "start": 155.34,
-      "end": 157.75,
+      "start": 124.58,
+      "end": 124.96,
       "words": [
         {
           "t": "Debes ir a la finca",
           "en": "You must go to the country estate / farm",
-          "pron": "DEH-bes eer ah lah FEEN-kah. Debes: stress DEH-. ir: eer (like “ear” shorter). a la: ah lah linked. finca: FEEN-kah, stress FEEN-, c like “k”."
+          "pron": "DEH-bes eer ah lah FEEN-kah; FEEN-kah with /k/."
         },
         {
           "t": "de tu tío don Jaime.",
           "en": "of your uncle Don Jaime.",
-          "pron": "deh too TEE-oh dohn HY-meh. tío: TEE-oh, stress TEE-, í is clear “ee”. don: dohn, low nasal vowel. Jaime: HY-meh (like English “high” without full diphthong + meh)."
+          "pron": "too TEE-oh, dohn HY-meh (don + first name)."
         }
       ]
     },
     {
-      "start": 158.52,
-      "end": 162.97,
+      "start": 125,
+      "end": 129.38,
       "words": [
         {
           "t": "Él te ha pedido",
-          "en": "He has asked you",
-          "pron": "ehl teh ah peh-DEE-doh. Él: stress on ehl (accent shows it’s “he,” not “the”). te: teh. ha: ah. pedido: peh-DEE-doh, stress -DEE-, past participle of pedir."
+          "en": "Your uncle has asked you (lit. “He has asked you”).",
+          "pron": "ehl teh ah peh-DEE-doh; stress -DEE- (present perfect of pedir)."
         },
         {
           "t": "que vayas antes de tomar los votos.",
-          "en": "that you go before taking your vows.",
-          "pron": "keh BAH-yahs AHN-tes deh toh-MAHR lohs BOH-tohs. vayas: BAH-yahs, subjunctive of ir, stress BAH-. antes: AHN-tes. tomar: toh-MAHR, stress -MAR. los votos: lohs BOH-tohs; votos: BOH-tohs, stress BOH-, plural of voto."
+          "en": "To come before you take your vows (so he can see you before you profess).",
+          "pron": "keh BAH-yahs AHN-tes deh toh-MAHR lohs BOH-tohs; stress BAH- / BOH- (subjunctive vayas)."
         }
       ]
     },
     {
-      "start": 165.66,
-      "end": 169.48,
+      "start": 132.14,
+      "end": 135.96,
       "words": [
         {
           "t": "No quiero verlo,",
           "en": "I don’t want to see him,",
-          "pron": "noh KYEH-roh BEHR-loh. verlo: BEHR-loh, proclitic lo attached to infinitive ver; r slightly rolled; stress BEHR-."
+          "pron": "noh KYEH-roh BEHR-loh; lo = “him” clitic on ver."
         },
         {
           "t": "madre.",
           "en": "Mother — here, the Mother Superior.",
-          "pron": "MAH-dreh. Stress MAH-; dreh with soft Spanish r (single flap) between vowels in many dialects: MAH-dreh."
+          "pron": "MAH-dreh; stress MAH-."
         }
       ]
     },
     {
-      "start": 173.09,
-      "end": 174.75,
+      "start": 139.57,
+      "end": 141.23,
       "words": [
         {
           "t": "Es un acto de humildad",
           "en": "It is an act of humility",
-          "pron": "ehs oon AHK-toh deh oo-meel-DAHD. Es: ehs. un: oon. acto: AHK-toh, stress AHK-. humildad: oo-meel-DAHD, stress -DAHD, u like “oo” short."
+          "pron": "ehs oon AHK-toh deh oo-meel-DAHD; stress -DAHD."
         },
         {
           "t": "y de perdón.",
           "en": "and of forgiveness / pardon.",
-          "pron": "ee deh pehr-DOHN. y: ee (like “ee” in “see,” shorter). perdón: pehr-DOHN, stress -DOHN, ó clear oh, n nasal in many dialects."
+          "pron": "ee deh pehr-DOHN; stress -DOHN."
         }
       ]
     },
     {
-      "start": 175.95,
-      "end": 181.35,
+      "start": 142.43,
+      "end": 147.83,
       "words": [
         {
           "t": "Tu tío está solo",
           "en": "Your uncle is alone",
-          "pron": "too TEE-oh ehs-TAH SOH-loh. Tu: too. tío: TEE-oh. está: ehs-TAH, stress -TAH, for state/condition. solo: SOH-loh, stress OH."
+          "pron": "too TEE-oh ehs-TAH SOH-loh; está = “is” (state)."
         },
         {
           "t": "y enfermo de nostalgia.",
           "en": "and ill with nostalgia / longing.",
-          "pron": "ee ehn-FEHR-moh deh nohs-tahl-HEE-ah. enfermo: ehn-FEHR-moh, stress -FEHR-. nostalgia: nohs-tahl-HEE-ah, stress -HEE-, written ll/y pronounced as “y” in most dialects."
+          "pron": "ehn-FEHR-moh deh nohs-tahl-HEE-ah; stress -FEHR- / -HEE-."
         }
       ]
     },
     {
-      "start": 198.41,
-      "end": 201.55,
+      "start": 164.89,
+      "end": 168.03,
       "words": [
         {
           "t": "Iré,",
           "en": "I’ll go (future of ir).",
-          "pron": "ee-REH. Future tense, first person; stress REH; accent marks stress; comma = pause."
+          "pron": "ee-REH; future of ir; accent = stress."
         },
         {
           "t": "pero",
           "en": "but",
-          "pron": "PEH-roh. Stress PEH-; rolled r light."
+          "pron": "PEH-roh."
         },
         {
           "t": "solo",
           "en": "only",
-          "pron": "SOH-loh. Stress OH."
+          "pron": "SOH-loh."
         },
         {
           "t": "por",
           "en": "for / because of",
-          "pron": "pohr. One syllable, Spanish o as in “more” (rounded)."
+          "pron": "pohr."
         },
         {
           "t": "obediencia.",
           "en": "obedience.",
-          "pron": "oh-beh-DYEHN-thyah (Spain, ce/ci = “th”) or oh-beh-DYEHN-syah (Latin America). Stress -DYEHN-; four syllables o-be-dien-cia."
+          "pron": "oh-beh-DYEHN-syah (LA) / -thyah (Spain); stress -DYEHN-."
         }
       ]
     },
     {
-      "start": 201.58,
-      "end": 206.08,
+      "start": 168.06,
+      "end": 172.56,
       "words": [
         {
           "t": "La",
@@ -213,8 +213,8 @@
       ]
     },
     {
-      "start": 213.5,
-      "end": 220.3,
+      "start": 179.98,
+      "end": 186.78,
       "words": [
         {
           "t": "En",
@@ -243,8 +243,8 @@
       ]
     },
     {
-      "start": 221.15,
-      "end": 229.61,
+      "start": 187.63,
+      "end": 196.09,
       "words": [
         {
           "t": "Ramona",
@@ -285,8 +285,8 @@
       ]
     },
     {
-      "start": 230.46,
-      "end": 237.52,
+      "start": 196.94,
+      "end": 204,
       "words": [
         {
           "t": "No",
@@ -319,8 +319,8 @@
       ]
     },
     {
-      "start": 239.37,
-      "end": 246.84,
+      "start": 205.85,
+      "end": 213.32,
       "words": [
         {
           "t": "La",
@@ -353,8 +353,8 @@
       ]
     },
     {
-      "start": 247.69,
-      "end": 257.99,
+      "start": 214.17,
+      "end": 224.47,
       "words": [
         {
           "t": "Don",
@@ -403,8 +403,8 @@
       ]
     },
     {
-      "start": 263.29,
-      "end": 269.82,
+      "start": 229.77,
+      "end": 236.3,
       "words": [
         {
           "t": "Que",
@@ -433,8 +433,8 @@
       ]
     },
     {
-      "start": 271.67,
-      "end": 281.67,
+      "start": 238.15,
+      "end": 248.15,
       "words": [
         {
           "t": "El",
@@ -483,8 +483,8 @@
       ]
     },
     {
-      "start": 282.52,
-      "end": 289.8,
+      "start": 249,
+      "end": 256.28,
       "words": [
         {
           "t": "Viridiana",
@@ -517,8 +517,8 @@
       ]
     },
     {
-      "start": 290.65,
-      "end": 297.64,
+      "start": 257.13,
+      "end": 264.12,
       "words": [
         {
           "t": "Buenas",
@@ -547,8 +547,8 @@
       ]
     },
     {
-      "start": 299.49,
-      "end": 307.25,
+      "start": 265.97,
+      "end": 273.73,
       "words": [
         {
           "t": "Don",
@@ -585,8 +585,8 @@
       ]
     },
     {
-      "start": 308.1,
-      "end": 312.07,
+      "start": 274.58,
+      "end": 278.55,
       "words": [
         {
           "t": "Gracias,",
@@ -599,8 +599,8 @@
       ]
     },
     {
-      "start": 312.92,
-      "end": 321.16,
+      "start": 279.4,
+      "end": 287.64,
       "words": [
         {
           "t": "Hace",
@@ -641,8 +641,8 @@
       ]
     },
     {
-      "start": 325.66,
-      "end": 333.27,
+      "start": 292.14,
+      "end": 299.75,
       "words": [
         {
           "t": "Has",
@@ -679,8 +679,8 @@
       ]
     },
     {
-      "start": 334.12,
-      "end": 342.22,
+      "start": 300.6,
+      "end": 308.7,
       "words": [
         {
           "t": "Prefiero",
@@ -717,8 +717,8 @@
       ]
     },
     {
-      "start": 343.07,
-      "end": 350.65,
+      "start": 309.55,
+      "end": 317.13,
       "words": [
         {
           "t": "Esta",
@@ -751,8 +751,8 @@
       ]
     },
     {
-      "start": 352.5,
-      "end": 358.52,
+      "start": 318.98,
+      "end": 325,
       "words": [
         {
           "t": "Mañana",
