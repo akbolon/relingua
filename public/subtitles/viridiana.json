@@ -2,438 +2,452 @@
   "locale": "es",
   "cues": [
     {
-      "start": 108,
-      "end": 117.44,
+      "start": 119.5,
+      "end": 126.5,
+      "words": [
+        {
+          "t": "Hermana,",
+          "en": "Sister (nun) — [air-MAH-nah]. Spanish for ‘Sister’ (religious); Italian cognate sorella = sister. Title used before a nun’s name, like ‘Sister Viridiana’ in English."
+        },
+        {
+          "t": "Viridiana.",
+          "en": "Viridiana — [vee-ree-dee-AH-nah]. Her given name, from Latin viridis (‘green’); used here with Hermana as ‘Sister Viridiana’."
+        }
+      ]
+    },
+    {
+      "start": 126.5,
+      "end": 135.94,
       "words": [
         {
           "t": "La",
-          "en": "The"
+          "en": "The — [lah]. Feminine singular article before caridad."
         },
         {
           "t": "caridad",
-          "en": "charity"
+          "en": "charity — [kah-ree-DAHD]. Christian love, almsgiving; not only ‘charity’ in the modern sense but concrete care for others."
         },
         {
           "t": "que",
-          "en": "that"
+          "en": "that / which — [keh]. Relative pronoun linking to practicamos."
         },
         {
           "t": "practicamos",
-          "en": "we practice"
+          "en": "we practice — [prahk-tee-KAH-mohs]. First-person plural of practicar (to practice, to carry out)."
         },
         {
           "t": "aquí",
-          "en": "here"
+          "en": "here — [ah-KEE]. Locative adverb: in this convent / this place."
         },
         {
           "t": "no",
-          "en": "not"
+          "en": "not — [noh]. Negation before debe ser."
         },
         {
           "t": "debe",
-          "en": "should"
+          "en": "must / ought to — [DEH-beh]. Third person of deber: it should, it must."
         },
         {
           "t": "ser",
-          "en": "be"
+          "en": "to be — [sehr]. Infinitive after debe (must be)."
         },
         {
           "t": "solo",
-          "en": "only"
+          "en": "only — [SOH-loh]. Restricts what charity should be."
         },
         {
           "t": "abstracta.",
-          "en": "abstract."
+          "en": "abstract — [ahb-STRAHK-tah]. Feminine singular adjective: not merely theoretical piety."
         }
       ]
     },
     {
-      "start": 118.29,
-      "end": 128.52,
+      "start": 136.44,
+      "end": 146.67,
       "words": [
         {
           "t": "Antes",
-          "en": "Before"
+          "en": "Before — [AHN-tes]. Temporal adverb: prior to an event (here, before taking vows)."
         },
         {
           "t": "de",
-          "en": "of"
+          "en": "of / to — [deh]. Preposition linking to profesar."
         },
         {
           "t": "profesar,",
-          "en": "taking your vows,"
+          "en": "taking your vows — [proh-feh-SAHR]. To profess (religious vows); gerund sense in context: before you profess."
         },
         {
           "t": "quiero",
-          "en": "I want"
+          "en": "I want — [KYEH-roh]. First person of querer."
         },
         {
           "t": "que",
-          "en": "that"
+          "en": "that — [keh]. Subordinating conjunction introducing a wish."
         },
         {
           "t": "cumplas",
-          "en": "you fulfill"
+          "en": "you fulfill — [KOOM-plahs]. Subjunctive of cumplir: that you may fulfill."
         },
         {
           "t": "una",
-          "en": "a"
+          "en": "a — [OO-nah]. Indefinite article (feminine)."
         },
         {
           "t": "última",
-          "en": "final"
+          "en": "final — [OOL-tee-mah]. Last in a series."
         },
         {
           "t": "misión",
-          "en": "mission"
+          "en": "mission — [mee-SYOHN]. Task or duty entrusted to her."
         },
         {
           "t": "de",
-          "en": "of"
+          "en": "of — [deh]."
         },
         {
           "t": "caridad.",
-          "en": "charity."
+          "en": "charity — [kah-ree-DAHD]. Same root as earlier caridad; a mission of love / service."
         }
       ]
     },
     {
-      "start": 129.37,
-      "end": 138.09,
+      "start": 147,
+      "end": 155.72,
       "words": [
         {
           "t": "Debes",
-          "en": "You must"
+          "en": "You must — [DEH-bes]. Second person singular of deber (to owe / must); strong obligation."
         },
         {
           "t": "ir",
-          "en": "go"
+          "en": "to go — [eer]. Infinitive after debes."
         },
         {
           "t": "a",
-          "en": "to"
+          "en": "to — [ah]. Preposition: motion toward (ir a la finca)."
         },
         {
           "t": "la",
-          "en": "the"
+          "en": "the — [lah]. Feminine article before finca."
         },
         {
           "t": "finca",
-          "en": "estate"
+          "en": "country estate / farm — [FEEN-kah]. Rural property; here Don Jaime’s house."
         },
         {
           "t": "de",
-          "en": "of"
+          "en": "of — [deh]. Possession: the estate of…"
         },
         {
           "t": "tu",
-          "en": "your"
+          "en": "your — [too]. Possessive with tío."
         },
         {
           "t": "tío",
-          "en": "uncle"
+          "en": "uncle — [TEE-oh]. Parent’s brother; Don Jaime."
         },
         {
           "t": "don",
-          "en": "Don"
+          "en": "Don — [dohn]. Honorific title before a man’s first name (Spanish, like Italian Don)."
         },
         {
           "t": "Jaime.",
-          "en": "Jaime."
+          "en": "Jaime — [HY-meh]. First name."
         }
       ]
     },
     {
-      "start": 139.94,
-      "end": 149.56,
+      "start": 157.57,
+      "end": 167.19,
       "words": [
         {
           "t": "Él",
-          "en": "He"
+          "en": "He — [ehl]. Subject pronoun (accent shows stress: not the article el)."
         },
         {
           "t": "te",
-          "en": "to you"
+          "en": "to you — [teh]. Indirect object: he has asked you."
         },
         {
           "t": "ha",
-          "en": "has"
+          "en": "has — [ah]. Auxiliary in present perfect (ha pedido)."
         },
         {
           "t": "pedido",
-          "en": "asked"
+          "en": "asked / requested — [peh-DEE-doh]. Past participle of pedir."
         },
         {
           "t": "que",
-          "en": "that"
+          "en": "that — [keh]. Subordinate clause: he has asked that you…"
         },
         {
           "t": "vayas",
-          "en": "you go"
+          "en": "you go — [BAH-yahs]. Subjunctive of ir (vaya): may you go / that you go."
         },
         {
           "t": "antes",
-          "en": "before"
+          "en": "before — [AHN-tes]. Before taking vows."
         },
         {
           "t": "de",
-          "en": "of"
+          "en": "of — [deh]. Before infinitive tomar."
         },
         {
           "t": "tomar",
-          "en": "taking"
+          "en": "to take — [toh-MAHR]. Tomar los votos: to take religious vows."
         },
         {
           "t": "los",
-          "en": "the"
+          "en": "the — [lohs]. Masculine plural article."
         },
         {
           "t": "votos.",
-          "en": "vows."
+          "en": "vows — [BOH-tohs]. Religious promises (voto = vow)."
         }
       ]
     },
     {
-      "start": 150.41,
-      "end": 155.6,
+      "start": 168.04,
+      "end": 173.23,
       "words": [
         {
           "t": "No",
-          "en": "I don't"
+          "en": "No / I don’t — [noh]. Negation: I don’t want to see him."
         },
         {
           "t": "quiero",
-          "en": "want"
+          "en": "I want — [KYEH-roh]. First person of querer."
         },
         {
           "t": "verlo,",
-          "en": "to see him,"
+          "en": "to see him — [BEHR-loh]. Ver + lo (him): to see him (Don Jaime)."
         },
         {
           "t": "madre.",
-          "en": "Mother."
+          "en": "Mother — [MAH-dreh]. Address to the Mother Superior."
         }
       ]
     },
     {
-      "start": 156.45,
-      "end": 164.02,
+      "start": 174.08,
+      "end": 181.65,
       "words": [
         {
           "t": "Es",
-          "en": "It is"
+          "en": "It is — [ehs]. Third person of ser."
         },
         {
           "t": "un",
-          "en": "a"
+          "en": "a — [oon]. Masculine indefinite article."
         },
         {
           "t": "acto",
-          "en": "act"
+          "en": "act — [AHK-toh]. Deed, gesture."
         },
         {
           "t": "de",
-          "en": "of"
+          "en": "of — [deh]."
         },
         {
           "t": "humildad",
-          "en": "humility"
+          "en": "humility — [oo-meel-DAHD]. Abstract noun; opposite of pride."
         },
         {
           "t": "y",
-          "en": "and"
+          "en": "and — [ee]."
         },
         {
           "t": "de",
-          "en": "of"
+          "en": "of — [deh]."
         },
         {
           "t": "perdón.",
-          "en": "forgiveness."
+          "en": "forgiveness / pardon — [pehr-DOHN]. From perdonar; also ‘excuse’ in other contexts."
         }
       ]
     },
     {
-      "start": 165.87,
-      "end": 173.63,
+      "start": 183.5,
+      "end": 191.26,
       "words": [
         {
           "t": "Tu",
-          "en": "Your"
+          "en": "Your — [too]. Possessive (with accent in careful writing: tú = you)."
         },
         {
           "t": "tío",
-          "en": "uncle"
+          "en": "uncle — [TEE-oh]."
         },
         {
           "t": "está",
-          "en": "is"
+          "en": "is — [ehs-TAH]. Third person of estar (state, location)."
         },
         {
           "t": "solo",
-          "en": "alone"
+          "en": "alone — [SOH-loh]. By himself."
         },
         {
           "t": "y",
-          "en": "and"
+          "en": "and — [ee]."
         },
         {
           "t": "enfermo",
-          "en": "ill"
+          "en": "ill — [ehn-FEHR-moh]. Sick; adjective with estar."
         },
         {
           "t": "de",
-          "en": "with"
+          "en": "with / from — [deh]. Enfermo de nostalgia: ill with longing."
         },
         {
           "t": "nostalgia.",
-          "en": "nostalgia."
+          "en": "nostalgia / longing — [nohs-tahl-HEE-ah]. Emotional ache for the past."
         }
       ]
     },
     {
-      "start": 178.53,
-      "end": 184.47,
+      "start": 196.16,
+      "end": 202.1,
       "words": [
         {
           "t": "Iré,",
-          "en": "I'll go,"
+          "en": "I’ll go — [ee-REH]. Future of ir (to go); first person."
         },
         {
           "t": "pero",
-          "en": "but"
+          "en": "but — [PEH-roh]. Contrast with what follows."
         },
         {
           "t": "solo",
-          "en": "only"
+          "en": "only — [SOH-loh]. Sole reason: obedience alone."
         },
         {
           "t": "por",
-          "en": "because"
+          "en": "because of / for — [pohr]. Cause: por obediencia."
         },
         {
           "t": "obediencia.",
-          "en": "of obedience."
+          "en": "obedience — [oh-beh-DYEHN-thyah]. From obedecer; religious submission to rule."
         }
       ]
     },
     {
-      "start": 185.32,
-      "end": 194.02,
+      "start": 202.95,
+      "end": 211.65,
       "words": [
         {
           "t": "La",
-          "en": "The"
+          "en": "The — [lah]. Feminine article."
         },
         {
           "t": "obediencia",
-          "en": "obedience"
+          "en": "obedience — [oh-beh-DYEHN-thyah]. Repeated for emphasis as a spiritual step."
         },
         {
           "t": "es",
-          "en": "is"
+          "en": "is — [ehs]. Ser: defining what obedience is."
         },
         {
           "t": "el",
-          "en": "the"
+          "en": "the — [ehl]. Masculine article before paso."
         },
         {
           "t": "primer",
-          "en": "first"
+          "en": "first — [pree-MEHR]. Short form of primero before masculine noun."
         },
         {
           "t": "paso",
-          "en": "step"
+          "en": "step — [PAH-soh]. Stage on the path to holiness."
         },
         {
           "t": "hacia",
-          "en": "toward"
+          "en": "toward — [AH-thyah / AH-syah]. Direction + la perfección."
         },
         {
           "t": "la",
-          "en": "the"
+          "en": "the — [lah]."
         },
         {
           "t": "perfección.",
-          "en": "perfection."
+          "en": "perfection — [pehr-fehk-SYOHN]. Spiritual or moral completeness."
         }
       ]
     },
     {
-      "start": 195.87,
-      "end": 202.67,
+      "start": 213.5,
+      "end": 220.3,
       "words": [
         {
           "t": "En",
-          "en": "In"
+          "en": "In — [ehn]."
         },
         {
           "t": "la",
-          "en": "the"
+          "en": "the — [lah]."
         },
         {
           "t": "granja",
-          "en": "farm"
+          "en": "farm — [GRAHN-hah]. Rural farmstead (Don Jaime’s property)."
         },
         {
           "t": "encontrarás",
-          "en": "you will find"
+          "en": "you will find — [ehn-kohn-trah-RAHS]. Future of encontrar."
         },
         {
           "t": "gente",
-          "en": "people"
+          "en": "people — [HEHN-teh]. Common folk, servants."
         },
         {
           "t": "sencilla.",
-          "en": "simple."
+          "en": "simple / plain — [sehn-SEE-yah]. Humble, unpretentious."
         }
       ]
     },
     {
-      "start": 203.52,
-      "end": 211.98,
+      "start": 221.15,
+      "end": 229.61,
       "words": [
         {
           "t": "Ramona",
-          "en": "Ramona"
+          "en": "Ramona — [rah-MOH-nah]. Woman’s name; housekeeper."
         },
         {
           "t": "cuida",
-          "en": "takes care of"
+          "en": "she looks after — [KOO-ee-dah]. Third person of cuidar (to care for)."
         },
         {
           "t": "la",
-          "en": "the"
+          "en": "the — [lah]."
         },
         {
           "t": "casa,",
-          "en": "house,"
+          "en": "house — [KAH-sah]."
         },
         {
           "t": "y",
-          "en": "and"
+          "en": "and — [ee]."
         },
         {
           "t": "Jorge",
-          "en": "Jorge"
+          "en": "Jorge — [HOHR-heh]. Man’s name (George)."
         },
         {
           "t": "es",
-          "en": "is"
+          "en": "is — [ehs]."
         },
         {
           "t": "el",
-          "en": "the"
+          "en": "the — [ehl]."
         },
         {
           "t": "mayordomo.",
-          "en": "steward."
+          "en": "butler / steward — [mah-yohr-DOH-moh]. Head male servant of the house."
         }
       ]
     },
     {
-      "start": 212.83,
-      "end": 219.89,
+      "start": 230.46,
+      "end": 237.52,
       "words": [
         {
           "t": "No",
@@ -466,8 +480,8 @@
       ]
     },
     {
-      "start": 221.74,
-      "end": 229.21,
+      "start": 239.37,
+      "end": 246.84,
       "words": [
         {
           "t": "La",
@@ -500,8 +514,8 @@
       ]
     },
     {
-      "start": 230.06,
-      "end": 240.36,
+      "start": 247.69,
+      "end": 257.99,
       "words": [
         {
           "t": "Don",
@@ -550,8 +564,8 @@
       ]
     },
     {
-      "start": 245.66,
-      "end": 252.19,
+      "start": 263.29,
+      "end": 269.82,
       "words": [
         {
           "t": "Que",
@@ -580,8 +594,8 @@
       ]
     },
     {
-      "start": 254.04,
-      "end": 264.04,
+      "start": 271.67,
+      "end": 281.67,
       "words": [
         {
           "t": "El",
@@ -630,72 +644,72 @@
       ]
     },
     {
-      "start": 264.89,
-      "end": 272.17,
+      "start": 282.52,
+      "end": 289.8,
       "words": [
         {
           "t": "Viridiana",
-          "en": "Viridiana"
+          "en": "Viridiana — [vee-ree-dee-AH-nah]. Same name as at the opening; here narrative description of her walking."
         },
         {
           "t": "camina",
-          "en": "walks"
+          "en": "walks — [kah-MEE-nah]. Third person of caminar."
         },
         {
           "t": "hacia",
-          "en": "toward"
+          "en": "toward — [AH-thyah]. Direction to the house."
         },
         {
           "t": "la",
-          "en": "the"
+          "en": "the — [lah]."
         },
         {
           "t": "casa",
-          "en": "house"
+          "en": "house — [KAH-sah]."
         },
         {
           "t": "de",
-          "en": "of"
+          "en": "of — [deh]."
         },
         {
           "t": "campo.",
-          "en": "the country estate."
+          "en": "country (estate) — [KAHM-poh]. Casa de campo: country house / villa."
         }
       ]
     },
     {
-      "start": 273.02,
-      "end": 280.01,
+      "start": 290.65,
+      "end": 297.64,
       "words": [
         {
           "t": "Buenas",
-          "en": "Good"
+          "en": "Good — [BWEH-nahs]. Part of buenas tardes (good afternoon)."
         },
         {
           "t": "tardes,",
-          "en": "afternoon,"
+          "en": "afternoon — [TAHR-dehs]. Greeting formula."
         },
         {
           "t": "soy",
-          "en": "I am"
+          "en": "I am — [soy]. First person of ser (identity)."
         },
         {
           "t": "Viridiana.",
-          "en": "Viridiana."
+          "en": "Viridiana — [vee-ree-dee-AH-nah]. She introduces herself by name."
         },
         {
           "t": "Pase,",
-          "en": "Come in,"
+          "en": "Come in / go ahead — [PAH-seh]. Imperative of pasar: please enter."
         },
         {
           "t": "señorita.",
-          "en": "miss."
+          "en": "miss / young lady — [seh-nyoh-REE-tah]. Polite address to an unmarried woman."
         }
       ]
     },
     {
-      "start": 281.86,
-      "end": 289.62,
+      "start": 299.49,
+      "end": 307.25,
       "words": [
         {
           "t": "Don",
@@ -732,8 +746,8 @@
       ]
     },
     {
-      "start": 290.47,
-      "end": 294.44,
+      "start": 308.1,
+      "end": 312.07,
       "words": [
         {
           "t": "Gracias,",
@@ -746,8 +760,8 @@
       ]
     },
     {
-      "start": 295.29,
-      "end": 303.53,
+      "start": 312.92,
+      "end": 321.16,
       "words": [
         {
           "t": "Hace",
@@ -788,8 +802,8 @@
       ]
     },
     {
-      "start": 308.03,
-      "end": 315.64,
+      "start": 325.66,
+      "end": 333.27,
       "words": [
         {
           "t": "Has",
@@ -826,8 +840,8 @@
       ]
     },
     {
-      "start": 316.49,
-      "end": 324.59,
+      "start": 334.12,
+      "end": 342.22,
       "words": [
         {
           "t": "Prefiero",
@@ -864,8 +878,8 @@
       ]
     },
     {
-      "start": 325.44,
-      "end": 333.02,
+      "start": 343.07,
+      "end": 350.65,
       "words": [
         {
           "t": "Esta",
@@ -898,8 +912,8 @@
       ]
     },
     {
-      "start": 334.87,
-      "end": 340.89,
+      "start": 352.5,
+      "end": 358.52,
       "words": [
         {
           "t": "Mañana",

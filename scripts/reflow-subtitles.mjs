@@ -18,7 +18,7 @@ const files = [
 ];
 
 const OFFSET = {
-  "viridiana.json": 108,
+  "viridiana.json": 119,
   "ladri-di-biciclette.json": 57,
   "rashomon.json": 118,
   "pather-panchali.json": 245,
