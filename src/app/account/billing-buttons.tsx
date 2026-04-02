@@ -44,7 +44,7 @@ export function BillingButtons({ hasCustomer, subscribed }: Props) {
           type="button"
           onClick={() => void checkout()}
           disabled={loading !== null}
-          className="rounded-lg bg-sky-600 px-4 py-2 text-sm font-medium text-white hover:bg-sky-500 disabled:opacity-60"
+          className="rounded-2xl bg-sky-600 px-4 py-2 text-sm font-medium text-white hover:bg-sky-500 disabled:opacity-60"
         >
           {loading === "sub" ? "Redirecting…" : "Subscribe ($20 / month)"}
         </button>
@@ -54,7 +54,7 @@ export function BillingButtons({ hasCustomer, subscribed }: Props) {
           type="button"
           onClick={() => void portal()}
           disabled={loading !== null}
-          className="glass-btn rounded-lg px-4 py-2 text-sm"
+          className="glass-btn rounded-2xl px-4 py-2 text-sm"
         >
           {loading === "portal" ? "Opening…" : "Billing"}
         </button>

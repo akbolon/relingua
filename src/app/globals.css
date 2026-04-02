@@ -12,12 +12,12 @@
 }
 
 .dark {
-  --glass-bg: rgba(30, 41, 59, 0.82);
-  --glass-border: rgba(148, 163, 184, 0.28);
+  --glass-bg: rgba(41, 53, 71, 0.88);
+  --glass-border: rgba(186, 198, 214, 0.38);
   --glass-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
   --page-bg: #070b14;
-  --text: #f1f5f9;
-  --text-muted: #cbd5e1;
+  --text: #f8fafc;
+  --text-muted: #e2e8f0;
   --link: #7dd3fc;
   --link-hover: #bae6fd;
 }
@@ -60,6 +60,7 @@ body {
 }
 
 .glass-btn {
+  border-radius: 1rem;
   background: rgba(255, 255, 255, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.28);
   backdrop-filter: blur(12px);
@@ -68,8 +69,8 @@ body {
 }
 
 .dark .glass-btn {
-  background: rgba(51, 65, 85, 0.45);
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(51, 65, 85, 0.55);
+  border: 1px solid rgba(186, 198, 214, 0.42);
   color: #f8fafc;
 }
 
@@ -130,7 +131,16 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(148, 163, 184, 0.35),
+    rgba(186, 198, 214, 0.5),
     transparent
   );
+}
+
+/* Center dot in rule ornaments: keep visible in dark mode (avoid opacity-50 on muted). */
+.rule-ornament-dot {
+  opacity: 0.85;
+}
+
+.dark .rule-ornament-dot {
+  opacity: 0.95;
 }

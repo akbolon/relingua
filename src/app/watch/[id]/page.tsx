@@ -63,7 +63,7 @@ export default async function WatchPage({
           </div>
           <Link
             href="/browse"
-            className="glass-btn inline-flex min-h-10 min-w-10 items-center justify-center rounded-lg px-3 text-lg leading-none"
+            className="glass-btn inline-flex min-h-10 min-w-10 items-center justify-center rounded-2xl px-3 text-lg leading-none"
             aria-label="Back to library"
             title="Back to library"
           >
@@ -83,7 +83,7 @@ export default async function WatchPage({
             </p>
             <Link
               href="/account"
-              className="mt-4 inline-flex rounded-lg bg-sky-600 px-4 py-2 text-sm font-medium text-white hover:bg-sky-500"
+              className="mt-4 inline-flex rounded-2xl bg-sky-600 px-4 py-2 text-sm font-medium text-white hover:bg-sky-500"
             >
               Billing
             </Link>
@@ -98,6 +98,7 @@ export default async function WatchPage({
               </p>
             ) : null}
             <WatchShell
+              key={movie.id}
               movieId={movie.id}
               src={movie.videoUrl}
               poster={movie.posterUrl}

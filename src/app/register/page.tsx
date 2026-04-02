@@ -49,7 +49,7 @@ export default function RegisterPage() {
       <main className="mx-auto flex max-w-md flex-col gap-6 px-4 py-12 sm:px-6">
         <div>
           <div className="rule-ornament mb-4 max-w-xs" aria-hidden>
-            <span className="opacity-50">·</span>
+            <span className="rule-ornament-dot">·</span>
           </div>
           <h1 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
             Create account
@@ -69,7 +69,7 @@ export default function RegisterPage() {
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="glass-input rounded-lg border border-white/35 bg-white/50 px-3 py-2.5 text-slate-900 outline-none ring-sky-500 focus:ring-2 dark:border-slate-500/45 dark:bg-slate-800/75 dark:text-slate-50 dark:placeholder:text-slate-400"
+                className="glass-input rounded-xl border border-white/35 bg-white/50 px-3 py-2.5 text-slate-900 outline-none ring-sky-500 focus:ring-2 dark:border-slate-400/50 dark:bg-slate-800/75 dark:text-slate-50 dark:placeholder:text-slate-300"
               />
             </label>
             <label className="flex flex-col gap-1 text-sm">
@@ -79,7 +79,7 @@ export default function RegisterPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="glass-input rounded-lg border border-white/35 bg-white/50 px-3 py-2.5 text-slate-900 outline-none ring-sky-500 focus:ring-2 dark:border-slate-500/45 dark:bg-slate-800/75 dark:text-slate-50 dark:placeholder:text-slate-400"
+                className="glass-input rounded-xl border border-white/35 bg-white/50 px-3 py-2.5 text-slate-900 outline-none ring-sky-500 focus:ring-2 dark:border-slate-400/50 dark:bg-slate-800/75 dark:text-slate-50 dark:placeholder:text-slate-300"
               />
             </label>
             <label className="flex flex-col gap-1 text-sm">
@@ -90,7 +90,7 @@ export default function RegisterPage() {
                 minLength={8}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="glass-input rounded-lg border border-white/35 bg-white/50 px-3 py-2.5 text-slate-900 outline-none ring-sky-500 focus:ring-2 dark:border-slate-500/45 dark:bg-slate-800/75 dark:text-slate-50 dark:placeholder:text-slate-400"
+                className="glass-input rounded-xl border border-white/35 bg-white/50 px-3 py-2.5 text-slate-900 outline-none ring-sky-500 focus:ring-2 dark:border-slate-400/50 dark:bg-slate-800/75 dark:text-slate-50 dark:placeholder:text-slate-300"
               />
             </label>
             {error ? (
@@ -101,7 +101,7 @@ export default function RegisterPage() {
             <button
               type="submit"
               disabled={loading}
-              className="mt-2 rounded-lg bg-sky-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-sky-500 disabled:opacity-60"
+              className="mt-2 rounded-2xl bg-sky-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-sky-500 disabled:opacity-60"
             >
               {loading ? "Creating…" : "Create account"}
             </button>

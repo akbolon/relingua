@@ -27,7 +27,7 @@ export default async function AccountPage() {
       <SiteHeader />
       <main className="mx-auto max-w-2xl px-4 py-10 sm:px-6">
         <div className="rule-ornament mb-4 max-w-xs" aria-hidden>
-          <span className="opacity-50">·</span>
+          <span className="rule-ornament-dot">·</span>
         </div>
         <h1 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
           Account
@@ -37,7 +37,7 @@ export default async function AccountPage() {
         </p>
 
         <section className="glass-panel mt-8 rounded-2xl p-6">
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-700 dark:text-slate-200">
             Subscription
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-800 dark:text-slate-100">
@@ -77,7 +77,7 @@ export default async function AccountPage() {
         <p className="mt-8 text-sm">
           <Link
             href="/browse"
-            className="link-accent inline-flex min-h-9 min-w-9 items-center justify-center rounded-lg border border-transparent text-lg leading-none underline-offset-4 hover:underline"
+            className="link-accent inline-flex min-h-9 min-w-9 items-center justify-center rounded-2xl border border-transparent text-lg leading-none underline-offset-4 hover:underline"
             aria-label="Back to library"
             title="Back to library"
           >

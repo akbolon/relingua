@@ -6,10 +6,11 @@ import { signOut, useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
 export function SiteHeader() {
-  const { data } = useSession();
+  const { data, status } = useSession();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
+  const sessionLoading = status === "loading";
 
   return (
     <header className="glass-panel sticky top-0 z-40 border-b border-white/25 dark:border-slate-500/25">
@@ -26,28 +27,33 @@ export function SiteHeader() {
         <nav className="flex flex-wrap items-center justify-end gap-1.5 sm:gap-2">
           <Link
             href="/browse"
-            className="rounded-lg px-3 py-1.5 text-sm text-slate-800 hover:bg-white/35 dark:text-slate-100 dark:hover:bg-white/10"
+            className="rounded-2xl px-3 py-1.5 text-sm text-slate-800 hover:bg-white/35 dark:text-slate-100 dark:hover:bg-white/10"
           >
             Library
           </Link>
-          {data?.user ? (
+          {sessionLoading ? (
+            <span
+              className="inline-block h-9 min-w-[5.5rem] rounded-2xl bg-slate-200/55 animate-pulse dark:bg-slate-600/45"
+              aria-hidden
+            />
+          ) : data?.user ? (
             <>
               <Link
                 href="/account"
-                className="rounded-lg px-3 py-1.5 text-sm text-slate-800 hover:bg-white/35 dark:text-slate-100 dark:hover:bg-white/10"
+                className="rounded-2xl px-3 py-1.5 text-sm text-slate-800 hover:bg-white/35 dark:text-slate-100 dark:hover:bg-white/10"
               >
                 Account
               </Link>
               <button
                 type="button"
                 onClick={() => signOut({ callbackUrl: "/" })}
-                className="glass-btn rounded-lg px-3 py-1.5 text-sm"
+                className="glass-btn rounded-2xl px-3 py-1.5 text-sm"
               >
                 Sign out
               </button>
             </>
           ) : (
-            <Link href="/login" className="glass-btn rounded-lg px-3 py-1.5 text-sm">
+            <Link href="/login" className="glass-btn rounded-2xl px-3 py-1.5 text-sm">
               Sign in
             </Link>
           )}
@@ -55,7 +61,7 @@ export function SiteHeader() {
             <button
               type="button"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="ml-1 inline-flex min-h-9 min-w-9 items-center justify-center rounded-lg border border-white/30 bg-white/20 px-3 py-2 text-sm font-medium text-slate-800 backdrop-blur-md dark:border-slate-500/35 dark:bg-slate-800/50 dark:text-slate-100"
+              className="ml-1 inline-flex min-h-9 min-w-9 items-center justify-center rounded-2xl border border-white/30 bg-white/20 px-3 py-2 text-sm font-medium text-slate-800 backdrop-blur-md dark:border-slate-400/40 dark:bg-slate-800/65 dark:text-slate-50"
               aria-label={theme === "dark" ? "Light theme" : "Dark theme"}
               title={theme === "dark" ? "Light theme" : "Dark theme"}
             >

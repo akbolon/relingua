@@ -10,7 +10,7 @@ export default function LoginPage() {
       <main className="mx-auto flex max-w-md flex-col gap-6 px-4 py-12 sm:px-6">
         <div>
           <div className="rule-ornament mb-4 max-w-xs" aria-hidden>
-            <span className="opacity-50">·</span>
+            <span className="rule-ornament-dot">·</span>
           </div>
           <h1 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
             Sign in

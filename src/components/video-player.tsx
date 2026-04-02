@@ -3,6 +3,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { SubtitleFile } from "@/types/subtitles";
 
+/** HTML5 timeupdate can be sparse; sync subtitle cues more often while playing. */
+const TIME_SYNC_MS = 50;
+
 type Props = {
   src: string;
   poster?: string;
@@ -21,7 +24,12 @@ function formatTime(s: number) {
 }
 
 export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Props) {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [videoEl, setVideoEl] = useState<HTMLVideoElement | null>(null);
+  const attachVideo = useCallback((node: HTMLVideoElement | null) => {
+    videoRef.current = node;
+    setVideoEl(node);
+  }, []);
   const shellRef = useRef<HTMLDivElement>(null);
   const [subs, setSubs] = useState<SubtitleFile | null>(null);
   const [t, setT] = useState(0);
@@ -56,24 +64,45 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
     return subs.cues.find((c) => t >= c.start && t < c.end) ?? null;
   }, [subs, t]);
 
-  const tick = useCallback(() => {
-    const v = videoRef.current;
-    if (v) setT(v.currentTime);
-  }, []);
-
   useEffect(() => {
-    const v = videoRef.current;
-    if (!v) return;
-    const onDur = () => setDur(v.duration || 0);
-    v.addEventListener("timeupdate", tick);
-    v.addEventListener("loadedmetadata", onDur);
-    v.addEventListener("play", () => setPlaying(true));
-    v.addEventListener("pause", () => setPlaying(false));
-    return () => {
-      v.removeEventListener("timeupdate", tick);
-      v.removeEventListener("loadedmetadata", onDur);
+    if (!videoEl) return;
+
+    const onDur = () => setDur(videoEl.duration || 0);
+    const syncTime = () => setT(videoEl.currentTime);
+
+    let interval: ReturnType<typeof setInterval> | null = null;
+    const onPlay = () => {
+      setPlaying(true);
+      if (interval) clearInterval(interval);
+      interval = setInterval(syncTime, TIME_SYNC_MS);
     };
-  }, [tick]);
+    const onPause = () => {
+      setPlaying(false);
+      if (interval) clearInterval(interval);
+      interval = null;
+      syncTime();
+    };
+
+    videoEl.addEventListener("loadedmetadata", onDur);
+    videoEl.addEventListener("play", onPlay);
+    videoEl.addEventListener("pause", onPause);
+    videoEl.addEventListener("seeking", syncTime);
+    videoEl.addEventListener("seeked", syncTime);
+    videoEl.addEventListener("timeupdate", syncTime);
+
+    if (videoEl.readyState >= 1) onDur();
+    if (!videoEl.paused) onPlay();
+
+    return () => {
+      if (interval) clearInterval(interval);
+      videoEl.removeEventListener("loadedmetadata", onDur);
+      videoEl.removeEventListener("play", onPlay);
+      videoEl.removeEventListener("pause", onPause);
+      videoEl.removeEventListener("seeking", syncTime);
+      videoEl.removeEventListener("seeked", syncTime);
+      videoEl.removeEventListener("timeupdate", syncTime);
+    };
+  }, [videoEl]);
 
   const togglePlay = useCallback(() => {
     const v = videoRef.current;
@@ -92,9 +121,8 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
   }, []);
 
   useEffect(() => {
-    const v = videoRef.current;
-    if (v) v.playbackRate = rate;
-  }, [rate]);
+    if (videoEl) videoEl.playbackRate = rate;
+  }, [rate, videoEl]);
 
   const toggleFs = useCallback(() => {
     const el = shellRef.current;
@@ -154,7 +182,7 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
       onMouseMove={bumpControls}
     >
       <video
-        ref={videoRef}
+        ref={attachVideo}
         className="aspect-video w-full bg-black object-contain"
         src={src}
         poster={poster}
@@ -169,7 +197,7 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
           aria-live="polite"
         >
           <div
-            className="glass-subtitle inline-block rounded-lg px-4 py-2 text-base leading-relaxed text-white drop-shadow-md sm:text-lg"
+            className="glass-subtitle inline-block rounded-2xl px-4 py-2 text-base leading-relaxed text-white drop-shadow-md sm:text-lg"
             style={{ pointerEvents: "auto" }}
           >
             {activeCue.words.map((w, i) => (
@@ -226,7 +254,7 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
             <button
               type="button"
               onClick={togglePlay}
-              className="inline-flex min-h-10 min-w-10 items-center justify-center rounded-lg border border-white/25 bg-white/10 px-3 py-2 text-base font-bold text-white backdrop-blur-sm hover:bg-white/20"
+              className="inline-flex min-h-10 min-w-10 items-center justify-center rounded-2xl border border-white/25 bg-white/10 px-3 py-2 text-base font-bold text-white backdrop-blur-sm hover:bg-white/20"
               aria-label={playing ? "Pause" : "Play"}
               title={playing ? "Pause" : "Play"}
             >
@@ -242,13 +270,13 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
           <div className="flex flex-wrap items-center justify-end gap-2">
             <label className="flex items-center gap-1 text-xs text-white/90">
               <span className="sr-only">Playback speed</span>
-              <span className="text-white/55" aria-hidden>
+              <span className="text-white/75" aria-hidden>
                 ×
               </span>
               <select
                 value={rate}
                 onChange={(e) => setRate(Number(e.target.value))}
-                className="rounded-md border border-white/30 bg-black/50 px-2 py-1 text-xs text-white outline-none ring-sky-400/50 focus:ring-2 dark:border-slate-400/40 dark:bg-slate-900/90"
+                className="rounded-xl border border-white/35 bg-black/55 px-2 py-1 text-xs text-white outline-none ring-sky-400/50 focus:ring-2 dark:border-slate-300/45 dark:bg-slate-900/90"
                 aria-label="Playback speed"
               >
                 {SPEEDS.map((s) => (
@@ -261,7 +289,7 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
             <button
               type="button"
               onClick={toggleFs}
-              className="inline-flex min-h-10 min-w-10 items-center justify-center rounded-lg border border-white/25 bg-white/10 px-3 py-2 text-base text-white backdrop-blur-sm hover:bg-white/20"
+              className="inline-flex min-h-10 min-w-10 items-center justify-center rounded-2xl border border-white/25 bg-white/10 px-3 py-2 text-base text-white backdrop-blur-sm hover:bg-white/20"
               aria-label="Fullscreen"
               title="Fullscreen"
             >
