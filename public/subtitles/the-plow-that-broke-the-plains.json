@@ -1,0 +1,159 @@
+{
+  "locale": "en",
+  "cues": [
+    {
+      "start": 28,
+      "end": 38.18,
+      "words": [
+        {
+          "t": "The",
+          "en": "The"
+        },
+        {
+          "t": "Great",
+          "en": "Great"
+        },
+        {
+          "t": "Plains",
+          "en": "Plains"
+        },
+        {
+          "t": "—",
+          "en": "—"
+        },
+        {
+          "t": "a",
+          "en": "a"
+        },
+        {
+          "t": "high",
+          "en": "high"
+        },
+        {
+          "t": "plateau",
+          "en": "plateau"
+        },
+        {
+          "t": "between",
+          "en": "between"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "Mississippi",
+          "en": "Mississippi"
+        },
+        {
+          "t": "and",
+          "en": "and"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "Rockies.",
+          "en": "Rockies."
+        }
+      ]
+    },
+    {
+      "start": 38.93,
+      "end": 47.2,
+      "words": [
+        {
+          "t": "Here",
+          "en": "Here"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "plains",
+          "en": "plains"
+        },
+        {
+          "t": "were",
+          "en": "were"
+        },
+        {
+          "t": "dry.",
+          "en": "dry."
+        },
+        {
+          "t": "Drought",
+          "en": "Drought"
+        },
+        {
+          "t": "came",
+          "en": "came"
+        },
+        {
+          "t": "again",
+          "en": "again"
+        },
+        {
+          "t": "and",
+          "en": "and"
+        },
+        {
+          "t": "again.",
+          "en": "again."
+        }
+      ]
+    },
+    {
+      "start": 47.95,
+      "end": 56.53,
+      "words": [
+        {
+          "t": "The",
+          "en": "The"
+        },
+        {
+          "t": "wind",
+          "en": "wind"
+        },
+        {
+          "t": "picked",
+          "en": "picked"
+        },
+        {
+          "t": "up",
+          "en": "up"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "soil.",
+          "en": "soil."
+        },
+        {
+          "t": "This",
+          "en": "This"
+        },
+        {
+          "t": "was",
+          "en": "was"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "Dust",
+          "en": "Dust"
+        },
+        {
+          "t": "Bowl.",
+          "en": "Bowl."
+        }
+      ]
+    }
+  ]
+}

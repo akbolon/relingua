@@ -1,0 +1,193 @@
+{
+  "locale": "en",
+  "cues": [
+    {
+      "start": 12,
+      "end": 17.47,
+      "words": [
+        {
+          "t": "I",
+          "en": "I"
+        },
+        {
+          "t": "was",
+          "en": "was"
+        },
+        {
+          "t": "lucky,",
+          "en": "lucky,"
+        },
+        {
+          "t": "in",
+          "en": "in"
+        },
+        {
+          "t": "a",
+          "en": "a"
+        },
+        {
+          "t": "way.",
+          "en": "way."
+        }
+      ]
+    },
+    {
+      "start": 18.22,
+      "end": 24.55,
+      "words": [
+        {
+          "t": "I",
+          "en": "I"
+        },
+        {
+          "t": "didn't",
+          "en": "didn't"
+        },
+        {
+          "t": "know",
+          "en": "know"
+        },
+        {
+          "t": "then",
+          "en": "then"
+        },
+        {
+          "t": "what",
+          "en": "what"
+        },
+        {
+          "t": "was",
+          "en": "was"
+        },
+        {
+          "t": "coming.",
+          "en": "coming."
+        }
+      ]
+    },
+    {
+      "start": 25.3,
+      "end": 39.09,
+      "words": [
+        {
+          "t": "Fate,",
+          "en": "Fate,"
+        },
+        {
+          "t": "or",
+          "en": "or"
+        },
+        {
+          "t": "some",
+          "en": "some"
+        },
+        {
+          "t": "mysterious",
+          "en": "mysterious"
+        },
+        {
+          "t": "force,",
+          "en": "force,"
+        },
+        {
+          "t": "can",
+          "en": "can"
+        },
+        {
+          "t": "put",
+          "en": "put"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "finger",
+          "en": "finger"
+        },
+        {
+          "t": "on",
+          "en": "on"
+        },
+        {
+          "t": "you",
+          "en": "you"
+        },
+        {
+          "t": "or",
+          "en": "or"
+        },
+        {
+          "t": "on",
+          "en": "on"
+        },
+        {
+          "t": "me,",
+          "en": "me,"
+        },
+        {
+          "t": "for",
+          "en": "for"
+        },
+        {
+          "t": "no",
+          "en": "no"
+        },
+        {
+          "t": "good",
+          "en": "good"
+        },
+        {
+          "t": "reason",
+          "en": "reason"
+        },
+        {
+          "t": "at",
+          "en": "at"
+        },
+        {
+          "t": "all.",
+          "en": "all."
+        }
+      ]
+    },
+    {
+      "start": 40.64,
+      "end": 47.73,
+      "words": [
+        {
+          "t": "You",
+          "en": "You"
+        },
+        {
+          "t": "ever",
+          "en": "ever"
+        },
+        {
+          "t": "heard",
+          "en": "heard"
+        },
+        {
+          "t": "of",
+          "en": "of"
+        },
+        {
+          "t": "Al",
+          "en": "Al"
+        },
+        {
+          "t": "Roberts?",
+          "en": "Roberts?"
+        },
+        {
+          "t": "Watch",
+          "en": "Watch"
+        },
+        {
+          "t": "yourself.",
+          "en": "yourself."
+        }
+      ]
+    }
+  ]
+}

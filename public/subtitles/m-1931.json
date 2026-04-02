@@ -1,0 +1,141 @@
+{
+  "locale": "de",
+  "cues": [
+    {
+      "start": 88,
+      "end": 94.23,
+      "words": [
+        {
+          "t": "Warte",
+          "en": "Wait"
+        },
+        {
+          "t": "—",
+          "en": "—"
+        },
+        {
+          "t": "hallo,",
+          "en": "hello,"
+        },
+        {
+          "t": "was",
+          "en": "what"
+        },
+        {
+          "t": "ist",
+          "en": "is"
+        },
+        {
+          "t": "denn",
+          "en": "then"
+        },
+        {
+          "t": "das?",
+          "en": "that?"
+        }
+      ]
+    },
+    {
+      "start": 94.98,
+      "end": 102,
+      "words": [
+        {
+          "t": "Ich",
+          "en": "I"
+        },
+        {
+          "t": "habe",
+          "en": "have"
+        },
+        {
+          "t": "keine",
+          "en": "no"
+        },
+        {
+          "t": "Zeit.",
+          "en": "time."
+        },
+        {
+          "t": "Alle",
+          "en": "Everyone"
+        },
+        {
+          "t": "sucht",
+          "en": "is looking for"
+        },
+        {
+          "t": "den",
+          "en": "the"
+        },
+        {
+          "t": "Mörder.",
+          "en": "murderer."
+        }
+      ]
+    },
+    {
+      "start": 102.75,
+      "end": 108.98,
+      "words": [
+        {
+          "t": "Wer",
+          "en": "Who"
+        },
+        {
+          "t": "ist",
+          "en": "is"
+        },
+        {
+          "t": "der",
+          "en": "the"
+        },
+        {
+          "t": "Mann",
+          "en": "man"
+        },
+        {
+          "t": "mit",
+          "en": "with"
+        },
+        {
+          "t": "der",
+          "en": "the"
+        },
+        {
+          "t": "Pfeife?",
+          "en": "whistle?"
+        }
+      ]
+    },
+    {
+      "start": 110.53,
+      "end": 116.47,
+      "words": [
+        {
+          "t": "Ruhe",
+          "en": "Quiet"
+        },
+        {
+          "t": "bitte!",
+          "en": "please!"
+        },
+        {
+          "t": "Die",
+          "en": "The"
+        },
+        {
+          "t": "Polizei",
+          "en": "police"
+        },
+        {
+          "t": "ist",
+          "en": "is"
+        },
+        {
+          "t": "überall.",
+          "en": "everywhere."
+        }
+      ]
+    }
+  ]
+}

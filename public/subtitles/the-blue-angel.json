@@ -1,0 +1,107 @@
+{
+  "locale": "de",
+  "cues": [
+    {
+      "start": 72,
+      "end": 79.4,
+      "words": [
+        {
+          "t": "Herr",
+          "en": "Mr."
+        },
+        {
+          "t": "Professor,",
+          "en": "Professor,"
+        },
+        {
+          "t": "guten",
+          "en": "good"
+        },
+        {
+          "t": "Tag.",
+          "en": "day."
+        },
+        {
+          "t": "Die",
+          "en": "The"
+        },
+        {
+          "t": "Studenten",
+          "en": "students"
+        },
+        {
+          "t": "warten",
+          "en": "are waiting"
+        },
+        {
+          "t": "schon.",
+          "en": "already."
+        }
+      ]
+    },
+    {
+      "start": 80.15,
+      "end": 87.54,
+      "words": [
+        {
+          "t": "Lola,",
+          "en": "Lola,"
+        },
+        {
+          "t": "singen",
+          "en": "sing"
+        },
+        {
+          "t": "Sie",
+          "en": "—"
+        },
+        {
+          "t": "heute",
+          "en": "today"
+        },
+        {
+          "t": "Abend?",
+          "en": "evening?"
+        },
+        {
+          "t": "Natürlich,",
+          "en": "Of course,"
+        },
+        {
+          "t": "meine",
+          "en": "my"
+        },
+        {
+          "t": "Herren.",
+          "en": "gentlemen."
+        }
+      ]
+    },
+    {
+      "start": 88.29,
+      "end": 93.61,
+      "words": [
+        {
+          "t": "Das",
+          "en": "That"
+        },
+        {
+          "t": "ist",
+          "en": "is"
+        },
+        {
+          "t": "ein",
+          "en": "a"
+        },
+        {
+          "t": "wunderbarer",
+          "en": "wonderful"
+        },
+        {
+          "t": "Abend.",
+          "en": "evening."
+        }
+      ]
+    }
+  ]
+}

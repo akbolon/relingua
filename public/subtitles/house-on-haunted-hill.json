@@ -1,0 +1,157 @@
+{
+  "locale": "en",
+  "cues": [
+    {
+      "start": 42,
+      "end": 48.89,
+      "words": [
+        {
+          "t": "I",
+          "en": "I"
+        },
+        {
+          "t": "am",
+          "en": "am"
+        },
+        {
+          "t": "Frederick",
+          "en": "Frederick"
+        },
+        {
+          "t": "Loren.",
+          "en": "Loren."
+        },
+        {
+          "t": "This",
+          "en": "This"
+        },
+        {
+          "t": "is",
+          "en": "is"
+        },
+        {
+          "t": "my",
+          "en": "my"
+        },
+        {
+          "t": "house.",
+          "en": "house."
+        }
+      ]
+    },
+    {
+      "start": 49.64,
+      "end": 57.04,
+      "words": [
+        {
+          "t": "I",
+          "en": "I"
+        },
+        {
+          "t": "have",
+          "en": "have"
+        },
+        {
+          "t": "invited",
+          "en": "invited"
+        },
+        {
+          "t": "you",
+          "en": "you"
+        },
+        {
+          "t": "here",
+          "en": "here"
+        },
+        {
+          "t": "to",
+          "en": "to"
+        },
+        {
+          "t": "stay",
+          "en": "stay"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "night.",
+          "en": "night."
+        }
+      ]
+    },
+    {
+      "start": 57.79,
+      "end": 66.55,
+      "words": [
+        {
+          "t": "At",
+          "en": "At"
+        },
+        {
+          "t": "midnight",
+          "en": "midnight"
+        },
+        {
+          "t": "I",
+          "en": "I"
+        },
+        {
+          "t": "will",
+          "en": "will"
+        },
+        {
+          "t": "give",
+          "en": "give"
+        },
+        {
+          "t": "each",
+          "en": "each"
+        },
+        {
+          "t": "of",
+          "en": "of"
+        },
+        {
+          "t": "you",
+          "en": "you"
+        },
+        {
+          "t": "ten",
+          "en": "ten"
+        },
+        {
+          "t": "thousand",
+          "en": "thousand"
+        },
+        {
+          "t": "dollars.",
+          "en": "dollars."
+        }
+      ]
+    },
+    {
+      "start": 68.1,
+      "end": 72.63,
+      "words": [
+        {
+          "t": "There's",
+          "en": "There's"
+        },
+        {
+          "t": "no",
+          "en": "no"
+        },
+        {
+          "t": "way",
+          "en": "way"
+        },
+        {
+          "t": "out.",
+          "en": "out."
+        }
+      ]
+    }
+  ]
+}

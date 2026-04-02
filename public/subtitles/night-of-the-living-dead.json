@@ -1,0 +1,165 @@
+{
+  "locale": "en",
+  "cues": [
+    {
+      "start": 118,
+      "end": 128.39,
+      "words": [
+        {
+          "t": "They",
+          "en": "They"
+        },
+        {
+          "t": "ought",
+          "en": "ought"
+        },
+        {
+          "t": "to",
+          "en": "to"
+        },
+        {
+          "t": "make",
+          "en": "make"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "day",
+          "en": "day"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "time",
+          "en": "time"
+        },
+        {
+          "t": "changes",
+          "en": "changes"
+        },
+        {
+          "t": "the",
+          "en": "the"
+        },
+        {
+          "t": "first",
+          "en": "first"
+        },
+        {
+          "t": "day",
+          "en": "day"
+        },
+        {
+          "t": "of",
+          "en": "of"
+        },
+        {
+          "t": "summer.",
+          "en": "summer."
+        }
+      ]
+    },
+    {
+      "start": 129.14,
+      "end": 135.37,
+      "words": [
+        {
+          "t": "What?",
+          "en": "What?"
+        },
+        {
+          "t": "Well,",
+          "en": "Well,"
+        },
+        {
+          "t": "it",
+          "en": "it"
+        },
+        {
+          "t": "was",
+          "en": "was"
+        },
+        {
+          "t": "just",
+          "en": "just"
+        },
+        {
+          "t": "an",
+          "en": "an"
+        },
+        {
+          "t": "idea.",
+          "en": "idea."
+        }
+      ]
+    },
+    {
+      "start": 136.12,
+      "end": 142.25,
+      "words": [
+        {
+          "t": "We've",
+          "en": "We've"
+        },
+        {
+          "t": "got",
+          "en": "got"
+        },
+        {
+          "t": "to",
+          "en": "to"
+        },
+        {
+          "t": "get",
+          "en": "get"
+        },
+        {
+          "t": "out",
+          "en": "out"
+        },
+        {
+          "t": "of",
+          "en": "of"
+        },
+        {
+          "t": "here.",
+          "en": "here."
+        }
+      ]
+    },
+    {
+      "start": 143.8,
+      "end": 149.6,
+      "words": [
+        {
+          "t": "Don't",
+          "en": "Don't"
+        },
+        {
+          "t": "worry,",
+          "en": "worry,"
+        },
+        {
+          "t": "we'll",
+          "en": "we'll"
+        },
+        {
+          "t": "be",
+          "en": "be"
+        },
+        {
+          "t": "all",
+          "en": "all"
+        },
+        {
+          "t": "right.",
+          "en": "right."
+        }
+      ]
+    }
+  ]
+}

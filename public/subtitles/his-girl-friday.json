@@ -1,0 +1,129 @@
+{
+  "locale": "en",
+  "cues": [
+    {
+      "start": 35,
+      "end": 42.26,
+      "words": [
+        {
+          "t": "Take",
+          "en": "Take"
+        },
+        {
+          "t": "me",
+          "en": "me"
+        },
+        {
+          "t": "with",
+          "en": "with"
+        },
+        {
+          "t": "you,",
+          "en": "you,"
+        },
+        {
+          "t": "Walter.",
+          "en": "Walter."
+        },
+        {
+          "t": "You're",
+          "en": "You're"
+        },
+        {
+          "t": "wonderful,",
+          "en": "wonderful,"
+        },
+        {
+          "t": "Hildy.",
+          "en": "Hildy."
+        }
+      ]
+    },
+    {
+      "start": 43.01,
+      "end": 48.65,
+      "words": [
+        {
+          "t": "What",
+          "en": "What"
+        },
+        {
+          "t": "do",
+          "en": "do"
+        },
+        {
+          "t": "you",
+          "en": "you"
+        },
+        {
+          "t": "want,",
+          "en": "want,"
+        },
+        {
+          "t": "a",
+          "en": "a"
+        },
+        {
+          "t": "cookie?",
+          "en": "cookie?"
+        }
+      ]
+    },
+    {
+      "start": 49.4,
+      "end": 56.74,
+      "words": [
+        {
+          "t": "The",
+          "en": "The"
+        },
+        {
+          "t": "Morning",
+          "en": "Morning"
+        },
+        {
+          "t": "Post",
+          "en": "Post"
+        },
+        {
+          "t": "—",
+          "en": "—"
+        },
+        {
+          "t": "get",
+          "en": "get"
+        },
+        {
+          "t": "me",
+          "en": "me"
+        },
+        {
+          "t": "a",
+          "en": "a"
+        },
+        {
+          "t": "rewrite",
+          "en": "rewrite"
+        },
+        {
+          "t": "man!",
+          "en": "man!"
+        }
+      ]
+    },
+    {
+      "start": 58.29,
+      "end": 61.74,
+      "words": [
+        {
+          "t": "Hello,",
+          "en": "Hello,"
+        },
+        {
+          "t": "baby!",
+          "en": "baby!"
+        }
+      ]
+    }
+  ]
+}
