@@ -5,9 +5,11 @@ import { useState } from "react";
 type Props = {
   hasCustomer: boolean;
   subscribed: boolean;
+  /** When true, hide subscribe CTA; playback does not require a subscription. */
+  devUnlimited?: boolean;
 };
 
-export function BillingButtons({ hasCustomer, subscribed }: Props) {
+export function BillingButtons({ hasCustomer, subscribed, devUnlimited }: Props) {
   const [loading, setLoading] = useState<null | "sub" | "portal">(null);
   const [message, setMessage] = useState<string | null>(null);
 
@@ -39,7 +41,12 @@ export function BillingButtons({ hasCustomer, subscribed }: Props) {
 
   return (
     <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-      {!subscribed ? (
+      {devUnlimited && !subscribed ? (
+        <p className="text-sm text-slate-700 dark:text-slate-200">
+          No subscription is required to stream while developer access is on.
+        </p>
+      ) : null}
+      {!subscribed && !devUnlimited ? (
         <button
           type="button"
           onClick={() => void checkout()}

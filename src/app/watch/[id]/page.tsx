@@ -90,7 +90,15 @@ export default async function WatchPage({
           </div>
         ) : (
           <>
-            {!subscribed && access.via === "free_monthly" ? (
+            {access.via === "dev_unlimited" ? (
+              <p
+                className="mb-4 rounded-xl border border-emerald-500/45 bg-emerald-50/95 px-4 py-3 text-sm text-emerald-950 dark:border-emerald-400/45 dark:bg-emerald-950/50 dark:text-emerald-100"
+                role="status"
+              >
+                <span className="font-semibold">Developer access:</span> full catalog streaming. No
+                monthly film limit applies to this account.
+              </p>
+            ) : !subscribed && access.via === "free_monthly" ? (
               <p className="mb-4 rounded-xl border border-amber-500/45 bg-amber-50 px-4 py-3 text-sm text-amber-950 dark:border-amber-400/50 dark:bg-amber-950/50 dark:text-amber-100">
                 You are using your one complimentary film for this calendar
                 month. Playback will lock this title as your monthly pick when

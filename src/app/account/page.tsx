@@ -36,22 +36,48 @@ export default async function AccountPage() {
           <span className="font-medium text-slate-800 dark:text-slate-100">{session.user.email}</span>
         </p>
 
+        {devUnlimited ? (
+          <div
+            className="mt-8 rounded-2xl border border-emerald-500/45 bg-emerald-50/90 px-5 py-4 shadow-sm dark:border-emerald-400/40 dark:bg-emerald-950/45"
+            role="status"
+            aria-label="Developer access active"
+          >
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="rounded-full bg-emerald-600 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-white dark:bg-emerald-500">
+                Developer
+              </span>
+              <span className="text-sm font-medium text-emerald-950 dark:text-emerald-100">
+                Developer access is on
+              </span>
+            </div>
+            <p className="mt-2 text-sm leading-relaxed text-emerald-950/90 dark:text-emerald-50/95">
+              The full catalog is unlocked for this account. There is no monthly “one film” limit, and
+              nothing is locked behind a subscription for playback. Use this for building and testing
+              the app.
+            </p>
+          </div>
+        ) : null}
+
         <section className="glass-panel mt-8 rounded-2xl p-6">
           <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-700 dark:text-slate-200">
-            Subscription
+            {devUnlimited ? "Subscription & billing" : "Subscription"}
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-800 dark:text-slate-100">
             {subscribed ? (
               <>
-                Active until{" "}
+                You have an active subscription. Unlimited streaming across the catalog until{" "}
                 {user?.subscriptionPeriodEnd?.toLocaleString(undefined, {
                   dateStyle: "medium",
                   timeStyle: "short",
                 })}
-                . Unlimited streaming across the catalog.
+                .
               </>
             ) : devUnlimited ? (
-              <>Full catalog access (developer).</>
+              <>
+                You are not on a paid plan. That is expected: developer access already gives full
+                streaming. The buttons below are only if you want to test Stripe billing or manage an
+                existing customer record.
+              </>
             ) : (
               <>
                 You are on the complimentary tier: one film per calendar month.
@@ -60,9 +86,15 @@ export default async function AccountPage() {
               </>
             )}
           </p>
-          {user?.freeMovieMonth ? (
+          {!devUnlimited && user?.freeMovieMonth ? (
             <p className="mt-3 text-xs text-muted">
               Complimentary: {user.freeMovieMonth}
+              {user.freeMovieId ? ` · ${user.freeMovieId}` : ""}
+            </p>
+          ) : null}
+          {devUnlimited && user?.freeMovieMonth ? (
+            <p className="mt-3 text-xs text-muted">
+              Monthly pick (ignored while developer access is on): {user.freeMovieMonth}
               {user.freeMovieId ? ` · ${user.freeMovieId}` : ""}
             </p>
           ) : null}
@@ -70,6 +102,7 @@ export default async function AccountPage() {
             <BillingButtons
               hasCustomer={Boolean(user?.stripeCustomerId)}
               subscribed={subscribed ?? false}
+              devUnlimited={devUnlimited}
             />
           </div>
         </section>
