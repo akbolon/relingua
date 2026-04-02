@@ -7,21 +7,19 @@ export type AccessResult =
     }
   | { allowed: false; reason: "subscription_required" };
 
+/** Maintainer dev account: full catalog in every environment (no env var required). */
+const MAINTAINER_DEV_EMAIL = "akbolon@gmail.com";
+
 /** Emails with full catalog access (no monthly cap). Set DEV_UNLIMITED_EMAILS in .env (comma-separated). */
 export function isDevUnlimitedEmail(email: string | null | undefined): boolean {
   if (!email) return false;
   const lower = email.toLowerCase().trim();
+  if (lower === MAINTAINER_DEV_EMAIL) return true;
   const fromEnv = (process.env.DEV_UNLIMITED_EMAILS ?? "")
     .split(",")
     .map((s) => s.trim().toLowerCase())
     .filter(Boolean);
   if (fromEnv.includes(lower)) return true;
-  if (
-    process.env.NODE_ENV === "development" &&
-    lower === "akbolon@gmail.com"
-  ) {
-    return true;
-  }
   return false;
 }
 

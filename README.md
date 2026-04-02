@@ -45,8 +45,8 @@ Open `http://localhost:3000`. Register an account, sign in, and use **Library** 
 
 ### Developer catalog access
 
-- Set **`DEV_UNLIMITED_EMAILS`** in `.env` to a comma-separated list of emails that may stream the full catalog without a subscription (no one-film monthly cap). Useful for staging or `next start` where `NODE_ENV` is `production`.
-- In **`npm run dev`** only (`NODE_ENV=development`), the account **`akbolon@gmail.com`** is also granted this access without env configuration.
+- The maintainer account **`akbolon@gmail.com`** always has full catalog access in every environment (no env variable required).
+- Set **`DEV_UNLIMITED_EMAILS`** in `.env` to a comma-separated list of additional emails with the same access (useful for teammates or staging).
 
 ## Subtitles
 
