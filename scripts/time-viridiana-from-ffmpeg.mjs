@@ -42,7 +42,7 @@ function mergeSpeech(segments, minGap = 0.45, minDur = 0.32) {
   return out;
 }
 
-export async function fetchSpeechSegments(tMaxSec = 400) {
+export async function fetchSpeechSegments(tMaxSec = 520) {
   return new Promise((resolve, reject) => {
     const chunks = [];
     const ff = spawn(

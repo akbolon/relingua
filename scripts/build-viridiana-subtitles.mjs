@@ -1,7 +1,8 @@
 /**
- * Rebuild public/subtitles/viridiana.json from Script Savant screenplay structure
- * (thescriptsavant.com/movies/Viridiana.pdf) with Spanish dialogue translated from
- * that official English screenplay text. Timings: ffmpeg silencedetect on IA Viridiana.mp4.
+ * Rebuild public/subtitles/viridiana.json from Script Savant
+ * (https://thescriptsavant.com/movies/Viridiana.pdf). English glosses (`en`) follow
+ * that screenplay; Spanish (`t`) matches the Spanish soundtrack phrasing where it
+ * differs. Timings: ffmpeg silencedetect on Internet Archive Viridiana.mp4.
  *
  * Run: node scripts/build-viridiana-subtitles.mjs
  */
@@ -23,7 +24,7 @@ function w(t, en, pron) {
   return o;
 }
 
-/** Spanish lines aligned to Script Savant order (opening through early estate). */
+/** Spanish + English aligned to Script Savant order through “You see, even the voice.” */
 const CUES = [
   {
     words: [
@@ -95,8 +96,8 @@ const CUES = [
   {
     words: [
       w(
-        "Me temo que su salud no es buena. Es tu único familiar y debes despedirte de él antes de tomar los votos.",
-        "I’m afraid his health is not good. He’s your only relative and you ought to say farewell before taking your vows. You will certainly never see him again.",
+        "Me temo que su salud no es buena. Es tu único familiar y debes despedirte de él antes de tomar los votos. Desde luego no volverás a verle.",
+        "I’m afraid that his health is not good. He’s your only relative and you ought to say farewell to him before taking your vows. You will certainly never see him again.",
         "deh-behs des-peh-DEER-teh … toh-MAHR lohs BOH-tohs",
       ),
     ],
@@ -114,7 +115,7 @@ const CUES = [
     words: [
       w(
         "Ha pagado tus estudios y tu manutención, y acaba de enviar tu dote.",
-        "He has paid for your studies and your maintenance, and has just sent your dowry.",
+        "He has paid for your studies and your maintenance, and he has just sent your dowry.",
         "pah-GAH-doh toos ehs-TOO-dyohs … DOH-teh",
       ),
       w(
@@ -167,7 +168,7 @@ const CUES = [
   {
     words: [
       w(
-        "Salta mejor: tiene asas.",
+        "Con ella se salta mejor: tiene mangos.",
         "It’s easier to jump with: it’s got handles.",
       ),
     ],
@@ -237,82 +238,189 @@ const CUES = [
       ),
     ],
   },
+  /** Walk to the house — not in earlier subtitle draft; from Script Savant PDF. */
   {
     words: [
       w(
-        "El tren llega al atardecer.",
-        "The train arrives at dusk. (Screenplay: carriage; Spanish release often uses tren / this voiceover.)",
-        "ehl trehn … ah-tahr-deh-SEHR",
-      ),
-      w(
-        "El paisaje es árido y silencioso.",
-        "The landscape is arid and silent.",
-        "pah-ee-SAH-heh AH-ree-doh",
+        "¿Cuánto tiempo te vas a quedar?",
+        "How long are you staying?",
       ),
     ],
   },
   {
     words: [
       w(
-        "Viridiana camina hacia la casa de campo.",
-        "Viridiana walks toward the country house.",
+        "Muy poco tiempo, tío.",
+        "A very short while, Uncle.",
       ),
-    ],
-  },
-  {
-    words: [
-      w("Buenas tardes, soy Viridiana.", "Good afternoon, I’m Viridiana."),
-      w("Pase, señorita.", "Come in, miss.", "PAH-seh seh-nyoh-REE-tah"),
-    ],
-  },
-  {
-    words: [
       w(
-        "Don Jaime la está esperando en el salón.",
-        "Don Jaime is waiting for her in the drawing room.",
-      ),
-    ],
-  },
-  {
-    words: [w("Gracias, Ramona.", "Thank you, Ramona.", "GRAH-thyahs")],
-  },
-  {
-    words: [
-      w(
-        "Hace años desde la última vez que te vi.",
-        "It has been years since the last time I saw you.",
+        "Solo me han dado permiso para quedarme unos días.",
+        "I’ve been given permission to stay only a few days.",
       ),
     ],
   },
   {
     words: [
       w(
-        "Has crecido y te pareces a tu madre.",
-        "You have grown and you look like your mother.",
+        "¿Te fue difícil conseguirlo?",
+        "Was that difficult to get?",
       ),
     ],
   },
   {
     words: [
       w(
-        "Prefiero no hablar de eso. Como quieras, sobrina.",
-        "I prefer not to speak of that. As you wish, niece.",
+        "No. La madre superiora me mandó venir.",
+        "No. Mother Superior told me to come.",
       ),
     ],
   },
   {
     words: [
       w(
-        "Esta noche descansarás en tu antigua habitación.",
-        "Tonight you will rest in your old room.",
+        "¿Tan poco interés tenía en verme?",
+        "Did you have so little interest in seeing me?",
       ),
     ],
   },
   {
     words: [
       w(
-        "Mañana hablaremos con más calma.",
-        "Tomorrow we will speak with more calm.",
+        "A decir verdad, no mucho.",
+        "To tell you the truth, not very much.",
+      ),
+      w(
+        "No sé mentir.",
+        "I cannot lie.",
+      ),
+      w(
+        "Le tengo respeto y le agradezco todo lo material, pero por lo demás…",
+        "I respect you and I am grateful to you because I owe you everything materially, but otherwise …",
+      ),
+    ],
+  },
+  {
+    words: [
+      w(
+        "No siente usted ningún cariño hacia…",
+        "You have no feelings toward …",
+      ),
+    ],
+  },
+  {
+    words: [w("No.", "No.")],
+  },
+  {
+    words: [
+      w(
+        "Tiene usted razón.",
+        "You are right.",
+      ),
+      w(
+        "Vivir solo me ha vuelto egoísta.",
+        "Being alone has made me self-centered.",
+      ),
+    ],
+  },
+  {
+    words: [
+      w(
+        "Lamento no habernos visto más.",
+        "Now I am sorry we have not seen more of each other.",
+      ),
+      w(
+        "Ya es demasiado tarde, ¿no es cierto?",
+        "It’s too late, isn’t it?",
+      ),
+    ],
+  },
+  {
+    words: [
+      w(
+        "Sí. Ya es demasiado tarde.",
+        "Yes. It’s too late.",
+      ),
+    ],
+  },
+  {
+    words: [
+      w(
+        "Ha descuidado usted la hacienda, tío.",
+        "You’ve been neglecting the farm, Uncle.",
+      ),
+    ],
+  },
+  {
+    words: [
+      w(
+        "En veinte años la hierba lo ha invadido todo.",
+        "In twenty years the grass has invaded everything.",
+      ),
+      w(
+        "Hay arañas por toda la casa, excepto en el primer piso.",
+        "There are spiders all over the house except on the first floor.",
+      ),
+      w(
+        "Casi nunca salgo.",
+        "I hardly ever go out.",
+      ),
+    ],
+  },
+  {
+    words: [
+      w(
+        "Es verdad. Cuando sale me hace saltar a la comba.",
+        "It’s true. When he goes out he makes me jump rope.",
+      ),
+    ],
+  },
+  {
+    words: [
+      w(
+        "Baja de ahí, pícara.",
+        "Come down here, you scamp.",
+      ),
+    ],
+  },
+  {
+    words: [w("¿Quién es?", "Who is she?")],
+  },
+  {
+    words: [
+      w(
+        "Es la hija de mi doncella Ramona.",
+        "My maid Ramona’s daughter.",
+      ),
+      w(
+        "Es un animalito.",
+        "She’s a little animal.",
+      ),
+    ],
+  },
+  {
+    words: [w("Baja.", "Come down.")],
+  },
+  {
+    words: [
+      w(
+        "Se parece usted mucho a su tía, hasta en el modo de andar.",
+        "How like your aunt you are, even in your walk.",
+      ),
+    ],
+  },
+  {
+    words: [
+      w(
+        "Ya lo sé, tío; ya me lo ha dicho usted.",
+        "I know, Uncle, you’ve told me that already.",
+      ),
+    ],
+  },
+  {
+    words: [
+      w(
+        "Hasta en la voz.",
+        "You see, even the voice.",
       ),
     ],
   },
@@ -387,8 +495,8 @@ function allocateTimes(segments, cues) {
 }
 
 async function main() {
-  const raw = await fetchSpeechSegments(420);
-  let window = mergeGaps(clipWindow(raw, 112, 360), 0.4);
+  const raw = await fetchSpeechSegments(520);
+  let window = mergeGaps(clipWindow(raw, 112, 480), 0.4);
   if (window.length === 0) {
     console.warn("No speech segments; using fallback linear 118–330s");
     window = [{ start: 118, end: 330 }];
@@ -398,7 +506,7 @@ async function main() {
   const data = {
     locale: "es",
     scriptSource:
-      "https://thescriptsavant.com/movies/Viridiana.pdf (English screenplay). Spanish lines translated from that text; timings from ffmpeg silencedetect on Internet Archive Viridiana.mp4 (viridiana_202108).",
+      "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: ffmpeg silencedetect on https://archive.org/details/viridiana_202108 (Viridiana.mp4), ~112–480s.",
     cues,
   };
   fs.writeFileSync(out, JSON.stringify(data, null, 2) + "\n", "utf8");
