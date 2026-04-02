@@ -1,778 +1,420 @@
 {
   "locale": "es",
+  "scriptSource": "https://thescriptsavant.com/movies/Viridiana.pdf (English screenplay). Spanish lines translated from that text; timings from ffmpeg silencedetect on Internet Archive Viridiana.mp4 (viridiana_202108).",
   "cues": [
     {
-      "start": 119.95,
-      "end": 120.4,
+      "start": 115.15,
+      "end": 116.54,
       "words": [
         {
           "t": "Hermana,",
-          "en": "Sister — religious title for a nun (here, addressing you).",
-          "pron": "air-MAH-nah; stress on -MAH-. (Spain: light /h/; Americas: often silent.)"
+          "en": "Sister — title before a nun’s name.",
+          "pron": "air-MAH-nah"
         },
         {
           "t": "Viridiana.",
-          "en": "Viridiana — the novice’s name.",
-          "pron": "vee-ree-DYAH-nah; stress on -DYAH- (Spain: bee- with soft b/v)."
+          "en": "Viridiana.",
+          "pron": "vee-ree-DYAH-nah"
         }
       ]
     },
     {
-      "start": 120.72,
-      "end": 121.17,
+      "start": 116.54,
+      "end": 120.82,
       "words": [
         {
-          "t": "La caridad que practicamos aquí",
-          "en": "The charity that we practice here",
-          "pron": "lah kah-ree-DAHD … prahk-tee-KAH-mohs ah-KEE; stress on -DAHD and -KAH-."
-        },
-        {
-          "t": "no debe ser",
-          "en": "must not be",
-          "pron": "noh DEH-beh sehr; stress DEH- on debe."
-        },
-        {
-          "t": "solo abstracta.",
-          "en": "only abstract.",
-          "pron": "SOH-loh ahb-STRAHK-tah; stress STRAHK."
+          "t": "¿Madre?",
+          "en": "Mother?",
+          "pron": "MAH-dreh"
         }
       ]
     },
     {
-      "start": 121.85,
-      "end": 124.25,
+      "start": 120.82,
+      "end": 136.06,
       "words": [
         {
-          "t": "Antes de profesar,",
-          "en": "Before you take (religious) vows / before professing",
-          "pron": "AHN-tes deh proh-feh-SAHR; stress -SAHR; pause after comma."
+          "t": "Acabo de recibir una carta de tu tío.",
+          "en": "I’ve just had a letter from your uncle.",
+          "pron": "ah-KAH-boh deh reh-bee-BEER OO-nah KAHR-tah deh too TEE-oh"
         },
         {
-          "t": "quiero que cumplas",
-          "en": "I want you to fulfill (subjunctive)",
-          "pron": "KYEH-roh keh KOOM-plahs; stress KOOM- (subjunctive)."
-        },
-        {
-          "t": "una última misión de caridad.",
-          "en": "one last mission of charity.",
-          "pron": "OOL-tee-mah mee-syOHN … kah-ree-DAHD; stress syOHN."
+          "t": "No podrá venir cuando tomes los votos.",
+          "en": "He won’t be able to come when you take your vows.",
+          "pron": "noh poh-DRAH beh-NEER KWAN-doh TOH-mes lohs BOH-tohs"
         }
       ]
     },
     {
-      "start": 124.58,
-      "end": 124.96,
+      "start": 136.06,
+      "end": 138.02,
       "words": [
         {
-          "t": "Debes ir a la finca",
-          "en": "You must go to the country estate / farm",
-          "pron": "DEH-bes eer ah lah FEEN-kah; FEEN-kah with /k/."
-        },
-        {
-          "t": "de tu tío don Jaime.",
-          "en": "of your uncle Don Jaime.",
-          "pron": "too TEE-oh, dohn HY-meh (don + first name)."
+          "t": "Está bien, Madre.",
+          "en": "All right, Mother.",
+          "pron": "ehs-TAH byehn MAH-dreh"
         }
       ]
     },
     {
-      "start": 125,
-      "end": 129.38,
+      "start": 138.02,
+      "end": 140.53,
       "words": [
         {
-          "t": "Él te ha pedido",
-          "en": "Your uncle has asked you (lit. “He has asked you”).",
-          "pron": "ehl teh ah peh-DEE-doh; stress -DEE- (present perfect of pedir)."
-        },
-        {
-          "t": "que vayas antes de tomar los votos.",
-          "en": "To come before you take your vows (so he can see you before you profess).",
-          "pron": "keh BAH-yahs AHN-tes deh toh-MAHR lohs BOH-tohs; stress BAH- / BOH- (subjunctive vayas)."
+          "t": "No parece importarte mucho.",
+          "en": "You don’t seem to mind very much.",
+          "pron": "noh pah-REH-theh im-pohr-TAHR-teh MOO-choh"
         }
       ]
     },
     {
-      "start": 132.14,
-      "end": 135.96,
+      "start": 140.53,
+      "end": 149.04,
       "words": [
         {
-          "t": "No quiero verlo,",
-          "en": "I don’t want to see him,",
-          "pron": "noh KYEH-roh BEHR-loh; lo = “him” clitic on ver."
+          "t": "Apenas lo conozco. Solo lo vi una vez, hace años.",
+          "en": "I hardly know him. I saw him only once, some years ago.",
+          "pron": "ah-PEH-nahs loh koh-NOHS-koh SOH-loh loh bee …"
         },
         {
-          "t": "madre.",
-          "en": "Mother — here, the Mother Superior.",
-          "pron": "MAH-dreh; stress MAH-."
+          "t": "Ni siquiera me acuerdo de él.",
+          "en": "I can’t even remember him.",
+          "pron": "nee see-kee-EH-rah meh ah-KWEHR-doh deh ehl"
         }
       ]
     },
     {
-      "start": 139.57,
-      "end": 141.23,
+      "start": 149.04,
+      "end": 156.84,
       "words": [
         {
-          "t": "Es un acto de humildad",
-          "en": "It is an act of humility",
-          "pron": "ehs oon AHK-toh deh oo-meel-DAHD; stress -DAHD."
-        },
-        {
-          "t": "y de perdón.",
-          "en": "and of forgiveness / pardon.",
-          "pron": "ee deh pehr-DOHN; stress -DOHN."
+          "t": "En cualquier caso, tu tío te pide que vayas a quedarte con él.",
+          "en": "In any case he’s asking you to come and stay with him.",
+          "pron": "too TEE-oh teh PEE-deh …"
         }
       ]
     },
     {
-      "start": 142.43,
-      "end": 147.83,
+      "start": 156.84,
+      "end": 160.35,
       "words": [
         {
-          "t": "Tu tío está solo",
-          "en": "Your uncle is alone",
-          "pron": "too TEE-oh ehs-TAH SOH-loh; está = “is” (state)."
-        },
-        {
-          "t": "y enfermo de nostalgia.",
-          "en": "and ill with nostalgia / longing.",
-          "pron": "ehn-FEHR-moh deh nohs-tahl-HEE-ah; stress -FEHR- / -HEE-."
+          "t": "No quiero salir del convento, Madre.",
+          "en": "I don’t want to leave the convent, Mother.",
+          "pron": "noh KYEH-roh sah-LEER dehl kohn-BEHN-toh"
         }
       ]
     },
     {
-      "start": 164.89,
-      "end": 168.03,
+      "start": 160.35,
+      "end": 171.87,
       "words": [
         {
-          "t": "Iré,",
-          "en": "I’ll go (future of ir).",
-          "pron": "ee-REH; future of ir; accent = stress."
-        },
-        {
-          "t": "pero",
-          "en": "but",
-          "pron": "PEH-roh."
-        },
-        {
-          "t": "solo",
-          "en": "only",
-          "pron": "SOH-loh."
-        },
-        {
-          "t": "por",
-          "en": "for / because of",
-          "pron": "pohr."
-        },
-        {
-          "t": "obediencia.",
-          "en": "obedience.",
-          "pron": "oh-beh-DYEHN-syah (LA) / -thyah (Spain); stress -DYEHN-."
+          "t": "Me temo que su salud no es buena. Es tu único familiar y debes despedirte de él antes de tomar los votos.",
+          "en": "I’m afraid his health is not good. He’s your only relative and you ought to say farewell before taking your vows. You will certainly never see him again.",
+          "pron": "deh-behs des-peh-DEER-teh … toh-MAHR lohs BOH-tohs"
         }
       ]
     },
     {
-      "start": 168.06,
-      "end": 172.56,
+      "start": 171.87,
+      "end": 178.05,
       "words": [
         {
-          "t": "La",
-          "en": "The — [lah]. Feminine article."
-        },
-        {
-          "t": "obediencia",
-          "en": "obedience — [oh-beh-DYEHN-thyah]. Repeated for emphasis as a spiritual step."
-        },
-        {
-          "t": "es",
-          "en": "is — [ehs]. Ser: defining what obedience is."
-        },
-        {
-          "t": "el",
-          "en": "the — [ehl]. Masculine article before paso."
-        },
-        {
-          "t": "primer",
-          "en": "first — [pree-MEHR]. Short form of primero before masculine noun."
-        },
-        {
-          "t": "paso",
-          "en": "step — [PAH-soh]. Stage on the path to holiness."
-        },
-        {
-          "t": "hacia",
-          "en": "toward — [AH-thyah / AH-syah]. Direction + la perfección."
-        },
-        {
-          "t": "la",
-          "en": "the — [lah]."
-        },
-        {
-          "t": "perfección.",
-          "en": "perfection — [pehr-fehk-SYOHN]. Spiritual or moral completeness."
+          "t": "¿Pero por qué quiere verme? Nunca se ha preocupado de mí.",
+          "en": "But why does he want to see me? He has never bothered about me.",
+          "pron": "KEH-ree-eh BEHR-meh noon-kah …"
         }
       ]
     },
     {
-      "start": 179.98,
-      "end": 186.78,
+      "start": 178.05,
+      "end": 216.29,
       "words": [
         {
-          "t": "En",
-          "en": "In — [ehn]."
+          "t": "Ha pagado tus estudios y tu manutención, y acaba de enviar tu dote.",
+          "en": "He has paid for your studies and your maintenance, and has just sent your dowry.",
+          "pron": "pah-GAH-doh toos ehs-TOO-dyohs … DOH-teh"
         },
         {
-          "t": "la",
-          "en": "the — [lah]."
-        },
-        {
-          "t": "granja",
-          "en": "farm — [GRAHN-hah]. Rural farmstead (Don Jaime’s property)."
-        },
-        {
-          "t": "encontrarás",
-          "en": "you will find — [ehn-kohn-trah-RAHS]. Future of encontrar."
-        },
-        {
-          "t": "gente",
-          "en": "people — [HEHN-teh]. Common folk, servants."
-        },
-        {
-          "t": "sencilla.",
-          "en": "simple / plain — [sehn-SEE-yah]. Humble, unpretentious."
+          "t": "¿Tan poco te importa, Viridiana?",
+          "en": "Does that mean so little to you, Viridiana?",
+          "pron": "teh im-POHR-tah"
         }
       ]
     },
     {
-      "start": 187.63,
-      "end": 196.09,
+      "start": 216.29,
+      "end": 224.25,
       "words": [
         {
-          "t": "Ramona",
-          "en": "Ramona — [rah-MOH-nah]. Woman’s name; housekeeper."
-        },
-        {
-          "t": "cuida",
-          "en": "she looks after — [KOO-ee-dah]. Third person of cuidar (to care for)."
-        },
-        {
-          "t": "la",
-          "en": "the — [lah]."
-        },
-        {
-          "t": "casa,",
-          "en": "house — [KAH-sah]."
-        },
-        {
-          "t": "y",
-          "en": "and — [ee]."
-        },
-        {
-          "t": "Jorge",
-          "en": "Jorge — [HOHR-heh]. Man’s name (George)."
-        },
-        {
-          "t": "es",
-          "en": "is — [ehs]."
-        },
-        {
-          "t": "el",
-          "en": "the — [ehl]."
-        },
-        {
-          "t": "mayordomo.",
-          "en": "butler / steward — [mah-yohr-DOH-moh]. Head male servant of the house."
+          "t": "No tengo ganas de volver a ver el mundo, pero si usted me lo ordena…",
+          "en": "I have no desire to see the world again, but if you order me to…",
+          "pron": "lo ohr-DEH-nah"
         }
       ]
     },
     {
-      "start": 196.94,
-      "end": 204,
+      "start": 224.25,
+      "end": 236.83,
       "words": [
         {
-          "t": "No",
-          "en": "Do not"
-        },
-        {
-          "t": "juzgues",
-          "en": "judge"
-        },
-        {
-          "t": "con",
-          "en": "with"
-        },
-        {
-          "t": "dureza",
-          "en": "harshness"
-        },
-        {
-          "t": "lo",
-          "en": "what"
-        },
-        {
-          "t": "que",
-          "en": "that"
-        },
-        {
-          "t": "veas.",
-          "en": "you see."
+          "t": "El retiro empezará pronto. Puedes marcharte mañana por la mañana.",
+          "en": "The retreat will start soon. You can leave tomorrow morning.",
+          "pron": "mahr-CHAHR-teh …"
         }
       ]
     },
     {
-      "start": 205.85,
-      "end": 213.32,
+      "start": 236.83,
+      "end": 253.48,
       "words": [
         {
-          "t": "La",
-          "en": "The"
+          "t": "En tu celda he hecho poner todo lo necesario para el viaje.",
+          "en": "Everything you need for the journey has been put in your cell."
         },
         {
-          "t": "misericordia",
-          "en": "mercy"
-        },
-        {
-          "t": "debe",
-          "en": "must"
-        },
-        {
-          "t": "incluir",
-          "en": "include"
-        },
-        {
-          "t": "a",
-          "en": "to"
-        },
-        {
-          "t": "los",
-          "en": "the"
-        },
-        {
-          "t": "pecadores.",
-          "en": "sinners."
+          "t": "Ve a prepararte y trata de mostrarle cariño.",
+          "en": "Go get yourself ready, and try to show him some affection.",
+          "pron": "prah-pah-RAHR-teh kah-REEN-yoh"
         }
       ]
     },
     {
-      "start": 214.17,
-      "end": 224.47,
+      "start": 253.48,
+      "end": 260.31,
       "words": [
         {
-          "t": "Don",
-          "en": "Don"
-        },
-        {
-          "t": "Jaime",
-          "en": "Jaime"
-        },
-        {
-          "t": "es",
-          "en": "is"
-        },
-        {
-          "t": "un",
-          "en": "a"
-        },
-        {
-          "t": "hombre",
-          "en": "man"
-        },
-        {
-          "t": "atribulado.",
-          "en": "tormented."
-        },
-        {
-          "t": "Prometo",
-          "en": "I promise"
-        },
-        {
-          "t": "ser",
-          "en": "to be"
-        },
-        {
-          "t": "paciente",
-          "en": "patient"
-        },
-        {
-          "t": "y",
-          "en": "and"
-        },
-        {
-          "t": "respetuosa.",
-          "en": "respectful."
+          "t": "Basta por hoy, Rita. ¿Te gusta la cuerda que te regalé?",
+          "en": "That’s enough for today, Rita. Do you like that rope I gave you?"
         }
       ]
     },
     {
-      "start": 229.77,
-      "end": 236.3,
+      "start": 260.31,
+      "end": 263.68,
       "words": [
         {
-          "t": "Que",
-          "en": "May"
-        },
-        {
-          "t": "Dios",
-          "en": "God"
-        },
-        {
-          "t": "te",
-          "en": "you"
-        },
-        {
-          "t": "acompañe,",
-          "en": "go with you,"
-        },
-        {
-          "t": "hija.",
-          "en": "daughter."
-        },
-        {
-          "t": "Amén.",
-          "en": "Amen."
+          "t": "Salta mejor: tiene asas.",
+          "en": "It’s easier to jump with: it’s got handles."
         }
       ]
     },
     {
-      "start": 238.15,
-      "end": 248.15,
+      "start": 263.68,
+      "end": 265.83,
       "words": [
         {
-          "t": "El",
-          "en": "The"
-        },
-        {
-          "t": "tren",
-          "en": "train"
-        },
-        {
-          "t": "llega",
-          "en": "arrives"
-        },
-        {
-          "t": "al",
-          "en": "at the"
-        },
-        {
-          "t": "atardecer.",
-          "en": "dusk."
-        },
-        {
-          "t": "El",
-          "en": "The"
-        },
-        {
-          "t": "paisaje",
-          "en": "landscape"
-        },
-        {
-          "t": "es",
-          "en": "is"
-        },
-        {
-          "t": "árido",
-          "en": "arid"
-        },
-        {
-          "t": "y",
-          "en": "and"
-        },
-        {
-          "t": "silencioso.",
-          "en": "silent."
+          "t": "Vete ya, vete a jugar.",
+          "en": "Go away now. Go and play.",
+          "pron": "BEH-teh"
         }
       ]
     },
     {
-      "start": 249,
-      "end": 256.28,
+      "start": 265.83,
+      "end": 269.29,
       "words": [
         {
-          "t": "Viridiana",
-          "en": "Viridiana — [vee-ree-dee-AH-nah]. Same name as at the opening; here narrative description of her walking."
-        },
-        {
-          "t": "camina",
-          "en": "walks — [kah-MEE-nah]. Third person of caminar."
-        },
-        {
-          "t": "hacia",
-          "en": "toward — [AH-thyah]. Direction to the house."
-        },
-        {
-          "t": "la",
-          "en": "the — [lah]."
-        },
-        {
-          "t": "casa",
-          "en": "house — [KAH-sah]."
-        },
-        {
-          "t": "de",
-          "en": "of — [deh]."
-        },
-        {
-          "t": "campo.",
-          "en": "country (estate) — [KAHM-poh]. Casa de campo: country house / villa."
+          "t": "Hola.",
+          "en": "Hello.",
+          "pron": "OH-lah"
         }
       ]
     },
     {
-      "start": 257.13,
-      "end": 264.12,
+      "start": 269.29,
+      "end": 271.24,
       "words": [
         {
-          "t": "Buenas",
-          "en": "Good — [BWEH-nahs]. Part of buenas tardes (good afternoon)."
-        },
-        {
-          "t": "tardes,",
-          "en": "afternoon — [TAHR-dehs]. Greeting formula."
-        },
-        {
-          "t": "soy",
-          "en": "I am — [soy]. First person of ser (identity)."
-        },
-        {
-          "t": "Viridiana.",
-          "en": "Viridiana — [vee-ree-dee-AH-nah]. She introduces herself by name."
-        },
-        {
-          "t": "Pase,",
-          "en": "Come in / go ahead — [PAH-seh]. Imperative of pasar: please enter."
-        },
-        {
-          "t": "señorita.",
-          "en": "miss / young lady — [seh-nyoh-REE-tah]. Polite address to an unmarried woman."
+          "t": "Hola.",
+          "en": "Hello.",
+          "pron": "OH-lah"
         }
       ]
     },
     {
-      "start": 265.97,
-      "end": 273.73,
+      "start": 271.24,
+      "end": 278.35,
       "words": [
         {
-          "t": "Don",
-          "en": "Don"
-        },
-        {
-          "t": "Jaime",
-          "en": "Jaime"
-        },
-        {
-          "t": "la",
-          "en": "her"
-        },
-        {
-          "t": "está",
-          "en": "is"
-        },
-        {
-          "t": "esperando",
-          "en": "waiting for"
-        },
-        {
-          "t": "en",
-          "en": "in"
-        },
-        {
-          "t": "el",
-          "en": "the"
-        },
-        {
-          "t": "salón.",
-          "en": "drawing room."
+          "t": "Bienvenida, señorita. Soy Ramona, la criada de don Jaime.",
+          "en": "Welcome, miss. I’m Ramona, Don Jaime’s servant.",
+          "pron": "soy rah-MOH-nah lah kree-AH-dah"
         }
       ]
     },
     {
-      "start": 274.58,
-      "end": 278.55,
+      "start": 278.35,
+      "end": 280.32,
       "words": [
         {
-          "t": "Gracias,",
-          "en": "Thank you,"
-        },
-        {
-          "t": "Ramona.",
-          "en": "Ramona."
+          "t": "¡Ah! Mucho gusto.",
+          "en": "Ah! Pleased to meet you.",
+          "pron": "MOO-choh GOOS-toh"
         }
       ]
     },
     {
-      "start": 279.4,
-      "end": 287.64,
+      "start": 280.32,
+      "end": 281.21,
       "words": [
         {
-          "t": "Hace",
-          "en": "It has been"
-        },
-        {
-          "t": "años",
-          "en": "years"
-        },
-        {
-          "t": "desde",
-          "en": "since"
-        },
-        {
-          "t": "la",
-          "en": "the"
-        },
-        {
-          "t": "última",
-          "en": "last"
-        },
-        {
-          "t": "vez",
-          "en": "time"
-        },
-        {
-          "t": "que",
-          "en": "that"
-        },
-        {
-          "t": "te",
-          "en": "I"
-        },
-        {
-          "t": "vi.",
-          "en": "saw you."
+          "t": "¡Viridiana!",
+          "en": "Viridiana!",
+          "pron": "vee-ree-DYAH-nah"
         }
       ]
     },
     {
-      "start": 292.14,
-      "end": 299.75,
+      "start": 281.21,
+      "end": 283.91,
       "words": [
         {
-          "t": "Has",
-          "en": "You have"
-        },
-        {
-          "t": "crecido",
-          "en": "grown"
-        },
-        {
-          "t": "y",
-          "en": "and"
-        },
-        {
-          "t": "te",
-          "en": "you"
-        },
-        {
-          "t": "pareces",
-          "en": "look like"
-        },
-        {
-          "t": "a",
-          "en": "to"
-        },
-        {
-          "t": "tu",
-          "en": "your"
-        },
-        {
-          "t": "madre.",
-          "en": "mother."
+          "t": "Sí, tío. ¿Qué tal está usted?",
+          "en": "Yes, Uncle. How are you?"
         }
       ]
     },
     {
-      "start": 300.6,
-      "end": 308.7,
+      "start": 283.91,
+      "end": 292.19,
       "words": [
         {
-          "t": "Prefiero",
-          "en": "I prefer"
-        },
-        {
-          "t": "no",
-          "en": "not"
-        },
-        {
-          "t": "hablar",
-          "en": "to speak"
-        },
-        {
-          "t": "de",
-          "en": "of"
-        },
-        {
-          "t": "eso.",
-          "en": "that."
-        },
-        {
-          "t": "Como",
-          "en": "As"
-        },
-        {
-          "t": "quieras,",
-          "en": "you wish,"
-        },
-        {
-          "t": "sobrina.",
-          "en": "niece."
+          "t": "Bien… ¿El autocar llegó tarde, verdad? ¿Qué tal el viaje?",
+          "en": "I’m well … The bus was late, wasn’t it? What was the journey like?"
         }
       ]
     },
     {
-      "start": 309.55,
-      "end": 317.13,
+      "start": 292.19,
+      "end": 299.46,
       "words": [
         {
-          "t": "Esta",
-          "en": "This"
-        },
-        {
-          "t": "noche",
-          "en": "night"
-        },
-        {
-          "t": "descansarás",
-          "en": "you will rest"
-        },
-        {
-          "t": "en",
-          "en": "in"
-        },
-        {
-          "t": "tu",
-          "en": "your"
-        },
-        {
-          "t": "antigua",
-          "en": "old"
-        },
-        {
-          "t": "habitación.",
-          "en": "room."
+          "t": "Excelente. ¡Qué lugar tan apacible y encantador, tío!",
+          "en": "Excellent. What a charming, peaceful place, Uncle."
         }
       ]
     },
     {
-      "start": 318.98,
-      "end": 325,
+      "start": 299.46,
+      "end": 303.31,
       "words": [
         {
-          "t": "Mañana",
-          "en": "Tomorrow"
+          "t": "Creerá que aún está en el convento.",
+          "en": "You’ll think you’re still at the convent."
+        }
+      ]
+    },
+    {
+      "start": 303.31,
+      "end": 310.44,
+      "words": [
+        {
+          "t": "El tren llega al atardecer.",
+          "en": "The train arrives at dusk. (Screenplay: carriage; Spanish release often uses tren / this voiceover.)",
+          "pron": "ehl trehn … ah-tahr-deh-SEHR"
         },
         {
-          "t": "hablaremos",
-          "en": "we will speak"
+          "t": "El paisaje es árido y silencioso.",
+          "en": "The landscape is arid and silent.",
+          "pron": "pah-ee-SAH-heh AH-ree-doh"
+        }
+      ]
+    },
+    {
+      "start": 310.44,
+      "end": 315.5,
+      "words": [
+        {
+          "t": "Viridiana camina hacia la casa de campo.",
+          "en": "Viridiana walks toward the country house."
+        }
+      ]
+    },
+    {
+      "start": 315.5,
+      "end": 321.74,
+      "words": [
+        {
+          "t": "Buenas tardes, soy Viridiana.",
+          "en": "Good afternoon, I’m Viridiana."
         },
         {
-          "t": "con",
-          "en": "with"
-        },
+          "t": "Pase, señorita.",
+          "en": "Come in, miss.",
+          "pron": "PAH-seh seh-nyoh-REE-tah"
+        }
+      ]
+    },
+    {
+      "start": 321.74,
+      "end": 327.3,
+      "words": [
         {
-          "t": "más",
-          "en": "more"
-        },
+          "t": "Don Jaime la está esperando en el salón.",
+          "en": "Don Jaime is waiting for her in the drawing room."
+        }
+      ]
+    },
+    {
+      "start": 327.3,
+      "end": 329.42,
+      "words": [
         {
-          "t": "calma.",
-          "en": "calm."
+          "t": "Gracias, Ramona.",
+          "en": "Thank you, Ramona.",
+          "pron": "GRAH-thyahs"
+        }
+      ]
+    },
+    {
+      "start": 329.42,
+      "end": 332.42,
+      "words": [
+        {
+          "t": "Hace años desde la última vez que te vi.",
+          "en": "It has been years since the last time I saw you."
+        }
+      ]
+    },
+    {
+      "start": 332.42,
+      "end": 340.47,
+      "words": [
+        {
+          "t": "Has crecido y te pareces a tu madre.",
+          "en": "You have grown and you look like your mother."
+        }
+      ]
+    },
+    {
+      "start": 340.47,
+      "end": 345.22,
+      "words": [
+        {
+          "t": "Prefiero no hablar de eso. Como quieras, sobrina.",
+          "en": "I prefer not to speak of that. As you wish, niece."
+        }
+      ]
+    },
+    {
+      "start": 345.22,
+      "end": 352.38,
+      "words": [
+        {
+          "t": "Esta noche descansarás en tu antigua habitación.",
+          "en": "Tonight you will rest in your old room."
+        }
+      ]
+    },
+    {
+      "start": 352.38,
+      "end": 354.78,
+      "words": [
+        {
+          "t": "Mañana hablaremos con más calma.",
+          "en": "Tomorrow we will speak with more calm."
         }
       ]
     }

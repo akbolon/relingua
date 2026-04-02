@@ -14,5 +14,7 @@ export type SubCue = {
 
 export type SubtitleFile = {
   locale: string;
+  /** Optional note on screenplay source (e.g. Script Savant PDF). */
+  scriptSource?: string;
   cues: SubCue[];
 };
