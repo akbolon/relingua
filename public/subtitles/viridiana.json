@@ -1,6 +1,6 @@
 {
   "locale": "es",
-  "scriptSource": "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: ffmpeg silencedetect on https://archive.org/details/viridiana_202108 (Viridiana.mp4), ~112–480s; IA encode: drop ~115s false-speech blip; first line anchored at 2:00; convent opening aligned to silence map before Mother Superior at ~125.8s.",
+  "scriptSource": "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: IA Viridiana.mp4 (viridiana_202108): drop ~115s blip; Hermana/Viridiana 2:00; Mother Superior letter ~2:05.8–2:10.95; “Está bien, Madre” from 2:11; then silencedetect-aligned tail from ~2:14.5.",
   "cues": [
     {
       "start": 120,
@@ -31,7 +31,7 @@
     },
     {
       "start": 125.8,
-      "end": 136.28,
+      "end": 130.95,
       "words": [
         {
           "t": "Acabo de recibir una carta de tu tío.",
@@ -46,8 +46,8 @@
       ]
     },
     {
-      "start": 136.28,
-      "end": 137.45,
+      "start": 131,
+      "end": 132.12,
       "words": [
         {
           "t": "Está bien, Madre.",
@@ -57,8 +57,8 @@
       ]
     },
     {
-      "start": 137.45,
-      "end": 139.81,
+      "start": 134.47,
+      "end": 136.83,
       "words": [
         {
           "t": "No parece importarte mucho.",
@@ -68,13 +68,13 @@
       ]
     },
     {
-      "start": 139.81,
-      "end": 147.87,
+      "start": 136.83,
+      "end": 144.89,
       "words": [
         {
           "t": "Apenas lo conozco. Solo lo vi una vez, hace años.",
           "en": "I hardly know him. I saw him only once, some years ago.",
-          "pron": "ah-PEH-nahs loh koh-NOHS-koh SOH-loh loh bee …"
+          "pron": "ah-PEH-nahs loh koh-NOHS-koh SOH-loh loh bee OO-nah behs AH-nyohs"
         },
         {
           "t": "Ni siquiera me acuerdo de él.",
@@ -84,19 +84,19 @@
       ]
     },
     {
-      "start": 147.87,
-      "end": 155.31,
+      "start": 144.89,
+      "end": 152.33,
       "words": [
         {
           "t": "En cualquier caso, tu tío te pide que vayas a quedarte con él.",
           "en": "In any case he’s asking you to come and stay with him.",
-          "pron": "too TEE-oh teh PEE-deh …"
+          "pron": "too TEE-oh teh PEE-deh keh BAH-yahs ah keh-DAHR-teh kohn ehl"
         }
       ]
     },
     {
-      "start": 155.31,
-      "end": 158.62,
+      "start": 152.33,
+      "end": 155.64,
       "words": [
         {
           "t": "No quiero salir del convento, Madre.",
@@ -106,35 +106,35 @@
       ]
     },
     {
-      "start": 158.62,
-      "end": 172.49,
+      "start": 155.64,
+      "end": 169.51,
       "words": [
         {
           "t": "Me temo que su salud no es buena. Es tu único familiar y debes despedirte de él antes de tomar los votos. Desde luego no volverás a verle.",
           "en": "I’m afraid that his health is not good. He’s your only relative and you ought to say farewell to him before taking your vows. You will certainly never see him again.",
-          "pron": "deh-behs des-peh-DEER-teh … toh-MAHR lohs BOH-tohs"
+          "pron": "deh-BEHS des-peh-DEER-teh deh ehl AHN-tehs deh toh-MAHR lohs BOH-tohs"
         }
       ]
     },
     {
-      "start": 172.49,
-      "end": 178.66,
+      "start": 169.51,
+      "end": 175.68,
       "words": [
         {
           "t": "¿Pero por qué quiere verme? Nunca se ha preocupado de mí.",
           "en": "But why does he want to see me? He has never bothered about me.",
-          "pron": "KEH-ree-eh BEHR-meh noon-kah …"
+          "pron": "KEH-ree-eh BEHR-meh NOON-kah seh ah preh-oh-koo-PAH-doh deh mee"
         }
       ]
     },
     {
-      "start": 178.66,
-      "end": 215.33,
+      "start": 175.68,
+      "end": 212.35,
       "words": [
         {
           "t": "Ha pagado tus estudios y tu manutención, y acaba de enviar tu dote.",
           "en": "He has paid for your studies and your maintenance, and he has just sent your dowry.",
-          "pron": "pah-GAH-doh toos ehs-TOO-dyohs … DOH-teh"
+          "pron": "pah-GAH-doh toos ehs-TOO-dyohs ee too mah-noo-tehn-SYOHN ee ah-KAH-bah deh em-bee-AHR too DOH-teh"
         },
         {
           "t": "¿Tan poco te importa, Viridiana?",
@@ -144,8 +144,8 @@
       ]
     },
     {
-      "start": 215.33,
-      "end": 222.91,
+      "start": 212.35,
+      "end": 219.93,
       "words": [
         {
           "t": "No tengo ganas de volver a ver el mundo, pero si usted me lo ordena…",
@@ -155,19 +155,19 @@
       ]
     },
     {
-      "start": 222.91,
-      "end": 234.47,
+      "start": 219.93,
+      "end": 231.49,
       "words": [
         {
           "t": "El retiro empezará pronto. Puedes marcharte mañana por la mañana.",
           "en": "The retreat will start soon. You can leave tomorrow morning.",
-          "pron": "mahr-CHAHR-teh …"
+          "pron": "mahr-CHAHR-teh mah-NYAH-nah pohr lah mah-NYAH-nah"
         }
       ]
     },
     {
-      "start": 234.47,
-      "end": 249.25,
+      "start": 231.49,
+      "end": 246.27,
       "words": [
         {
           "t": "En tu celda he hecho poner todo lo necesario para el viaje.",
@@ -181,8 +181,8 @@
       ]
     },
     {
-      "start": 249.25,
-      "end": 255.66,
+      "start": 246.27,
+      "end": 252.68,
       "words": [
         {
           "t": "Basta por hoy, Rita. ¿Te gusta la cuerda que te regalé?",
@@ -191,8 +191,8 @@
       ]
     },
     {
-      "start": 255.66,
-      "end": 261.88,
+      "start": 252.68,
+      "end": 258.9,
       "words": [
         {
           "t": "Con ella se salta mejor: tiene mangos.",
@@ -201,8 +201,8 @@
       ]
     },
     {
-      "start": 261.88,
-      "end": 263.9,
+      "start": 258.9,
+      "end": 260.92,
       "words": [
         {
           "t": "Vete ya, vete a jugar.",
@@ -212,8 +212,8 @@
       ]
     },
     {
-      "start": 263.9,
-      "end": 264.73,
+      "start": 260.92,
+      "end": 261.75,
       "words": [
         {
           "t": "Hola.",
@@ -223,8 +223,8 @@
       ]
     },
     {
-      "start": 264.73,
-      "end": 268.13,
+      "start": 261.75,
+      "end": 265.15,
       "words": [
         {
           "t": "Hola.",
@@ -234,8 +234,8 @@
       ]
     },
     {
-      "start": 268.13,
-      "end": 274.17,
+      "start": 265.15,
+      "end": 271.19,
       "words": [
         {
           "t": "Bienvenida, señorita. Soy Ramona, la criada de don Jaime.",
@@ -245,8 +245,8 @@
       ]
     },
     {
-      "start": 274.17,
-      "end": 277.14,
+      "start": 271.19,
+      "end": 274.16,
       "words": [
         {
           "t": "¡Ah! Mucho gusto.",
@@ -256,8 +256,8 @@
       ]
     },
     {
-      "start": 277.14,
-      "end": 278.66,
+      "start": 274.16,
+      "end": 275.68,
       "words": [
         {
           "t": "¡Viridiana!",
@@ -267,8 +267,8 @@
       ]
     },
     {
-      "start": 278.66,
-      "end": 280.67,
+      "start": 275.68,
+      "end": 277.69,
       "words": [
         {
           "t": "Sí, tío. ¿Qué tal está usted?",
@@ -277,8 +277,8 @@
       ]
     },
     {
-      "start": 280.67,
-      "end": 287.95,
+      "start": 277.69,
+      "end": 284.97,
       "words": [
         {
           "t": "Bien… ¿El autocar llegó tarde, verdad? ¿Qué tal el viaje?",
@@ -287,8 +287,8 @@
       ]
     },
     {
-      "start": 287.95,
-      "end": 293.73,
+      "start": 284.97,
+      "end": 290.75,
       "words": [
         {
           "t": "Excelente. ¡Qué lugar tan apacible y encantador, tío!",
@@ -297,8 +297,8 @@
       ]
     },
     {
-      "start": 293.73,
-      "end": 298.53,
+      "start": 290.75,
+      "end": 295.55,
       "words": [
         {
           "t": "Creerá que aún está en el convento.",
@@ -307,8 +307,8 @@
       ]
     },
     {
-      "start": 298.53,
-      "end": 301.91,
+      "start": 295.55,
+      "end": 298.93,
       "words": [
         {
           "t": "¿Cuánto tiempo te vas a quedar?",
@@ -317,8 +317,8 @@
       ]
     },
     {
-      "start": 301.91,
-      "end": 309.38,
+      "start": 298.93,
+      "end": 306.4,
       "words": [
         {
           "t": "Muy poco tiempo, tío.",
@@ -331,8 +331,8 @@
       ]
     },
     {
-      "start": 309.38,
-      "end": 313.38,
+      "start": 306.4,
+      "end": 310.4,
       "words": [
         {
           "t": "¿Te fue difícil conseguirlo?",
@@ -341,8 +341,8 @@
       ]
     },
     {
-      "start": 313.38,
-      "end": 318.39,
+      "start": 310.4,
+      "end": 315.41,
       "words": [
         {
           "t": "No. La madre superiora me mandó venir.",
@@ -351,8 +351,8 @@
       ]
     },
     {
-      "start": 318.39,
-      "end": 321.16,
+      "start": 315.41,
+      "end": 318.18,
       "words": [
         {
           "t": "¿Tan poco interés tenía en verme?",
@@ -361,8 +361,8 @@
       ]
     },
     {
-      "start": 321.16,
-      "end": 337.47,
+      "start": 318.18,
+      "end": 334.49,
       "words": [
         {
           "t": "A decir verdad, no mucho.",
@@ -379,8 +379,8 @@
       ]
     },
     {
-      "start": 337.47,
-      "end": 339.96,
+      "start": 334.49,
+      "end": 336.98,
       "words": [
         {
           "t": "No siente usted ningún cariño hacia…",
@@ -389,8 +389,8 @@
       ]
     },
     {
-      "start": 339.96,
-      "end": 340.79,
+      "start": 336.98,
+      "end": 337.81,
       "words": [
         {
           "t": "No.",
@@ -399,8 +399,8 @@
       ]
     },
     {
-      "start": 340.79,
-      "end": 347.4,
+      "start": 337.81,
+      "end": 344.42,
       "words": [
         {
           "t": "Tiene usted razón.",
@@ -413,8 +413,8 @@
       ]
     },
     {
-      "start": 347.4,
-      "end": 353.66,
+      "start": 344.42,
+      "end": 350.68,
       "words": [
         {
           "t": "Lamento no habernos visto más.",
@@ -427,8 +427,8 @@
       ]
     },
     {
-      "start": 353.66,
-      "end": 355.46,
+      "start": 350.68,
+      "end": 352.48,
       "words": [
         {
           "t": "Sí. Ya es demasiado tarde.",
@@ -437,8 +437,8 @@
       ]
     },
     {
-      "start": 355.46,
-      "end": 358.02,
+      "start": 352.48,
+      "end": 355.04,
       "words": [
         {
           "t": "Ha descuidado usted la hacienda, tío.",
@@ -447,8 +447,8 @@
       ]
     },
     {
-      "start": 358.02,
-      "end": 408.16,
+      "start": 355.04,
+      "end": 405.18,
       "words": [
         {
           "t": "En veinte años la hierba lo ha invadido todo.",
@@ -465,8 +465,8 @@
       ]
     },
     {
-      "start": 408.16,
-      "end": 441.77,
+      "start": 405.18,
+      "end": 438.79,
       "words": [
         {
           "t": "Es verdad. Cuando sale me hace saltar a la comba.",
@@ -475,8 +475,8 @@
       ]
     },
     {
-      "start": 441.77,
-      "end": 443.15,
+      "start": 438.79,
+      "end": 440.17,
       "words": [
         {
           "t": "Baja de ahí, pícara.",
@@ -485,8 +485,8 @@
       ]
     },
     {
-      "start": 443.15,
-      "end": 443.98,
+      "start": 440.17,
+      "end": 441,
       "words": [
         {
           "t": "¿Quién es?",
@@ -495,8 +495,8 @@
       ]
     },
     {
-      "start": 443.98,
-      "end": 449.28,
+      "start": 441,
+      "end": 446.3,
       "words": [
         {
           "t": "Es la hija de mi doncella Ramona.",
@@ -509,8 +509,8 @@
       ]
     },
     {
-      "start": 449.28,
-      "end": 450.71,
+      "start": 446.3,
+      "end": 447.73,
       "words": [
         {
           "t": "Baja.",
@@ -519,8 +519,8 @@
       ]
     },
     {
-      "start": 450.71,
-      "end": 455.38,
+      "start": 447.73,
+      "end": 452.4,
       "words": [
         {
           "t": "Se parece usted mucho a su tía, hasta en el modo de andar.",
@@ -529,8 +529,8 @@
       ]
     },
     {
-      "start": 455.38,
-      "end": 460.1,
+      "start": 452.4,
+      "end": 457.12,
       "words": [
         {
           "t": "Ya lo sé, tío; ya me lo ha dicho usted.",
@@ -539,8 +539,8 @@
       ]
     },
     {
-      "start": 460.1,
-      "end": 461.99,
+      "start": 457.12,
+      "end": 459.01,
       "words": [
         {
           "t": "Hasta en la voz.",

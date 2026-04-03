@@ -34,13 +34,28 @@ function glossForWord(w: SubWord): { en: string; pron?: string } {
   return { en: w.en };
 }
 
-const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5, 2] as const;
+const SPEEDS = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2] as const;
 
 function formatTime(s: number) {
   if (!Number.isFinite(s)) return "0:00";
   const m = Math.floor(s / 60);
   const sec = Math.floor(s % 60);
   return `${m}:${sec.toString().padStart(2, "0")}`;
+}
+
+function bufferedAhead(v: HTMLVideoElement): number {
+  try {
+    const r = v.buffered;
+    if (!r?.length) return 0;
+    for (let i = 0; i < r.length; i++) {
+      if (v.currentTime >= r.start(i) && v.currentTime <= r.end(i)) {
+        return r.end(i);
+      }
+    }
+    return r.end(r.length - 1);
+  } catch {
+    return 0;
+  }
 }
 
 export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Props) {
@@ -56,6 +71,13 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
   const [dur, setDur] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [rate, setRate] = useState(1);
+  const [vol, setVol] = useState(1);
+  const [muted, setMuted] = useState(false);
+  const [bufferedUntil, setBufferedUntil] = useState(0);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [subsOn, setSubsOn] = useState(true);
+  const [scrubPreview, setScrubPreview] = useState<number | null>(null);
+  const settingsRef = useRef<HTMLDivElement | null>(null);
   const [controlsVisible, setControlsVisible] = useState(true);
   const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [tip, setTip] = useState<{
@@ -83,9 +105,9 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
   }, [subtitleUrl]);
 
   const activeCue = useMemo(() => {
-    if (!subs?.cues?.length) return null;
+    if (!subsOn || !subs?.cues?.length) return null;
     return subs.cues.find((c) => t >= c.start && t < c.end) ?? null;
-  }, [subs, t]);
+  }, [subs, subsOn, t]);
 
   useEffect(() => {
     if (!videoEl) return;
@@ -147,6 +169,40 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
     if (videoEl) videoEl.playbackRate = rate;
   }, [rate, videoEl]);
 
+  useEffect(() => {
+    if (!videoEl) return;
+    videoEl.volume = vol;
+    videoEl.muted = muted || vol < 0.001;
+  }, [vol, muted, videoEl]);
+
+  const refreshBuffered = useCallback(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    setBufferedUntil(bufferedAhead(v));
+  }, []);
+
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const onProg = () => refreshBuffered();
+    v.addEventListener("progress", onProg);
+    return () => v.removeEventListener("progress", onProg);
+  }, [videoEl, refreshBuffered]);
+
+  useEffect(() => {
+    refreshBuffered();
+  }, [t, refreshBuffered]);
+
+  useEffect(() => {
+    if (!settingsOpen) return;
+    const onDoc = (e: MouseEvent) => {
+      if (settingsRef.current?.contains(e.target as Node)) return;
+      setSettingsOpen(false);
+    };
+    document.addEventListener("mousedown", onDoc);
+    return () => document.removeEventListener("mousedown", onDoc);
+  }, [settingsOpen]);
+
   const toggleFs = useCallback(() => {
     const el = shellRef.current;
     if (!el) return;
@@ -170,8 +226,21 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
           seek(v.currentTime - 10);
           break;
         case "ArrowRight":
+        case "l":
           e.preventDefault();
           seek(v.currentTime + 10);
+          break;
+        case "j":
+          e.preventDefault();
+          seek(v.currentTime - 10);
+          break;
+        case "m":
+          e.preventDefault();
+          setMuted((m) => !m);
+          break;
+        case "c":
+          e.preventDefault();
+          setSubsOn((s) => !s);
           break;
         case "f":
           e.preventDefault();
@@ -212,6 +281,10 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
         playsInline
         preload="metadata"
         onClick={togglePlay}
+        onDoubleClick={(e) => {
+          e.preventDefault();
+          toggleFs();
+        }}
       />
 
       {activeCue && (
@@ -273,61 +346,174 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
           controlsVisible ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        <div className="mb-2 flex items-center gap-2">
-          <input
-            type="range"
-            min={0}
-            max={dur || 1}
-            step={0.05}
-            value={t}
-            onChange={(e) => seek(Number(e.target.value))}
-            className="h-1.5 flex-1 cursor-pointer accent-sky-400 dark:accent-sky-300"
-            aria-label="Seek"
-          />
+        <div className="relative mb-2 flex flex-1 flex-col gap-1">
+          <div className="relative h-1.5 w-full overflow-hidden rounded-full bg-white/15">
+            {dur > 0 ? (
+              <div
+                className="absolute inset-y-0 left-0 rounded-full bg-white/25"
+                style={{ width: `${Math.min(100, (100 * bufferedUntil) / dur)}%` }}
+                aria-hidden
+              />
+            ) : null}
+            {dur > 0 ? (
+              <div
+                className="pointer-events-none absolute inset-y-0 left-0 rounded-full bg-sky-400/90 dark:bg-sky-300/90"
+                style={{ width: `${Math.min(100, (100 * t) / dur)}%` }}
+                aria-hidden
+              />
+            ) : null}
+          </div>
+          <div className="relative -mt-2 h-2 pt-0.5">
+            <input
+              type="range"
+              min={0}
+              max={dur || 1}
+              step={0.05}
+              value={t}
+              onChange={(e) => {
+                seek(Number(e.target.value));
+                setScrubPreview(null);
+              }}
+              onInput={(e) => setScrubPreview(Number((e.target as HTMLInputElement).value))}
+              onMouseLeave={() => setScrubPreview(null)}
+              onBlur={() => setScrubPreview(null)}
+              className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+              aria-label="Seek"
+              aria-valuetext={`${formatTime(scrubPreview ?? t)} of ${formatTime(dur)}`}
+            />
+            {scrubPreview !== null && dur > 0 ? (
+              <span
+                className="pointer-events-none absolute -top-7 z-10 -translate-x-1/2 rounded border border-white/30 bg-black/85 px-1.5 py-0.5 font-mono text-[0.65rem] tabular-nums text-white"
+                style={{ left: `${Math.min(100, Math.max(0, (100 * scrubPreview) / dur))}%` }}
+              >
+                {formatTime(scrubPreview)}
+              </span>
+            ) : null}
+          </div>
         </div>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex min-w-0 flex-wrap items-center gap-2">
             <button
               type="button"
               onClick={togglePlay}
               className="inline-flex min-h-10 min-w-10 items-center justify-center rounded-2xl border border-white/25 bg-white/10 px-3 py-2 text-base font-bold text-white backdrop-blur-sm hover:bg-white/20"
               aria-label={playing ? "Pause" : "Play"}
-              title={playing ? "Pause" : "Play"}
+              title={playing ? "Pause (k)" : "Play (k)"}
             >
               {playing ? "||" : "▶"}
             </button>
-            <span className="font-mono text-xs tabular-nums text-white/95" aria-live="polite">
+            <div className="flex items-center gap-1.5">
+              <button
+                type="button"
+                onClick={() => setMuted((m) => !m)}
+                className="inline-flex min-h-9 min-w-9 items-center justify-center rounded-xl border border-white/25 bg-white/10 text-sm text-white backdrop-blur-sm hover:bg-white/20"
+                aria-label={muted || vol < 0.001 ? "Unmute" : "Mute"}
+                title={muted || vol < 0.001 ? "Unmute (m)" : "Mute (m)"}
+              >
+                {muted || vol < 0.001 ? "🔇" : vol < 0.5 ? "🔉" : "🔊"}
+              </button>
+              <input
+                type="range"
+                min={0}
+                max={1}
+                step={0.05}
+                value={muted ? 0 : vol}
+                onChange={(e) => {
+                  const x = Number(e.target.value);
+                  setVol(x);
+                  if (x > 0) setMuted(false);
+                }}
+                className="h-1 w-20 cursor-pointer accent-sky-400 dark:accent-sky-300 sm:w-24"
+                aria-label="Volume"
+              />
+            </div>
+            <span
+              className="font-mono text-xs tabular-nums text-white/95"
+              aria-live="polite"
+              title="Current time / duration"
+            >
               {formatTime(t)} / {formatTime(dur)}
             </span>
           </div>
-          <p className="min-w-0 flex-1 truncate text-center text-xs font-medium text-white sm:text-sm">
+          <p className="order-last min-w-0 w-full truncate text-center text-xs font-medium text-white sm:order-none sm:w-auto sm:flex-1 sm:text-sm">
             {title}
           </p>
           <div className="flex flex-wrap items-center justify-end gap-2">
-            <label className="flex items-center gap-1 text-xs text-white/90">
-              <span className="sr-only">Playback speed</span>
-              <span className="text-white/75" aria-hidden>
-                ×
-              </span>
-              <select
-                value={rate}
-                onChange={(e) => setRate(Number(e.target.value))}
-                className="rounded-xl border border-white/35 bg-black/55 px-2 py-1 text-xs text-white outline-none ring-sky-400/50 focus:ring-2 dark:border-slate-300/45 dark:bg-slate-900/90"
-                aria-label="Playback speed"
+            {typeof document !== "undefined" &&
+            "pictureInPictureEnabled" in document &&
+            document.pictureInPictureEnabled &&
+            typeof HTMLVideoElement.prototype.requestPictureInPicture === "function" ? (
+              <button
+                type="button"
+                onClick={async () => {
+                  const v = videoRef.current;
+                  if (!v) return;
+                  try {
+                    if (document.pictureInPictureElement === v) {
+                      await document.exitPictureInPicture();
+                    } else {
+                      await v.requestPictureInPicture();
+                    }
+                  } catch {
+                    /* ignore */
+                  }
+                }}
+                className="hidden sm:inline-flex min-h-10 min-w-10 items-center justify-center rounded-2xl border border-white/25 bg-white/10 px-2 py-2 text-xs font-medium text-white backdrop-blur-sm hover:bg-white/20"
+                aria-label="Picture in picture"
+                title="Picture in picture"
               >
-                {SPEEDS.map((s) => (
-                  <option key={s} value={s} className="bg-zinc-900 text-slate-100">
-                    {s}×
-                  </option>
-                ))}
-              </select>
-            </label>
+                PiP
+              </button>
+            ) : null}
+            <div className="relative" ref={settingsRef}>
+              <button
+                type="button"
+                onClick={() => setSettingsOpen((o) => !o)}
+                className="inline-flex min-h-10 min-w-10 items-center justify-center rounded-2xl border border-white/25 bg-white/10 px-3 py-2 text-sm text-white backdrop-blur-sm hover:bg-white/20"
+                aria-label="Settings"
+                title="Settings"
+                aria-expanded={settingsOpen}
+              >
+                ⚙
+              </button>
+              {settingsOpen ? (
+                <div className="absolute bottom-full right-0 z-20 mb-2 w-56 rounded-xl border border-white/25 bg-black/90 p-3 text-left text-white shadow-xl backdrop-blur-md dark:border-slate-300/35 dark:bg-slate-950/95">
+                  <p className="mb-2 text-[0.65rem] font-semibold uppercase tracking-wide text-white/60">
+                    Playback speed
+                  </p>
+                  <select
+                    value={rate}
+                    onChange={(e) => setRate(Number(e.target.value))}
+                    className="mb-3 w-full rounded-lg border border-white/35 bg-black/55 px-2 py-1.5 text-sm text-white outline-none ring-sky-400/50 focus:ring-2 dark:border-slate-300/45 dark:bg-slate-900/90"
+                    aria-label="Playback speed"
+                  >
+                    {SPEEDS.map((s) => (
+                      <option key={s} value={s} className="bg-zinc-900 text-slate-100">
+                        {s}×
+                      </option>
+                    ))}
+                  </select>
+                  <label className="flex cursor-pointer items-center gap-2 text-sm text-white/95">
+                    <input
+                      type="checkbox"
+                      checked={subsOn}
+                      onChange={(e) => setSubsOn(e.target.checked)}
+                      className="h-4 w-4 rounded border-white/40 accent-sky-400 dark:accent-sky-300"
+                    />
+                    Show subtitles
+                  </label>
+                  <p className="mt-3 border-t border-white/15 pt-2 text-[0.65rem] leading-snug text-white/55">
+                    k play/pause · j / l ±10s · m mute · c subs · f fullscreen · double-click video fullscreen
+                  </p>
+                </div>
+              ) : null}
+            </div>
             <button
               type="button"
               onClick={toggleFs}
               className="inline-flex min-h-10 min-w-10 items-center justify-center rounded-2xl border border-white/25 bg-white/10 px-3 py-2 text-base text-white backdrop-blur-sm hover:bg-white/20"
               aria-label="Fullscreen"
-              title="Fullscreen"
+              title="Fullscreen (f)"
             >
               □
             </button>

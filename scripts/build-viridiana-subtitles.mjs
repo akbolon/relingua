@@ -66,7 +66,7 @@ const CUES = [
       w(
         "Apenas lo conozco. Solo lo vi una vez, hace años.",
         "I hardly know him. I saw him only once, some years ago.",
-        "ah-PEH-nahs loh koh-NOHS-koh SOH-loh loh bee …",
+        "ah-PEH-nahs loh koh-NOHS-koh SOH-loh loh bee OO-nah behs AH-nyohs",
       ),
       w(
         "Ni siquiera me acuerdo de él.",
@@ -80,7 +80,7 @@ const CUES = [
       w(
         "En cualquier caso, tu tío te pide que vayas a quedarte con él.",
         "In any case he’s asking you to come and stay with him.",
-        "too TEE-oh teh PEE-deh …",
+        "too TEE-oh teh PEE-deh keh BAH-yahs ah keh-DAHR-teh kohn ehl",
       ),
     ],
   },
@@ -98,7 +98,7 @@ const CUES = [
       w(
         "Me temo que su salud no es buena. Es tu único familiar y debes despedirte de él antes de tomar los votos. Desde luego no volverás a verle.",
         "I’m afraid that his health is not good. He’s your only relative and you ought to say farewell to him before taking your vows. You will certainly never see him again.",
-        "deh-behs des-peh-DEER-teh … toh-MAHR lohs BOH-tohs",
+        "deh-BEHS des-peh-DEER-teh deh ehl AHN-tehs deh toh-MAHR lohs BOH-tohs",
       ),
     ],
   },
@@ -107,7 +107,7 @@ const CUES = [
       w(
         "¿Pero por qué quiere verme? Nunca se ha preocupado de mí.",
         "But why does he want to see me? He has never bothered about me.",
-        "KEH-ree-eh BEHR-meh noon-kah …",
+        "KEH-ree-eh BEHR-meh NOON-kah seh ah preh-oh-koo-PAH-doh deh mee",
       ),
     ],
   },
@@ -116,7 +116,7 @@ const CUES = [
       w(
         "Ha pagado tus estudios y tu manutención, y acaba de enviar tu dote.",
         "He has paid for your studies and your maintenance, and he has just sent your dowry.",
-        "pah-GAH-doh toos ehs-TOO-dyohs … DOH-teh",
+        "pah-GAH-doh toos ehs-TOO-dyohs ee too mah-noo-tehn-SYOHN ee ah-KAH-bah deh em-bee-AHR too DOH-teh",
       ),
       w(
         "¿Tan poco te importa, Viridiana?",
@@ -139,7 +139,7 @@ const CUES = [
       w(
         "El retiro empezará pronto. Puedes marcharte mañana por la mañana.",
         "The retreat will start soon. You can leave tomorrow morning.",
-        "mahr-CHAHR-teh …",
+        "mahr-CHAHR-teh mah-NYAH-nah pohr lah mah-NYAH-nah",
       ),
     ],
   },
@@ -435,21 +435,23 @@ function dropIaCreditsFalseSpeech(segments) {
   return segments.filter((s) => !(s.start < 118 && s.end < 118));
 }
 
-/** First dialogue + “¿Madre?” sit in detected speech ~120s and the following gap before ~125.84s. */
+/**
+ * IA `Viridiana.mp4` convent block: silencedetect + listening check.
+ * “Está bien, Madre” begins ~2:11 (131s) on this encode; letter speech ~125.84–129.25s + pause.
+ */
 function pinOpeningConventToFilmClock(cues) {
-  const line0Start = 120.0;
-  const line0End = 121.02;
-  /** One word; keep card short—silence until Mother Superior ~125.84s has no subs. */
-  const line1End = 122.12;
-  cues[0].start = round2(line0Start);
-  cues[0].end = round2(line0End);
-  cues[1].start = round2(line0End + 0.04);
-  cues[1].end = round2(line1End);
-  /** Measured silence_end before Mother Superior’s line on IA encode (~125.84s). */
-  const motherSpeechStart = 125.8;
-  const shift = round2(motherSpeechStart - cues[2].start);
-  if (Math.abs(shift) < 0.02) return;
-  for (let i = 2; i < cues.length; i++) {
+  cues[0].start = round2(120.0);
+  cues[0].end = round2(121.02);
+  cues[1].start = round2(121.06);
+  cues[1].end = round2(122.12);
+  cues[2].start = round2(125.8);
+  cues[2].end = round2(130.95);
+  cues[3].start = round2(131.0);
+  cues[3].end = round2(132.12);
+  /** Next speech (“No parece importarte…”) ~134.47s on IA. */
+  const afterEstaBien = 134.47;
+  const shift = round2(afterEstaBien - cues[4].start);
+  for (let i = 4; i < cues.length; i++) {
     cues[i].start = round2(cues[i].start + shift);
     cues[i].end = round2(cues[i].end + shift);
   }
@@ -544,7 +546,7 @@ async function main() {
   const data = {
     locale: "es",
     scriptSource:
-      "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: ffmpeg silencedetect on https://archive.org/details/viridiana_202108 (Viridiana.mp4), ~112–480s; IA encode: drop ~115s false-speech blip; first line anchored at 2:00; convent opening aligned to silence map before Mother Superior at ~125.8s.",
+      "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: IA Viridiana.mp4 (viridiana_202108): drop ~115s blip; Hermana/Viridiana 2:00; Mother Superior letter ~2:05.8–2:10.95; “Está bien, Madre” from 2:11; then silencedetect-aligned tail from ~2:14.5.",
     cues,
   };
   fs.writeFileSync(out, JSON.stringify(data, null, 2) + "\n", "utf8");
