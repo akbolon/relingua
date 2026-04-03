@@ -285,12 +285,12 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
       className="relative w-full overflow-hidden rounded-2xl border border-white/20 bg-black/40 shadow-2xl ring-1 ring-black/10 dark:border-white/10 dark:ring-white/5"
       onMouseMove={bumpControls}
     >
+      {/* crossOrigin omitted: many archive.org URLs fail CORS and then never expose duration (stuck 0:00). */}
       <video
         ref={attachVideo}
         className="aspect-video w-full bg-black object-contain"
         src={src}
         poster={poster}
-        crossOrigin="anonymous"
         playsInline
         preload="metadata"
         onClick={togglePlay}
