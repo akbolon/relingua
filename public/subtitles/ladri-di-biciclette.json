@@ -1,9 +1,10 @@
 {
   "locale": "it",
+  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
   "cues": [
     {
-      "start": 57,
-      "end": 66.25,
+      "start": 50,
+      "end": 59.25,
       "words": [
         {
           "t": "Roma,",
@@ -48,8 +49,8 @@
       ]
     },
     {
-      "start": 67.1,
-      "end": 75.91,
+      "start": 60.1,
+      "end": 68.91,
       "words": [
         {
           "t": "Senza",
@@ -90,8 +91,8 @@
       ]
     },
     {
-      "start": 76.76,
-      "end": 85.17,
+      "start": 69.76,
+      "end": 78.17,
       "words": [
         {
           "t": "Dobbiamo",
@@ -128,8 +129,8 @@
       ]
     },
     {
-      "start": 87.02,
-      "end": 95.12,
+      "start": 80.02,
+      "end": 88.12,
       "words": [
         {
           "t": "La",
@@ -166,8 +167,8 @@
       ]
     },
     {
-      "start": 95.97,
-      "end": 103.74,
+      "start": 88.97,
+      "end": 96.74,
       "words": [
         {
           "t": "Dovevo",

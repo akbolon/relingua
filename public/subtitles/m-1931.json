@@ -1,9 +1,10 @@
 {
   "locale": "de",
+  "scriptSource": "Opening sample; timings from seed-catalog-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
   "cues": [
     {
-      "start": 108,
-      "end": 114.23,
+      "start": 37,
+      "end": 43.23,
       "words": [
         {
           "t": "Warte",
@@ -36,8 +37,8 @@
       ]
     },
     {
-      "start": 114.98,
-      "end": 122,
+      "start": 43.98,
+      "end": 51,
       "words": [
         {
           "t": "Ich",
@@ -74,8 +75,8 @@
       ]
     },
     {
-      "start": 122.75,
-      "end": 128.98,
+      "start": 51.75,
+      "end": 57.98,
       "words": [
         {
           "t": "Wer",
@@ -108,8 +109,8 @@
       ]
     },
     {
-      "start": 130.53,
-      "end": 136.47,
+      "start": 59.53,
+      "end": 65.47,
       "words": [
         {
           "t": "Ruhe",

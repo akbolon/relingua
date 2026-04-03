@@ -1,6 +1,9 @@
 /**
  * Reflows subtitle cues: merge short lines, duration from phrase length,
  * silence gaps where no subtitle should show. Run: node scripts/reflow-subtitles.mjs
+ *
+ * OFFSET values align first cue to Internet Archive audio (ffmpeg silencedetect
+ * first major silence_end vs. wall clock, adjusted 2026-04). Re-probe if IA replaces a file.
  */
 import fs from "fs";
 import path from "path";
@@ -19,10 +22,10 @@ const files = [
 ];
 
 const OFFSET = {
-  "ladri-di-biciclette.json": 57,
-  "rashomon.json": 118,
-  "pather-panchali.json": 245,
-  "seventh-seal.json": 72,
+  "ladri-di-biciclette.json": 50,
+  "rashomon.json": 37,
+  "pather-panchali.json": 198,
+  "seventh-seal.json": 69.5,
 };
 
 function round2(x) {

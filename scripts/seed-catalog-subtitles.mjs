@@ -2,6 +2,8 @@
  * Generates timed subtitle JSON (opening scenes) for catalog titles.
  * Only non-English dialogue films belong in the catalog (English glosses target L1 English learners).
  * Run from repo root: node scripts/seed-catalog-subtitles.mjs
+ *
+ * `offset` anchors the first cue to IA audio (silencedetect / wall-clock check, 2026-04).
  */
 import fs from "fs";
 import path from "path";
@@ -80,7 +82,7 @@ function buildFile(locale, offset, rawCues) {
 const DATA = {
   "m-1931.json": {
     locale: "de",
-    offset: 108,
+    offset: 37,
     lines: [
       [
         ["Warte", "Wait"],
@@ -126,7 +128,7 @@ const DATA = {
   },
   "the-blue-angel.json": {
     locale: "de",
-    offset: 94,
+    offset: 90,
     lines: [
       [
         ["Herr", "Mr."],

@@ -1,9 +1,10 @@
 {
   "locale": "bn",
+  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
   "cues": [
     {
-      "start": 245,
-      "end": 253.66,
+      "start": 198,
+      "end": 206.66,
       "words": [
         {
           "t": "গ্রামের",
@@ -44,8 +45,8 @@
       ]
     },
     {
-      "start": 254.51,
-      "end": 261.75,
+      "start": 207.51,
+      "end": 214.75,
       "words": [
         {
           "t": "বাবা",
@@ -78,8 +79,8 @@
       ]
     },
     {
-      "start": 262.6,
-      "end": 270.36,
+      "start": 215.6,
+      "end": 223.36,
       "words": [
         {
           "t": "বৃষ্টি",
@@ -116,8 +117,8 @@
       ]
     },
     {
-      "start": 272.21,
-      "end": 277.25,
+      "start": 225.21,
+      "end": 230.25,
       "words": [
         {
           "t": "জীবন",

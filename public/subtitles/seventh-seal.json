@@ -1,9 +1,10 @@
 {
   "locale": "sv",
+  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
   "cues": [
     {
-      "start": 72,
-      "end": 80.95,
+      "start": 69.5,
+      "end": 78.45,
       "words": [
         {
           "t": "Jag",
@@ -48,8 +49,8 @@
       ]
     },
     {
-      "start": 81.8,
-      "end": 88.77,
+      "start": 79.3,
+      "end": 86.27,
       "words": [
         {
           "t": "Vi",
@@ -82,8 +83,8 @@
       ]
     },
     {
-      "start": 89.62,
-      "end": 98.8,
+      "start": 87.12,
+      "end": 96.3,
       "words": [
         {
           "t": "Om",
@@ -128,8 +129,8 @@
       ]
     },
     {
-      "start": 100.65,
-      "end": 108.3,
+      "start": 98.15,
+      "end": 105.8,
       "words": [
         {
           "t": "Gud",
@@ -166,8 +167,8 @@
       ]
     },
     {
-      "start": 109.15,
-      "end": 115.41,
+      "start": 106.65,
+      "end": 112.91,
       "words": [
         {
           "t": "Min",

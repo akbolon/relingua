@@ -1,9 +1,10 @@
 {
   "locale": "ja",
+  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
   "cues": [
     {
-      "start": 118,
-      "end": 124.86,
+      "start": 37,
+      "end": 43.86,
       "words": [
         {
           "t": "この",
@@ -36,8 +37,8 @@
       ]
     },
     {
-      "start": 125.71,
-      "end": 131.46,
+      "start": 44.71,
+      "end": 50.46,
       "words": [
         {
           "t": "森の中で",
@@ -62,8 +63,8 @@
       ]
     },
     {
-      "start": 132.31,
-      "end": 137.32,
+      "start": 51.31,
+      "end": 56.32,
       "words": [
         {
           "t": "証言は",
@@ -84,8 +85,8 @@
       ]
     },
     {
-      "start": 139.17,
-      "end": 144.28,
+      "start": 58.17,
+      "end": 63.28,
       "words": [
         {
           "t": "門の下で",

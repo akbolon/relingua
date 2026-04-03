@@ -17,8 +17,8 @@ const OUT = path.join(__dirname, "..", "public", "subtitles", "viridiana.json");
 
 /** Trim start in the IA file (skip credits). */
 const TRIM_OFFSET = 108;
-/** Whisper’s first line is a few seconds early vs. wall clock on this encode; nudge to ~2:00 for “Hermana…”. */
-const WALL_CLOCK_NUDGE = 12;
+/** Whisper’s first line vs. wall clock on this encode; with TRIM_OFFSET 108 → first cue ~2:00 after regen. */
+const WALL_CLOCK_NUDGE = 10;
 
 function round2(x) {
   return Math.round(x * 100) / 100;
