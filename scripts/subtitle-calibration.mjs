@@ -12,6 +12,12 @@
  * embed the corrected base offsets so you usually do not need to shift again.
  *
  * Re-probe if archive.org replaces a file or sync still feels wrong.
+ *
+ * IA English vs. our English glosses: archive.org items for these films do not publish
+ * separate English .srt/.vtt next to the MP4 (except Seventh Seal, which has Swedish
+ * sidecar subs only). Embedded subtitle streams in the MP4 are absent (see
+ * scripts/ia-subtitle-inventory.mjs). Relingua keeps English in words[].en on the same
+ * cue as the original line; there is no second English timeline on IA to merge.
  */
 export const SUBTITLE_CALIBRATION = {
   "viridiana.json": { shiftSec: -2, note: "Whisper ASR + nudge; −2s vs. IA spot-check" },
