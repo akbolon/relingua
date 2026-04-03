@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useVoiceSyncedSubtitle, subtitleLanguageLabel } from "@/hooks/use-voice-synced-subtitle";
 import type { SubtitleFile, SubWord } from "@/types/subtitles";
 
 /** HTML5 timeupdate can be sparse; sync subtitle cues more often while playing. */
@@ -76,6 +77,8 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
   const [bufferedUntil, setBufferedUntil] = useState(0);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [subsOn, setSubsOn] = useState(true);
+  /** Follow real audio energy: show line when speech starts, hide after silence (Web Audio). */
+  const [voiceSync, setVoiceSync] = useState(true);
   const [scrubPreview, setScrubPreview] = useState<number | null>(null);
   const settingsRef = useRef<HTMLDivElement | null>(null);
   const [controlsVisible, setControlsVisible] = useState(true);
@@ -104,10 +107,19 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
     };
   }, [subtitleUrl]);
 
-  const activeCue = useMemo(() => {
+  const jsonActiveCue = useMemo(() => {
     if (!subsOn || !subs?.cues?.length) return null;
     return subs.cues.find((c) => t >= c.start && t < c.end) ?? null;
   }, [subs, subsOn, t]);
+
+  const activeCue = useVoiceSyncedSubtitle(videoEl, jsonActiveCue, {
+    voiceSync,
+    subsOn,
+    muted,
+    volume: vol,
+    locale: subs?.locale,
+    playing,
+  });
 
   useEffect(() => {
     if (!videoEl) return;
@@ -278,6 +290,7 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
         className="aspect-video w-full bg-black object-contain"
         src={src}
         poster={poster}
+        crossOrigin="anonymous"
         playsInline
         preload="metadata"
         onClick={togglePlay}
@@ -502,6 +515,24 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
                     />
                     Show subtitles
                   </label>
+                  <label
+                    className={`mt-2 flex cursor-pointer items-center gap-2 text-sm text-white/95 ${!subsOn ? "pointer-events-none opacity-45" : ""}`}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={voiceSync}
+                      disabled={!subsOn}
+                      onChange={(e) => setVoiceSync(e.target.checked)}
+                      className="h-4 w-4 rounded border-white/40 accent-sky-400 dark:accent-sky-300"
+                    />
+                    Sync to speech (hide in silence)
+                  </label>
+                  {subs?.locale ? (
+                    <p className="mt-1.5 text-[0.65rem] leading-snug text-white/50">
+                      Subtitle language: {subtitleLanguageLabel(subs.locale)} ({subs.locale}) — thresholds
+                      tuned for this code when voice sync is on.
+                    </p>
+                  ) : null}
                   <p className="mt-3 border-t border-white/15 pt-2 text-[0.65rem] leading-snug text-white/55">
                     k play/pause · j / l ±10s · m mute · c subs · f fullscreen · double-click video fullscreen
                   </p>
