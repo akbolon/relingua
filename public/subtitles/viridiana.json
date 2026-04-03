@@ -1,314 +1,410 @@
 {
   "locale": "es",
-  "scriptSource": "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: IA Viridiana.mp4 (viridiana_202108): drop ~115s blip; Hermana/Viridiana 2:00; Mother Superior letter ~2:05.8–2:10.95; “Está bien, Madre” from 2:11; then silencedetect-aligned tail from ~2:14.5.",
+  "scriptSource": "Spanish: OpenAI Whisper (base) on IA Viridiana.mp4 audio, ffmpeg trim from 1:48 (+108s) + 12s wall-clock nudge. English: Script Savant PDF where keyed; else Whisper translate segment time-matched. Spanish post-edited for ASR errors. Regenerate: node scripts/whisper-to-relingua-json.mjs",
   "cues": [
     {
       "start": 120,
-      "end": 121.02,
+      "end": 122.64,
       "words": [
         {
-          "t": "Hermana,",
-          "en": "Sister — title before a nun’s name.",
-          "pron": "air-MAH-nah"
-        },
-        {
-          "t": "Viridiana.",
-          "en": "Viridiana.",
-          "pron": "vee-ree-DYAH-nah"
+          "t": "Hermana Viridiana.",
+          "en": "Sister Viridiana."
         }
       ]
     },
     {
-      "start": 121.06,
-      "end": 122.12,
+      "start": 122.64,
+      "end": 123.79,
       "words": [
         {
           "t": "¿Madre?",
-          "en": "Mother?",
-          "pron": "MAH-dreh"
+          "en": "Mother?"
         }
       ]
     },
     {
-      "start": 125.8,
-      "end": 130.95,
+      "start": 123.79,
+      "end": 132.89,
       "words": [
         {
           "t": "Acabo de recibir una carta de tu tío.",
-          "en": "I’ve just had a letter from your uncle.",
-          "pron": "ah-KAH-boh deh reh-bee-BEER OO-nah KAHR-tah deh too TEE-oh"
-        },
-        {
-          "t": "No podrá venir cuando tomes los votos.",
-          "en": "He won’t be able to come when you take your vows.",
-          "pron": "noh poh-DRAH beh-NEER KWAN-doh TOH-mes lohs BOH-tohs"
+          "en": "I’ve just had a letter from your uncle."
         }
       ]
     },
     {
-      "start": 131,
-      "end": 132.12,
+      "start": 132.89,
+      "end": 142,
+      "words": [
+        {
+          "t": "No puede venir a la profesión.",
+          "en": "He won’t be able to come when you take your vows."
+        }
+      ]
+    },
+    {
+      "start": 143,
+      "end": 144,
       "words": [
         {
           "t": "Está bien, Madre.",
-          "en": "All right, Mother.",
-          "pron": "ehs-TAH byehn MAH-dreh"
+          "en": "All right, Mother."
         }
       ]
     },
     {
-      "start": 134.47,
-      "end": 136.83,
+      "start": 146,
+      "end": 148,
       "words": [
         {
           "t": "No parece importarte mucho.",
-          "en": "You don’t seem to mind very much.",
-          "pron": "noh pah-REH-theh im-pohr-TAHR-teh MOO-choh"
+          "en": "You don’t seem to mind very much."
         }
       ]
     },
     {
-      "start": 136.83,
-      "end": 144.89,
+      "start": 149,
+      "end": 154,
       "words": [
         {
-          "t": "Apenas lo conozco. Solo lo vi una vez, hace años.",
-          "en": "I hardly know him. I saw him only once, some years ago.",
-          "pron": "ah-PEH-nahs loh koh-NOHS-koh SOH-loh loh bee OO-nah behs AH-nyohs"
-        },
-        {
-          "t": "Ni siquiera me acuerdo de él.",
-          "en": "I can’t even remember him.",
-          "pron": "nee see-kee-EH-rah meh ah-KWEHR-doh deh ehl"
+          "t": "Casi no le conozco, sólo le vi una vez, hace años, ya ni me acuerdo, pues ahora le invita a su casa.",
+          "en": "I hardly know him. I saw him only once, some years ago. I can’t even remember him. Now he’s inviting you to his house."
         }
       ]
     },
     {
-      "start": 144.89,
-      "end": 152.33,
+      "start": 155,
+      "end": 157,
       "words": [
         {
-          "t": "En cualquier caso, tu tío te pide que vayas a quedarte con él.",
-          "en": "In any case he’s asking you to come and stay with him.",
-          "pron": "too TEE-oh teh PEE-deh keh BAH-yahs ah keh-DAHR-teh kohn ehl"
+          "t": "Preferiría no salir del convento, Madre.",
+          "en": "I’d prefer not to leave the convent, Mother."
         }
       ]
     },
     {
-      "start": 152.33,
-      "end": 155.64,
+      "start": 158,
+      "end": 160.33,
       "words": [
         {
-          "t": "No quiero salir del convento, Madre.",
-          "en": "I don’t want to leave the convent, Mother.",
-          "pron": "noh KYEH-roh sah-LEER dehl kohn-BEHN-toh"
+          "t": "Me temo que no se encuentre bien.",
+          "en": "I’m afraid his health is not good."
         }
       ]
     },
     {
-      "start": 155.64,
-      "end": 169.51,
+      "start": 160.33,
+      "end": 162.67,
       "words": [
         {
-          "t": "Me temo que su salud no es buena. Es tu único familiar y debes despedirte de él antes de tomar los votos. Desde luego no volverás a verle.",
-          "en": "I’m afraid that his health is not good. He’s your only relative and you ought to say farewell to him before taking your vows. You will certainly never see him again.",
-          "pron": "deh-BEHS des-peh-DEER-teh deh ehl AHN-tehs deh toh-MAHR lohs BOH-tohs"
+          "t": "Es tu único familiar y debes despedirte de él antes de profesar.",
+          "en": "He’s your only relative and you ought to say farewell to him before taking your vows."
         }
       ]
     },
     {
-      "start": 169.51,
-      "end": 175.68,
+      "start": 162.67,
+      "end": 165,
       "words": [
         {
-          "t": "¿Pero por qué quiere verme? Nunca se ha preocupado de mí.",
-          "en": "But why does he want to see me? He has never bothered about me.",
-          "pron": "KEH-ree-eh BEHR-meh NOON-kah seh ah preh-oh-koo-PAH-doh deh mee"
+          "t": "Seguramente no volverás a verle.",
+          "en": "You will certainly never see him again."
         }
       ]
     },
     {
-      "start": 175.68,
-      "end": 212.35,
+      "start": 166,
+      "end": 167.5,
       "words": [
         {
-          "t": "Ha pagado tus estudios y tu manutención, y acaba de enviar tu dote.",
-          "en": "He has paid for your studies and your maintenance, and he has just sent your dowry.",
-          "pron": "pah-GAH-doh toos ehs-TOO-dyohs ee too mah-noo-tehn-SYOHN ee ah-KAH-bah deh em-bee-AHR too DOH-teh"
-        },
-        {
-          "t": "¿Tan poco te importa, Viridiana?",
-          "en": "Does that mean so little to you, Viridiana?",
-          "pron": "teh im-POHR-tah"
+          "t": "¿Por qué quiere que vaya?",
+          "en": "But why does he want to see me?"
         }
       ]
     },
     {
-      "start": 212.35,
-      "end": 219.93,
+      "start": 167.5,
+      "end": 169,
       "words": [
         {
-          "t": "No tengo ganas de volver a ver el mundo, pero si usted me lo ordena…",
-          "en": "I have no desire to see the world again, but if you order me to…",
-          "pron": "lo ohr-DEH-nah"
+          "t": "Nunca se ha preocupado por mí.",
+          "en": "He has never bothered about me."
         }
       ]
     },
     {
-      "start": 219.93,
-      "end": 231.49,
+      "start": 170,
+      "end": 172.5,
       "words": [
         {
-          "t": "El retiro empezará pronto. Puedes marcharte mañana por la mañana.",
-          "en": "The retreat will start soon. You can leave tomorrow morning.",
-          "pron": "mahr-CHAHR-teh mah-NYAH-nah pohr lah mah-NYAH-nah"
+          "t": "Ha pagado sus estudios, la ha sostenido y acaba de enviar su dote.",
+          "en": "He has paid for your studies and your maintenance, and he has just sent your dowry."
         }
       ]
     },
     {
-      "start": 231.49,
-      "end": 246.27,
+      "start": 172.5,
+      "end": 175,
       "words": [
         {
-          "t": "En tu celda he hecho poner todo lo necesario para el viaje.",
+          "t": "¿Qué más quiere?",
+          "en": "Does that mean so little to you, Viridiana?"
+        }
+      ]
+    },
+    {
+      "start": 177,
+      "end": 181,
+      "words": [
+        {
+          "t": "Mi deseo sería no volver a ver el mundo, pero si su reverencia me lo ordena.",
+          "en": "I have no desire to see the world again, but if you order me to…"
+        }
+      ]
+    },
+    {
+      "start": 182,
+      "end": 184,
+      "words": [
+        {
+          "t": "El retiro empezará pronto.",
+          "en": "It's too late for him to start the retreat."
+        }
+      ]
+    },
+    {
+      "start": 184,
+      "end": 186,
+      "words": [
+        {
+          "t": "Así que puedes marcharte mañana por la mañana.",
+          "en": "So he can go tomorrow itself."
+        }
+      ]
+    },
+    {
+      "start": 187,
+      "end": 190,
+      "words": [
+        {
+          "t": "En su celda encontrará todo lo necesario para el viaje.",
           "en": "Everything you need for the journey has been put in your cell."
-        },
-        {
-          "t": "Ve a prepararte y trata de mostrarle cariño.",
-          "en": "Go get yourself ready, and try to show him some affection.",
-          "pron": "prah-pah-RAHR-teh kah-REEN-yoh"
         }
       ]
     },
     {
-      "start": 246.27,
-      "end": 252.68,
+      "start": 190,
+      "end": 193,
       "words": [
         {
-          "t": "Basta por hoy, Rita. ¿Te gusta la cuerda que te regalé?",
-          "en": "That’s enough for today, Rita. Do you like that rope I gave you?"
+          "t": "Procure ser afectuosa con él.",
+          "en": "Go get yourself ready, and try to show him some affection."
         }
       ]
     },
     {
-      "start": 252.68,
-      "end": 258.9,
+      "start": 223,
+      "end": 225,
       "words": [
         {
-          "t": "Con ella se salta mejor: tiene mangos.",
+          "t": "Ya está bien por hoy, Rita.",
+          "en": "That’s enough for today, Rita."
+        }
+      ]
+    },
+    {
+      "start": 225,
+      "end": 227,
+      "words": [
+        {
+          "t": "Te gusta la cuerda que te he regalado.",
+          "en": "Do you like that rope I gave you?"
+        }
+      ]
+    },
+    {
+      "start": 227,
+      "end": 229,
+      "words": [
+        {
+          "t": "Se salta mejor porque tiene mangos.",
           "en": "It’s easier to jump with: it’s got handles."
         }
       ]
     },
     {
-      "start": 258.9,
-      "end": 260.92,
+      "start": 229,
+      "end": 231,
       "words": [
         {
-          "t": "Vete ya, vete a jugar.",
-          "en": "Go away now. Go and play.",
-          "pron": "BEH-teh"
+          "t": "Anda, vete a jugar.",
+          "en": "Go away now. Go and play."
         }
       ]
     },
     {
-      "start": 260.92,
-      "end": 261.75,
+      "start": 242,
+      "end": 244,
+      "words": [
+        {
+          "t": "Déjelo, señorita.",
+          "en": "Hello."
+        }
+      ]
+    },
+    {
+      "start": 244,
+      "end": 245,
+      "words": [
+        {
+          "t": "Buenos días.",
+          "en": "Hello."
+        }
+      ]
+    },
+    {
+      "start": 245,
+      "end": 246,
       "words": [
         {
           "t": "Hola.",
-          "en": "Hello.",
-          "pron": "OH-lah"
+          "en": "Hello."
         }
       ]
     },
     {
-      "start": 261.75,
-      "end": 265.15,
+      "start": 247,
+      "end": 248,
       "words": [
         {
-          "t": "Hola.",
-          "en": "Hello.",
-          "pron": "OH-lah"
+          "t": "Bienvenida, señorita.",
+          "en": "Welcome, miss."
         }
       ]
     },
     {
-      "start": 265.15,
-      "end": 271.19,
+      "start": 248,
+      "end": 251,
       "words": [
         {
-          "t": "Bienvenida, señorita. Soy Ramona, la criada de don Jaime.",
-          "en": "Welcome, miss. I’m Ramona, Don Jaime’s servant.",
-          "pron": "soy rah-MOH-nah lah kree-AH-dah"
+          "t": "Soy Ramona, la criada de Don Jaime.",
+          "en": "I’m Ramona, Don Jaime’s servant."
         }
       ]
     },
     {
-      "start": 271.19,
-      "end": 274.16,
+      "start": 251,
+      "end": 252,
       "words": [
         {
-          "t": "¡Ah! Mucho gusto.",
-          "en": "Ah! Pleased to meet you.",
-          "pron": "MOO-choh GOOS-toh"
+          "t": "Ah, mucho gusto.",
+          "en": "Ah! Pleased to meet you."
         }
       ]
     },
     {
-      "start": 274.16,
-      "end": 275.68,
+      "start": 252,
+      "end": 253,
       "words": [
         {
-          "t": "¡Viridiana!",
-          "en": "Viridiana!",
-          "pron": "vee-ree-DYAH-nah"
+          "t": "Viridiana.",
+          "en": "Viridiana!"
         }
       ]
     },
     {
-      "start": 275.68,
-      "end": 277.69,
+      "start": 253,
+      "end": 254,
       "words": [
         {
-          "t": "Sí, tío. ¿Qué tal está usted?",
+          "t": "",
+          "en": "How are you?"
+        }
+      ]
+    },
+    {
+      "start": 259,
+      "end": 260,
+      "words": [
+        {
+          "t": "¿Cómo está, tío?",
           "en": "Yes, Uncle. How are you?"
         }
       ]
     },
     {
-      "start": 277.69,
-      "end": 284.97,
+      "start": 260,
+      "end": 261,
       "words": [
         {
-          "t": "Bien… ¿El autocar llegó tarde, verdad? ¿Qué tal el viaje?",
-          "en": "I’m well … The bus was late, wasn’t it? What was the journey like?"
+          "t": "Bien, bien.",
+          "en": "I’m well …"
         }
       ]
     },
     {
-      "start": 284.97,
-      "end": 290.75,
+      "start": 261,
+      "end": 263,
       "words": [
         {
-          "t": "Excelente. ¡Qué lugar tan apacible y encantador, tío!",
-          "en": "Excellent. What a charming, peaceful place, Uncle."
+          "t": "Llegó el autocar tarde, ¿verdad?",
+          "en": "The bus was late, wasn’t it?"
         }
       ]
     },
     {
-      "start": 290.75,
-      "end": 295.55,
+      "start": 263,
+      "end": 264,
       "words": [
         {
-          "t": "Creerá que aún está en el convento.",
+          "t": "¿Qué tal el viaje?",
+          "en": "What was the journey like?"
+        }
+      ]
+    },
+    {
+      "start": 264,
+      "end": 265,
+      "words": [
+        {
+          "t": "Muy bueno.",
+          "en": "Excellent."
+        }
+      ]
+    },
+    {
+      "start": 265,
+      "end": 267,
+      "words": [
+        {
+          "t": "Qué lugar tan apacible, tío.",
+          "en": "What a charming, peaceful place, Uncle."
+        }
+      ]
+    },
+    {
+      "start": 267,
+      "end": 268,
+      "words": [
+        {
+          "t": "Muy tranquilo.",
+          "en": "Very quiet."
+        }
+      ]
+    },
+    {
+      "start": 268,
+      "end": 270,
+      "words": [
+        {
+          "t": "Creerá que aún estás en el convento.",
           "en": "You’ll think you’re still at the convent."
         }
       ]
     },
     {
-      "start": 295.55,
-      "end": 298.93,
+      "start": 270,
+      "end": 273,
       "words": [
         {
           "t": "¿Cuánto tiempo te vas a quedar?",
@@ -317,80 +413,38 @@
       ]
     },
     {
-      "start": 298.93,
-      "end": 306.4,
+      "start": 273,
+      "end": 275,
       "words": [
         {
-          "t": "Muy poco tiempo, tío.",
+          "t": "Muy poco, tío.",
           "en": "A very short while, Uncle."
-        },
+        }
+      ]
+    },
+    {
+      "start": 275,
+      "end": 277,
+      "words": [
         {
-          "t": "Solo me han dado permiso para quedarme unos días.",
+          "t": "Solo tengo permiso para unos días.",
           "en": "I’ve been given permission to stay only a few days."
         }
       ]
     },
     {
-      "start": 306.4,
-      "end": 310.4,
+      "start": 277,
+      "end": 279,
       "words": [
         {
-          "t": "¿Te fue difícil conseguirlo?",
-          "en": "Was that difficult to get?"
+          "t": "¿Te costó mucho conseguirlo.",
+          "en": "Did you spend a lot of time getting it?"
         }
       ]
     },
     {
-      "start": 310.4,
-      "end": 315.41,
-      "words": [
-        {
-          "t": "No. La madre superiora me mandó venir.",
-          "en": "No. Mother Superior told me to come."
-        }
-      ]
-    },
-    {
-      "start": 315.41,
-      "end": 318.18,
-      "words": [
-        {
-          "t": "¿Tan poco interés tenía en verme?",
-          "en": "Did you have so little interest in seeing me?"
-        }
-      ]
-    },
-    {
-      "start": 318.18,
-      "end": 334.49,
-      "words": [
-        {
-          "t": "A decir verdad, no mucho.",
-          "en": "To tell you the truth, not very much."
-        },
-        {
-          "t": "No sé mentir.",
-          "en": "I cannot lie."
-        },
-        {
-          "t": "Le tengo respeto y le agradezco todo lo material, pero por lo demás…",
-          "en": "I respect you and I am grateful to you because I owe you everything materially, but otherwise …"
-        }
-      ]
-    },
-    {
-      "start": 334.49,
-      "end": 336.98,
-      "words": [
-        {
-          "t": "No siente usted ningún cariño hacia…",
-          "en": "You have no feelings toward …"
-        }
-      ]
-    },
-    {
-      "start": 336.98,
-      "end": 337.81,
+      "start": 279,
+      "end": 280.5,
       "words": [
         {
           "t": "No.",
@@ -399,94 +453,258 @@
       ]
     },
     {
-      "start": 337.81,
-      "end": 344.42,
+      "start": 280.5,
+      "end": 282,
       "words": [
         {
-          "t": "Tiene usted razón.",
-          "en": "You are right."
-        },
+          "t": "Vine por orden de la superiora.",
+          "en": "No. Mother Superior told me to come."
+        }
+      ]
+    },
+    {
+      "start": 282,
+      "end": 284,
+      "words": [
         {
-          "t": "Vivir solo me ha vuelto egoísta.",
+          "t": "Tampoco te interesaba verme",
+          "en": "I came for orders from the superior."
+        }
+      ]
+    },
+    {
+      "start": 284,
+      "end": 286,
+      "words": [
+        {
+          "t": "que te lo tuvieron que ordenar.",
+          "en": "I was not interested in seeing what you had to order."
+        }
+      ]
+    },
+    {
+      "start": 286,
+      "end": 289,
+      "words": [
+        {
+          "t": "La verdad, no mucho.",
+          "en": "To tell you the truth, not very much."
+        }
+      ]
+    },
+    {
+      "start": 289,
+      "end": 291,
+      "words": [
+        {
+          "t": "Yo no se mentir, tío.",
+          "en": "I cannot lie."
+        }
+      ]
+    },
+    {
+      "start": 291,
+      "end": 293,
+      "words": [
+        {
+          "t": "Le tengo respeto y agradecimiento",
+          "en": "I respect and thank you for the matter."
+        }
+      ]
+    },
+    {
+      "start": 293,
+      "end": 295,
+      "words": [
+        {
+          "t": "porque en lo material se lo debo todo.",
+          "en": "I owe it to you."
+        }
+      ]
+    },
+    {
+      "start": 295,
+      "end": 296,
+      "words": [
+        {
+          "t": "Pero en lo demás...",
+          "en": "You have no feelings toward …"
+        }
+      ]
+    },
+    {
+      "start": 296,
+      "end": 298,
+      "words": [
+        {
+          "t": "Ningún cariño humano.",
+          "en": "You have no feelings toward …"
+        }
+      ]
+    },
+    {
+      "start": 298,
+      "end": 299,
+      "words": [
+        {
+          "t": "Ninguno.",
+          "en": "No."
+        }
+      ]
+    },
+    {
+      "start": 299,
+      "end": 300,
+      "words": [
+        {
+          "t": "Tiene razón.",
+          "en": "You are right."
+        }
+      ]
+    },
+    {
+      "start": 300,
+      "end": 302,
+      "words": [
+        {
+          "t": "La soledad me ha vuelto egoísta.",
           "en": "Being alone has made me self-centered."
         }
       ]
     },
     {
-      "start": 344.42,
-      "end": 350.68,
+      "start": 302,
+      "end": 305,
       "words": [
         {
-          "t": "Lamento no habernos visto más.",
+          "t": "Ahora siento que no hayamos tenido más trato.",
           "en": "Now I am sorry we have not seen more of each other."
-        },
+        }
+      ]
+    },
+    {
+      "start": 305,
+      "end": 307,
+      "words": [
         {
-          "t": "Ya es demasiado tarde, ¿no es cierto?",
+          "t": "Demasiado tarde, ¿verdad?",
           "en": "It’s too late, isn’t it?"
         }
       ]
     },
     {
-      "start": 350.68,
-      "end": 352.48,
+      "start": 307,
+      "end": 308,
       "words": [
         {
-          "t": "Sí. Ya es demasiado tarde.",
-          "en": "Yes. It’s too late."
+          "t": "Sí.",
+          "en": "Yes."
         }
       ]
     },
     {
-      "start": 352.48,
-      "end": 355.04,
+      "start": 308,
+      "end": 310,
       "words": [
         {
-          "t": "Ha descuidado usted la hacienda, tío.",
-          "en": "You’ve been neglecting the farm, Uncle."
+          "t": "Demasiado tarde.",
+          "en": "It’s too late."
         }
       ]
     },
     {
-      "start": 355.04,
-      "end": 405.18,
+      "start": 310,
+      "end": 313,
       "words": [
         {
-          "t": "En veinte años la hierba lo ha invadido todo.",
-          "en": "In twenty years the grass has invaded everything."
-        },
+          "t": "Tienes muy abandonados los campos, tío.",
+          "en": "Too late."
+        }
+      ]
+    },
+    {
+      "start": 313,
+      "end": 314,
+      "words": [
         {
-          "t": "Hay arañas por toda la casa, excepto en el primer piso.",
+          "t": "Desde hace 20 años,",
+          "en": "You're not very abandoned in the fields, ma'am."
+        }
+      ]
+    },
+    {
+      "start": 314,
+      "end": 316,
+      "words": [
+        {
+          "t": "las hierbas se han hecho dueñas de todo.",
+          "en": "It's been 20 years since you've done all this."
+        }
+      ]
+    },
+    {
+      "start": 316,
+      "end": 319,
+      "words": [
+        {
+          "t": "Y en la casa, aparte del primer piso,",
           "en": "There are spiders all over the house except on the first floor."
-        },
+        }
+      ]
+    },
+    {
+      "start": 319,
+      "end": 321,
+      "words": [
         {
-          "t": "Casi nunca salgo.",
+          "t": "se reproducen muy bien las arañas.",
+          "en": "There are spiders all over the house except on the first floor."
+        }
+      ]
+    },
+    {
+      "start": 321,
+      "end": 323,
+      "words": [
+        {
+          "t": "Apenas salgo al campo.",
           "en": "I hardly ever go out."
         }
       ]
     },
     {
-      "start": 405.18,
-      "end": 438.79,
+      "start": 323,
+      "end": 325,
       "words": [
         {
-          "t": "Es verdad. Cuando sale me hace saltar a la comba.",
-          "en": "It’s true. When he goes out he makes me jump rope."
+          "t": "Es verdad.",
+          "en": "It’s true."
         }
       ]
     },
     {
-      "start": 438.79,
-      "end": 440.17,
+      "start": 325,
+      "end": 327,
       "words": [
         {
-          "t": "Baja de ahí, pícara.",
+          "t": "Y cuando sale, me hace saltar a la comba.",
+          "en": "When he goes out he makes me jump rope."
+        }
+      ]
+    },
+    {
+      "start": 327,
+      "end": 329,
+      "words": [
+        {
+          "t": "Ven aquí, perrito.",
           "en": "Come down here, you scamp."
         }
       ]
     },
     {
-      "start": 440.17,
-      "end": 441,
+      "start": 329,
+      "end": 330,
       "words": [
         {
           "t": "¿Quién es?",
@@ -495,56 +713,332 @@
       ]
     },
     {
-      "start": 441,
-      "end": 446.3,
+      "start": 330,
+      "end": 332,
       "words": [
         {
-          "t": "Es la hija de mi doncella Ramona.",
+          "t": "Es la hija de Ramona, mi sirvienta.",
           "en": "My maid Ramona’s daughter."
-        },
-        {
-          "t": "Es un animalito.",
-          "en": "She’s a little animal."
         }
       ]
     },
     {
-      "start": 446.3,
-      "end": 447.73,
+      "start": 332,
+      "end": 333,
       "words": [
         {
-          "t": "Baja.",
+          "t": "¡Venga!",
           "en": "Come down."
         }
       ]
     },
     {
-      "start": 447.73,
-      "end": 452.4,
+      "start": 333,
+      "end": 335,
       "words": [
         {
-          "t": "Se parece usted mucho a su tía, hasta en el modo de andar.",
+          "t": "Está hecha una salvaje.",
+          "en": "She’s a little animal."
+        }
+      ]
+    },
+    {
+      "start": 336,
+      "end": 338,
+      "words": [
+        {
+          "t": "¿Cómo te parece esa tu tía?",
           "en": "How like your aunt you are, even in your walk."
         }
       ]
     },
     {
-      "start": 452.4,
-      "end": 457.12,
+      "start": 338,
+      "end": 340,
       "words": [
         {
-          "t": "Ya lo sé, tío; ya me lo ha dicho usted.",
+          "t": "Hasta el mismo modo de andar.",
+          "en": "How like your aunt you are, even in your walk."
+        }
+      ]
+    },
+    {
+      "start": 340,
+      "end": 342,
+      "words": [
+        {
+          "t": "Ya lo sé, tío.",
           "en": "I know, Uncle, you’ve told me that already."
         }
       ]
     },
     {
-      "start": 457.12,
-      "end": 459.01,
+      "start": 342,
+      "end": 343,
       "words": [
         {
-          "t": "Hasta en la voz.",
-          "en": "You see, even the voice."
+          "t": "Ya me lo ha dicho usted antes.",
+          "en": "I know, Uncle, you’ve told me that already."
+        }
+      ]
+    },
+    {
+      "start": 343,
+      "end": 345,
+      "words": [
+        {
+          "t": "Hasta en la voz también.",
+          "en": "You see it, and your voice too."
+        }
+      ]
+    },
+    {
+      "start": 393,
+      "end": 395,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 395,
+      "end": 396,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 396,
+      "end": 397,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 397,
+      "end": 399,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 399,
+      "end": 400,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 400,
+      "end": 401,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 401,
+      "end": 402,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 402,
+      "end": 403,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 403,
+      "end": 404,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 404,
+      "end": 405,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 405,
+      "end": 406,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 406,
+      "end": 407,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 407,
+      "end": 408,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 408,
+      "end": 409,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 409,
+      "end": 410,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 410,
+      "end": 411,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 411,
+      "end": 412,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 412,
+      "end": 413,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 413,
+      "end": 414,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 414,
+      "end": 416,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 416,
+      "end": 417,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 417,
+      "end": 418.52,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 418.52,
+      "end": 419.52,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Get up."
+        }
+      ]
+    },
+    {
+      "start": 419.52,
+      "end": 420.52,
+      "words": [
+        {
+          "t": "¿ AMDán?",
+          "en": "Come on."
+        }
+      ]
+    },
+    {
+      "start": 420.52,
+      "end": 422.34,
+      "words": [
+        {
+          "t": "¿Qué pasa?",
+          "en": "Come on."
         }
       ]
     }
