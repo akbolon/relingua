@@ -1,10 +1,10 @@
 {
   "locale": "es",
-  "scriptSource": "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: ffmpeg silencedetect on https://archive.org/details/viridiana_202108 (Viridiana.mp4), ~112–480s.",
+  "scriptSource": "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: ffmpeg silencedetect on https://archive.org/details/viridiana_202108 (Viridiana.mp4), ~112–480s; IA encode: drop ~115s false-speech blip; first line anchored at 2:00; convent opening aligned to silence map before Mother Superior at ~125.8s.",
   "cues": [
     {
-      "start": 115.15,
-      "end": 116.48,
+      "start": 120,
+      "end": 121.02,
       "words": [
         {
           "t": "Hermana,",
@@ -19,8 +19,8 @@
       ]
     },
     {
-      "start": 116.48,
-      "end": 120.73,
+      "start": 121.06,
+      "end": 122.12,
       "words": [
         {
           "t": "¿Madre?",
@@ -30,8 +30,8 @@
       ]
     },
     {
-      "start": 120.73,
-      "end": 135.58,
+      "start": 125.8,
+      "end": 136.28,
       "words": [
         {
           "t": "Acabo de recibir una carta de tu tío.",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "start": 135.58,
+      "start": 136.28,
       "end": 137.45,
       "words": [
         {
@@ -58,7 +58,7 @@
     },
     {
       "start": 137.45,
-      "end": 139.82,
+      "end": 139.81,
       "words": [
         {
           "t": "No parece importarte mucho.",
@@ -68,8 +68,8 @@
       ]
     },
     {
-      "start": 139.82,
-      "end": 147.39,
+      "start": 139.81,
+      "end": 147.87,
       "words": [
         {
           "t": "Apenas lo conozco. Solo lo vi una vez, hace años.",
@@ -84,8 +84,8 @@
       ]
     },
     {
-      "start": 147.39,
-      "end": 155.42,
+      "start": 147.87,
+      "end": 155.31,
       "words": [
         {
           "t": "En cualquier caso, tu tío te pide que vayas a quedarte con él.",
@@ -95,8 +95,8 @@
       ]
     },
     {
-      "start": 155.42,
-      "end": 158.74,
+      "start": 155.31,
+      "end": 158.62,
       "words": [
         {
           "t": "No quiero salir del convento, Madre.",
@@ -106,8 +106,8 @@
       ]
     },
     {
-      "start": 158.74,
-      "end": 172.02,
+      "start": 158.62,
+      "end": 172.49,
       "words": [
         {
           "t": "Me temo que su salud no es buena. Es tu único familiar y debes despedirte de él antes de tomar los votos. Desde luego no volverás a verle.",
@@ -117,8 +117,8 @@
       ]
     },
     {
-      "start": 172.02,
-      "end": 177.91,
+      "start": 172.49,
+      "end": 178.66,
       "words": [
         {
           "t": "¿Pero por qué quiere verme? Nunca se ha preocupado de mí.",
@@ -128,8 +128,8 @@
       ]
     },
     {
-      "start": 177.91,
-      "end": 215.64,
+      "start": 178.66,
+      "end": 215.33,
       "words": [
         {
           "t": "Ha pagado tus estudios y tu manutención, y acaba de enviar tu dote.",
@@ -144,8 +144,8 @@
       ]
     },
     {
-      "start": 215.64,
-      "end": 223.26,
+      "start": 215.33,
+      "end": 222.91,
       "words": [
         {
           "t": "No tengo ganas de volver a ver el mundo, pero si usted me lo ordena…",
@@ -155,8 +155,8 @@
       ]
     },
     {
-      "start": 223.26,
-      "end": 232.76,
+      "start": 222.91,
+      "end": 234.47,
       "words": [
         {
           "t": "El retiro empezará pronto. Puedes marcharte mañana por la mañana.",
@@ -166,8 +166,8 @@
       ]
     },
     {
-      "start": 232.76,
-      "end": 249.7,
+      "start": 234.47,
+      "end": 249.25,
       "words": [
         {
           "t": "En tu celda he hecho poner todo lo necesario para el viaje.",
@@ -181,8 +181,8 @@
       ]
     },
     {
-      "start": 249.7,
-      "end": 255.46,
+      "start": 249.25,
+      "end": 255.66,
       "words": [
         {
           "t": "Basta por hoy, Rita. ¿Te gusta la cuerda que te regalé?",
@@ -191,8 +191,8 @@
       ]
     },
     {
-      "start": 255.46,
-      "end": 262.39,
+      "start": 255.66,
+      "end": 261.88,
       "words": [
         {
           "t": "Con ella se salta mejor: tiene mangos.",
@@ -201,8 +201,8 @@
       ]
     },
     {
-      "start": 262.39,
-      "end": 263.92,
+      "start": 261.88,
+      "end": 263.9,
       "words": [
         {
           "t": "Vete ya, vete a jugar.",
@@ -212,8 +212,8 @@
       ]
     },
     {
-      "start": 263.92,
-      "end": 265.26,
+      "start": 263.9,
+      "end": 264.73,
       "words": [
         {
           "t": "Hola.",
@@ -223,8 +223,8 @@
       ]
     },
     {
-      "start": 265.26,
-      "end": 266.1,
+      "start": 264.73,
+      "end": 268.13,
       "words": [
         {
           "t": "Hola.",
@@ -234,8 +234,8 @@
       ]
     },
     {
-      "start": 266.1,
-      "end": 273.69,
+      "start": 268.13,
+      "end": 274.17,
       "words": [
         {
           "t": "Bienvenida, señorita. Soy Ramona, la criada de don Jaime.",
@@ -245,8 +245,8 @@
       ]
     },
     {
-      "start": 273.69,
-      "end": 276.61,
+      "start": 274.17,
+      "end": 277.14,
       "words": [
         {
           "t": "¡Ah! Mucho gusto.",
@@ -256,8 +256,8 @@
       ]
     },
     {
-      "start": 276.61,
-      "end": 278.55,
+      "start": 277.14,
+      "end": 278.66,
       "words": [
         {
           "t": "¡Viridiana!",
@@ -267,8 +267,8 @@
       ]
     },
     {
-      "start": 278.55,
-      "end": 281.27,
+      "start": 278.66,
+      "end": 280.67,
       "words": [
         {
           "t": "Sí, tío. ¿Qué tal está usted?",
@@ -277,8 +277,8 @@
       ]
     },
     {
-      "start": 281.27,
-      "end": 287.63,
+      "start": 280.67,
+      "end": 287.95,
       "words": [
         {
           "t": "Bien… ¿El autocar llegó tarde, verdad? ¿Qué tal el viaje?",
@@ -287,8 +287,8 @@
       ]
     },
     {
-      "start": 287.63,
-      "end": 293.96,
+      "start": 287.95,
+      "end": 293.73,
       "words": [
         {
           "t": "Excelente. ¡Qué lugar tan apacible y encantador, tío!",
@@ -297,8 +297,8 @@
       ]
     },
     {
-      "start": 293.96,
-      "end": 299.23,
+      "start": 293.73,
+      "end": 298.53,
       "words": [
         {
           "t": "Creerá que aún está en el convento.",
@@ -307,8 +307,8 @@
       ]
     },
     {
-      "start": 299.23,
-      "end": 302.62,
+      "start": 298.53,
+      "end": 301.91,
       "words": [
         {
           "t": "¿Cuánto tiempo te vas a quedar?",
@@ -317,8 +317,8 @@
       ]
     },
     {
-      "start": 302.62,
-      "end": 309.32,
+      "start": 301.91,
+      "end": 309.38,
       "words": [
         {
           "t": "Muy poco tiempo, tío.",
@@ -331,8 +331,8 @@
       ]
     },
     {
-      "start": 309.32,
-      "end": 314.15,
+      "start": 309.38,
+      "end": 313.38,
       "words": [
         {
           "t": "¿Te fue difícil conseguirlo?",
@@ -341,8 +341,8 @@
       ]
     },
     {
-      "start": 314.15,
-      "end": 319.19,
+      "start": 313.38,
+      "end": 318.39,
       "words": [
         {
           "t": "No. La madre superiora me mandó venir.",
@@ -351,8 +351,8 @@
       ]
     },
     {
-      "start": 319.19,
-      "end": 321.98,
+      "start": 318.39,
+      "end": 321.16,
       "words": [
         {
           "t": "¿Tan poco interés tenía en verme?",
@@ -361,8 +361,8 @@
       ]
     },
     {
-      "start": 321.98,
-      "end": 338.35,
+      "start": 321.16,
+      "end": 337.47,
       "words": [
         {
           "t": "A decir verdad, no mucho.",
@@ -379,8 +379,8 @@
       ]
     },
     {
-      "start": 338.35,
-      "end": 340.86,
+      "start": 337.47,
+      "end": 339.96,
       "words": [
         {
           "t": "No siente usted ningún cariño hacia…",
@@ -389,8 +389,8 @@
       ]
     },
     {
-      "start": 340.86,
-      "end": 341.7,
+      "start": 339.96,
+      "end": 340.79,
       "words": [
         {
           "t": "No.",
@@ -399,8 +399,8 @@
       ]
     },
     {
-      "start": 341.7,
-      "end": 346.34,
+      "start": 340.79,
+      "end": 347.4,
       "words": [
         {
           "t": "Tiene usted razón.",
@@ -413,8 +413,8 @@
       ]
     },
     {
-      "start": 346.34,
-      "end": 354.65,
+      "start": 347.4,
+      "end": 353.66,
       "words": [
         {
           "t": "Lamento no habernos visto más.",
@@ -427,8 +427,8 @@
       ]
     },
     {
-      "start": 354.65,
-      "end": 356.47,
+      "start": 353.66,
+      "end": 355.46,
       "words": [
         {
           "t": "Sí. Ya es demasiado tarde.",
@@ -437,8 +437,8 @@
       ]
     },
     {
-      "start": 356.47,
-      "end": 359.05,
+      "start": 355.46,
+      "end": 358.02,
       "words": [
         {
           "t": "Ha descuidado usted la hacienda, tío.",
@@ -447,8 +447,8 @@
       ]
     },
     {
-      "start": 359.05,
-      "end": 409.26,
+      "start": 358.02,
+      "end": 408.16,
       "words": [
         {
           "t": "En veinte años la hierba lo ha invadido todo.",
@@ -465,8 +465,8 @@
       ]
     },
     {
-      "start": 409.26,
-      "end": 442.9,
+      "start": 408.16,
+      "end": 441.77,
       "words": [
         {
           "t": "Es verdad. Cuando sale me hace saltar a la comba.",
@@ -475,8 +475,8 @@
       ]
     },
     {
-      "start": 442.9,
-      "end": 444.29,
+      "start": 441.77,
+      "end": 443.15,
       "words": [
         {
           "t": "Baja de ahí, pícara.",
@@ -485,8 +485,8 @@
       ]
     },
     {
-      "start": 444.29,
-      "end": 445.13,
+      "start": 443.15,
+      "end": 443.98,
       "words": [
         {
           "t": "¿Quién es?",
@@ -495,8 +495,8 @@
       ]
     },
     {
-      "start": 445.13,
-      "end": 450.45,
+      "start": 443.98,
+      "end": 449.28,
       "words": [
         {
           "t": "Es la hija de mi doncella Ramona.",
@@ -509,8 +509,8 @@
       ]
     },
     {
-      "start": 450.45,
-      "end": 451.89,
+      "start": 449.28,
+      "end": 450.71,
       "words": [
         {
           "t": "Baja.",
@@ -519,8 +519,8 @@
       ]
     },
     {
-      "start": 451.89,
-      "end": 456.6,
+      "start": 450.71,
+      "end": 455.38,
       "words": [
         {
           "t": "Se parece usted mucho a su tía, hasta en el modo de andar.",
@@ -529,8 +529,8 @@
       ]
     },
     {
-      "start": 456.6,
-      "end": 461.34,
+      "start": 455.38,
+      "end": 460.1,
       "words": [
         {
           "t": "Ya lo sé, tío; ya me lo ha dicho usted.",
@@ -539,8 +539,8 @@
       ]
     },
     {
-      "start": 461.34,
-      "end": 463.25,
+      "start": 460.1,
+      "end": 461.99,
       "words": [
         {
           "t": "Hasta en la voz.",

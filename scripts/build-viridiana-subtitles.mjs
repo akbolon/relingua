@@ -426,6 +426,43 @@ const CUES = [
   },
 ];
 
+/**
+ * IA `Viridiana.mp4`: Handel credits fade leaves a ~1.4s non-silent blip ~115.2–116.5s
+ * that silencedetect treats as speech. First real line (“Hermana, Viridiana”) begins ~120s
+ * (silence_end ~119.95s). Verified with multiple ffmpeg silencedetect passes (noise/d varied).
+ */
+function dropIaCreditsFalseSpeech(segments) {
+  return segments.filter((s) => !(s.start < 118 && s.end < 118));
+}
+
+/** First dialogue + “¿Madre?” sit in detected speech ~120s and the following gap before ~125.84s. */
+function pinOpeningConventToFilmClock(cues) {
+  const line0Start = 120.0;
+  const line0End = 121.02;
+  /** One word; keep card short—silence until Mother Superior ~125.84s has no subs. */
+  const line1End = 122.12;
+  cues[0].start = round2(line0Start);
+  cues[0].end = round2(line0End);
+  cues[1].start = round2(line0End + 0.04);
+  cues[1].end = round2(line1End);
+  /** Measured silence_end before Mother Superior’s line on IA encode (~125.84s). */
+  const motherSpeechStart = 125.8;
+  const shift = round2(motherSpeechStart - cues[2].start);
+  if (Math.abs(shift) < 0.02) return;
+  for (let i = 2; i < cues.length; i++) {
+    cues[i].start = round2(cues[i].start + shift);
+    cues[i].end = round2(cues[i].end + shift);
+  }
+  for (let i = 1; i < cues.length; i++) {
+    if (cues[i].start < cues[i - 1].end) {
+      cues[i].start = round2(cues[i - 1].end + 0.05);
+    }
+    if (cues[i].end <= cues[i].start) {
+      cues[i].end = round2(cues[i].start + 0.55);
+    }
+  }
+}
+
 function clipWindow(segments, t0, t1) {
   return segments
     .map((s) => ({
@@ -495,7 +532,7 @@ function allocateTimes(segments, cues) {
 }
 
 async function main() {
-  const raw = await fetchSpeechSegments(520);
+  const raw = dropIaCreditsFalseSpeech(await fetchSpeechSegments(520));
   let window = mergeGaps(clipWindow(raw, 112, 480), 0.4);
   if (window.length === 0) {
     console.warn("No speech segments; using fallback linear 118–330s");
@@ -503,14 +540,27 @@ async function main() {
   }
 
   const cues = allocateTimes(window, CUES);
+  pinOpeningConventToFilmClock(cues);
   const data = {
     locale: "es",
     scriptSource:
-      "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: ffmpeg silencedetect on https://archive.org/details/viridiana_202108 (Viridiana.mp4), ~112–480s.",
+      "https://thescriptsavant.com/movies/Viridiana.pdf — English glosses follow this screenplay; Spanish follows the film. Timings: ffmpeg silencedetect on https://archive.org/details/viridiana_202108 (Viridiana.mp4), ~112–480s; IA encode: drop ~115s false-speech blip; first line anchored at 2:00; convent opening aligned to silence map before Mother Superior at ~125.8s.",
     cues,
   };
   fs.writeFileSync(out, JSON.stringify(data, null, 2) + "\n", "utf8");
-  console.log("Wrote", cues.length, "cues to", out, "first", cues[0].start, cues[0].end);
+  console.log(
+    "Wrote",
+    cues.length,
+    "cues;",
+    "Hermana/Viridiana",
+    cues[0].start,
+    "–",
+    cues[0].end,
+    "¿Madre?",
+    cues[1].start,
+    "–",
+    cues[1].end,
+  );
 }
 
 main().catch((e) => {
