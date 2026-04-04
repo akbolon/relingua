@@ -1,6 +1,6 @@
 {
   "locale": "bn",
-  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
+  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).\nTiming pass: burned-in English OCR (tesseract.js + ffmpeg bottom strip) vs. words[].en — 2026-04-03.",
   "cues": [
     {
       "start": 198,
@@ -45,8 +45,8 @@
       ]
     },
     {
-      "start": 207.51,
-      "end": 214.75,
+      "start": 209.17,
+      "end": 215.47,
       "words": [
         {
           "t": "বাবা",

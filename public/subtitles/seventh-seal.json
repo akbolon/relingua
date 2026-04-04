@@ -1,6 +1,6 @@
 {
   "locale": "sv",
-  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
+  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).\nTiming pass: burned-in English OCR (tesseract.js + ffmpeg bottom strip) vs. words[].en — 2026-04-03.",
   "cues": [
     {
       "start": 69.5,
@@ -49,8 +49,8 @@
       ]
     },
     {
-      "start": 79.3,
-      "end": 86.27,
+      "start": 80.16,
+      "end": 84.46,
       "words": [
         {
           "t": "Vi",
@@ -83,8 +83,8 @@
       ]
     },
     {
-      "start": 87.12,
-      "end": 96.3,
+      "start": 92.78,
+      "end": 98.28,
       "words": [
         {
           "t": "Om",
@@ -129,8 +129,8 @@
       ]
     },
     {
-      "start": 98.15,
-      "end": 105.8,
+      "start": 98.33,
+      "end": 102.55,
       "words": [
         {
           "t": "Gud",
@@ -167,8 +167,8 @@
       ]
     },
     {
-      "start": 106.65,
-      "end": 112.91,
+      "start": 106.31,
+      "end": 113.81,
       "words": [
         {
           "t": "Min",

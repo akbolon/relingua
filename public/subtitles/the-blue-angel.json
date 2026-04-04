@@ -1,10 +1,10 @@
 {
   "locale": "de",
-  "scriptSource": "Opening sample; timings from seed-catalog-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
+  "scriptSource": "Opening sample; timings from seed-catalog-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).\nTiming pass: burned-in English OCR (tesseract.js + ffmpeg bottom strip) vs. words[].en — 2026-04-03.",
   "cues": [
     {
-      "start": 90,
-      "end": 97.4,
+      "start": 87,
+      "end": 94.9,
       "words": [
         {
           "t": "Herr",

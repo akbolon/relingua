@@ -1,10 +1,10 @@
 {
   "locale": "it",
-  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
+  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).\nTiming pass: burned-in English OCR (tesseract.js + ffmpeg bottom strip) vs. words[].en — 2026-04-03.",
   "cues": [
     {
-      "start": 50,
-      "end": 59.25,
+      "start": 50.58,
+      "end": 58.3,
       "words": [
         {
           "t": "Roma,",
@@ -49,8 +49,8 @@
       ]
     },
     {
-      "start": 60.1,
-      "end": 68.91,
+      "start": 61.3,
+      "end": 69.28,
       "words": [
         {
           "t": "Senza",
@@ -129,8 +129,8 @@
       ]
     },
     {
-      "start": 80.02,
-      "end": 88.12,
+      "start": 78.78,
+      "end": 86.76,
       "words": [
         {
           "t": "La",
@@ -167,8 +167,8 @@
       ]
     },
     {
-      "start": 88.97,
-      "end": 96.74,
+      "start": 92.87,
+      "end": 95.45,
       "words": [
         {
           "t": "Dovevo",

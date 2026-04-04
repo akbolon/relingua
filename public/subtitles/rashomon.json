@@ -1,6 +1,6 @@
 {
   "locale": "ja",
-  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).",
+  "scriptSource": "Opening sample; timings from reflow-subtitles.mjs (IA silencedetect anchor, see scripts/subtitle-calibration.mjs).\nTiming pass: burned-in English OCR (tesseract.js + ffmpeg bottom strip) vs. words[].en — 2026-04-03.",
   "cues": [
     {
       "start": 37,
@@ -37,8 +37,8 @@
       ]
     },
     {
-      "start": 44.71,
-      "end": 50.46,
+      "start": 45.17,
+      "end": 50.27,
       "words": [
         {
           "t": "森の中で",

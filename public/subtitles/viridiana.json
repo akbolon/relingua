@@ -1,10 +1,10 @@
 {
   "locale": "es",
-  "scriptSource": "Spanish: OpenAI Whisper (base) on IA Viridiana.mp4 audio, ffmpeg trim from 1:48 (+108s) + 10s wall-clock nudge in generator, then −2s bulk shift vs. IA encode (2026-04). English: Script Savant PDF where keyed; else Whisper translate time-matched. Regenerate: node scripts/whisper-to-relingua-json.mjs; optional fine-tune: node scripts/shift-subtitle-times.mjs <Δ> public/subtitles/viridiana.json",
+  "scriptSource": "Spanish: OpenAI Whisper (base) on IA Viridiana.mp4 audio, ffmpeg trim from 1:48 (+108s) + 10s wall-clock nudge in generator, then −2s bulk shift vs. IA encode (2026-04). English: Script Savant PDF where keyed; else Whisper translate time-matched. Regenerate: node scripts/whisper-to-relingua-json.mjs; optional fine-tune: node scripts/shift-subtitle-times.mjs <Δ> public/subtitles/viridiana.json\nTiming pass: burned-in English OCR (tesseract.js + ffmpeg bottom strip) vs. words[].en — 2026-04-03.",
   "cues": [
     {
-      "start": 118,
-      "end": 120.64,
+      "start": 117.06,
+      "end": 120.28,
       "words": [
         {
           "t": "Hermana Viridiana.",
@@ -23,8 +23,8 @@
       ]
     },
     {
-      "start": 121.79,
-      "end": 130.89,
+      "start": 122.8,
+      "end": 130.78,
       "words": [
         {
           "t": "Acabo de recibir una carta de tu tío.",
@@ -33,8 +33,8 @@
       ]
     },
     {
-      "start": 130.89,
-      "end": 140,
+      "start": 131.64,
+      "end": 136.24,
       "words": [
         {
           "t": "No puede venir a la profesión.",
@@ -43,8 +43,8 @@
       ]
     },
     {
-      "start": 141,
-      "end": 142,
+      "start": 139.72,
+      "end": 143.26,
       "words": [
         {
           "t": "Está bien, Madre.",
@@ -63,8 +63,8 @@
       ]
     },
     {
-      "start": 147,
-      "end": 152,
+      "start": 146.79,
+      "end": 150.01,
       "words": [
         {
           "t": "Casi no le conozco, sólo le vi una vez, hace años, ya ni me acuerdo, pues ahora le invita a su casa.",
@@ -83,8 +83,8 @@
       ]
     },
     {
-      "start": 156,
-      "end": 158.33,
+      "start": 155.02,
+      "end": 155.42,
       "words": [
         {
           "t": "Me temo que no se encuentre bien.",
@@ -93,8 +93,8 @@
       ]
     },
     {
-      "start": 158.33,
-      "end": 160.67,
+      "start": 158.53,
+      "end": 159.81,
       "words": [
         {
           "t": "Es tu único familiar y debes despedirte de él antes de profesar.",
@@ -103,8 +103,8 @@
       ]
     },
     {
-      "start": 160.67,
-      "end": 163,
+      "start": 161.71,
+      "end": 162.35,
       "words": [
         {
           "t": "Seguramente no volverás a verle.",
@@ -133,8 +133,8 @@
       ]
     },
     {
-      "start": 168,
-      "end": 170.5,
+      "start": 167.56,
+      "end": 170.46,
       "words": [
         {
           "t": "Ha pagado sus estudios, la ha sostenido y acaba de enviar su dote.",
@@ -143,8 +143,8 @@
       ]
     },
     {
-      "start": 170.5,
-      "end": 173,
+      "start": 170.51,
+      "end": 173.76,
       "words": [
         {
           "t": "¿Qué más quiere?",
@@ -173,8 +173,8 @@
       ]
     },
     {
-      "start": 182,
-      "end": 184,
+      "start": 182.8,
+      "end": 183.2,
       "words": [
         {
           "t": "Así que puedes marcharte mañana por la mañana.",
@@ -183,8 +183,8 @@
       ]
     },
     {
-      "start": 185,
-      "end": 188,
+      "start": 185.27,
+      "end": 186.23,
       "words": [
         {
           "t": "En su celda encontrará todo lo necesario para el viaje.",
@@ -193,8 +193,8 @@
       ]
     },
     {
-      "start": 188,
-      "end": 191,
+      "start": 190.62,
+      "end": 191.02,
       "words": [
         {
           "t": "Procure ser afectuosa con él.",
@@ -213,8 +213,8 @@
       ]
     },
     {
-      "start": 223,
-      "end": 225,
+      "start": 224.32,
+      "end": 224.72,
       "words": [
         {
           "t": "Te gusta la cuerda que te he regalado.",
@@ -223,8 +223,8 @@
       ]
     },
     {
-      "start": 225,
-      "end": 227,
+      "start": 225.52,
+      "end": 226.16,
       "words": [
         {
           "t": "Se salta mejor porque tiene mangos.",
@@ -273,8 +273,8 @@
       ]
     },
     {
-      "start": 245,
-      "end": 246,
+      "start": 245.58,
+      "end": 245.98,
       "words": [
         {
           "t": "Bienvenida, señorita.",
@@ -283,8 +283,8 @@
       ]
     },
     {
-      "start": 246,
-      "end": 249,
+      "start": 247.56,
+      "end": 248.2,
       "words": [
         {
           "t": "Soy Ramona, la criada de Don Jaime.",
@@ -313,8 +313,8 @@
       ]
     },
     {
-      "start": 251,
-      "end": 252,
+      "start": 251.27,
+      "end": 254.49,
       "words": [
         {
           "t": "",
@@ -323,8 +323,8 @@
       ]
     },
     {
-      "start": 257,
-      "end": 258,
+      "start": 257.63,
+      "end": 258.03,
       "words": [
         {
           "t": "¿Cómo está, tío?",
@@ -333,7 +333,7 @@
       ]
     },
     {
-      "start": 258,
+      "start": 258.08,
       "end": 259,
       "words": [
         {
@@ -343,8 +343,8 @@
       ]
     },
     {
-      "start": 259,
-      "end": 261,
+      "start": 260.58,
+      "end": 260.98,
       "words": [
         {
           "t": "Llegó el autocar tarde, ¿verdad?",
@@ -373,8 +373,8 @@
       ]
     },
     {
-      "start": 263,
-      "end": 265,
+      "start": 263.05,
+      "end": 264.22,
       "words": [
         {
           "t": "Qué lugar tan apacible, tío.",
@@ -383,8 +383,8 @@
       ]
     },
     {
-      "start": 265,
-      "end": 266,
+      "start": 265.28,
+      "end": 265.68,
       "words": [
         {
           "t": "Muy tranquilo.",
@@ -403,8 +403,8 @@
       ]
     },
     {
-      "start": 268,
-      "end": 271,
+      "start": 268.39,
+      "end": 270.33,
       "words": [
         {
           "t": "¿Cuánto tiempo te vas a quedar?",
@@ -463,8 +463,8 @@
       ]
     },
     {
-      "start": 280,
-      "end": 282,
+      "start": 280.54,
+      "end": 280.94,
       "words": [
         {
           "t": "Tampoco te interesaba verme",
@@ -483,8 +483,8 @@
       ]
     },
     {
-      "start": 284,
-      "end": 287,
+      "start": 286.36,
+      "end": 286.76,
       "words": [
         {
           "t": "La verdad, no mucho.",
@@ -493,8 +493,8 @@
       ]
     },
     {
-      "start": 287,
-      "end": 289,
+      "start": 288.58,
+      "end": 288.98,
       "words": [
         {
           "t": "Yo no se mentir, tío.",
@@ -503,8 +503,8 @@
       ]
     },
     {
-      "start": 289,
-      "end": 291,
+      "start": 289.28,
+      "end": 289.68,
       "words": [
         {
           "t": "Le tengo respeto y agradecimiento",
@@ -563,8 +563,8 @@
       ]
     },
     {
-      "start": 298,
-      "end": 300,
+      "start": 299.32,
+      "end": 299.72,
       "words": [
         {
           "t": "La soledad me ha vuelto egoísta.",
@@ -623,8 +623,8 @@
       ]
     },
     {
-      "start": 311,
-      "end": 312,
+      "start": 311.54,
+      "end": 311.94,
       "words": [
         {
           "t": "Desde hace 20 años,",
@@ -653,8 +653,8 @@
       ]
     },
     {
-      "start": 317,
-      "end": 319,
+      "start": 317.54,
+      "end": 317.94,
       "words": [
         {
           "t": "se reproducen muy bien las arañas.",
@@ -673,8 +673,8 @@
       ]
     },
     {
-      "start": 321,
-      "end": 323,
+      "start": 322.84,
+      "end": 323.24,
       "words": [
         {
           "t": "Es verdad.",
@@ -683,7 +683,7 @@
       ]
     },
     {
-      "start": 323,
+      "start": 323.29,
       "end": 325,
       "words": [
         {
@@ -693,8 +693,8 @@
       ]
     },
     {
-      "start": 325,
-      "end": 327,
+      "start": 326.01,
+      "end": 326.97,
       "words": [
         {
           "t": "Ven aquí, perrito.",
@@ -724,7 +724,7 @@
     },
     {
       "start": 330,
-      "end": 331,
+      "end": 330.64,
       "words": [
         {
           "t": "¡Venga!",
@@ -733,8 +733,8 @@
       ]
     },
     {
-      "start": 331,
-      "end": 333,
+      "start": 331.28,
+      "end": 331.68,
       "words": [
         {
           "t": "Está hecha una salvaje.",
@@ -743,8 +743,8 @@
       ]
     },
     {
-      "start": 334,
-      "end": 336,
+      "start": 334.06,
+      "end": 334.46,
       "words": [
         {
           "t": "¿Cómo te parece esa tu tía?",
@@ -993,8 +993,8 @@
       ]
     },
     {
-      "start": 414,
-      "end": 415,
+      "start": 414.28,
+      "end": 414.68,
       "words": [
         {
           "t": "¿Qué pasa?",
