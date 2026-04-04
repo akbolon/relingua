@@ -1,7 +1,8 @@
 /**
  * Re-times public/subtitles/*.json cues by OCR of burned-in English subtitles in the IA MP4.
  * Samples the bottom ~38% of the frame (typical hardcoded sub band), runs Tesseract (eng),
- * and matches OCR text to each cue's English gloss (words[].en). Only start/end change.
+ * and scores OCR vs. each cue's English gloss with token overlap (English keyword match).
+ * Only start/end change. Viridiana: first 5 cues stay hand-pinned to IA wall clock (opening).
  *
  * Prereqs: ffmpeg in PATH, npm i (tesseract.js).
  * Usage:
@@ -18,6 +19,9 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
+
+/** Viridiana: first cues are wall-clock–pinned to IA English subs (see fix-viridiana-opening-anchors.mjs). */
+const SKIP_OCR_CUE_COUNT = { viridiana: 5 };
 
 const CATALOG = [
   {
@@ -195,9 +199,18 @@ async function processMovie(movie, { maxCues = Infinity, minScore = 0.38, stepSe
   let updated = 0;
   let skipped = 0;
 
+  const skipFirst = SKIP_OCR_CUE_COUNT[movie.id] ?? 0;
+
   try {
     for (let i = 0; i < n; i++) {
       const cue = cues[i];
+      if (i < skipFirst) {
+        skipped++;
+        process.stdout.write(
+          `[${movie.id}] cue ${i + 1}/${n} skipped (wall-clock opening anchor)\n`,
+        );
+        continue;
+      }
       const en = englishFromCue(cue);
       if (!en) {
         skipped++;
