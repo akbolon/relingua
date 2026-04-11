@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useVoiceSyncedSubtitle, subtitleLanguageLabel } from "@/hooks/use-voice-synced-subtitle";
+import { expandSubWordsForDisplay } from "@/lib/expand-subtitle-words";
 import type { SubtitleFile, SubWord } from "@/types/subtitles";
 
 /** HTML5 timeupdate can be sparse; sync subtitle cues more often while playing. */
@@ -16,23 +17,28 @@ type Props = {
 };
 
 /** Split legacy "English · [pron]" into separate lines when `pron` is absent. */
-function glossForWord(w: SubWord): { en: string; pron?: string } {
+function glossForWord(w: SubWord): { en: string; pron?: string; fullLineEn?: string } {
   if (w.pron !== undefined && w.pron !== "") {
-    return { en: w.en, pron: w.pron };
+    return { en: w.en, pron: w.pron, fullLineEn: w.fullLineEn };
   }
   const sep = " · ";
   const i = w.en.indexOf(sep);
   if (i >= 0) {
-    return { en: w.en.slice(0, i).trim(), pron: w.en.slice(i + sep.length).trim() };
+    return {
+      en: w.en.slice(0, i).trim(),
+      pron: w.en.slice(i + sep.length).trim(),
+      fullLineEn: w.fullLineEn,
+    };
   }
   const em = /\s+—\s+/.exec(w.en);
   if (em && em.index > 0) {
     return {
       en: w.en.slice(0, em.index).trim(),
       pron: w.en.slice(em.index + em[0].length).trim(),
+      fullLineEn: w.fullLineEn,
     };
   }
-  return { en: w.en };
+  return { en: w.en, fullLineEn: w.fullLineEn };
 }
 
 const SPEEDS = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2] as const;
@@ -88,6 +94,7 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
     y: number;
     en: string;
     pron?: string;
+    fullLineEn?: string;
   } | null>(null);
 
   useEffect(() => {
@@ -120,6 +127,11 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
     locale: subs?.locale,
     playing,
   });
+
+  const displayWords = useMemo(() => {
+    if (!activeCue) return [];
+    return expandSubWordsForDisplay(activeCue.words, subs?.locale);
+  }, [activeCue, subs?.locale]);
 
   useEffect(() => {
     if (!videoEl) return;
@@ -310,8 +322,8 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
             style={{ pointerEvents: "auto" }}
           >
             <p className="text-base font-medium leading-snug tracking-tight text-white sm:text-[1.05rem] sm:leading-snug">
-              {activeCue.words.map((w, i) => (
-                <span key={`${activeCue.start}-${i}`} className="inline">
+              {displayWords.map((w, i) => (
+                <span key={`${activeCue.start}-${i}-${w.t}`} className="inline">
                   <span
                     className="cursor-help rounded px-0.5 transition-colors hover:bg-white/20"
                     onMouseEnter={(e) => {
@@ -322,13 +334,14 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
                         y: r.top,
                         en: g.en,
                         pron: g.pron,
+                        fullLineEn: g.fullLineEn,
                       });
                     }}
                     onMouseLeave={() => setTip(null)}
                   >
                     {w.t}
                   </span>
-                  {i < activeCue.words.length - 1 ? " " : null}
+                  {i < displayWords.length - 1 ? " " : null}
                 </span>
               ))}
             </p>
@@ -349,6 +362,14 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
                 Pronunciation
               </p>
               <p className="mt-0.5 text-[0.8125rem] text-zinc-200">{tip.pron}</p>
+            </>
+          ) : null}
+          {tip.fullLineEn ? (
+            <>
+              <p className="mt-2 text-[0.7rem] font-semibold uppercase tracking-wide text-zinc-400">
+                Full line
+              </p>
+              <p className="mt-0.5 text-[0.75rem] leading-snug text-zinc-400">{tip.fullLineEn}</p>
             </>
           ) : null}
         </div>

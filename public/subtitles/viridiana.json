@@ -1,6 +1,6 @@
 {
   "locale": "es",
-  "scriptSource": "Spanish: OpenAI Whisper (base) on IA Viridiana.mp4; English glosses Script Savant where keyed. Opening pinned to IA wall clock / English burned-in: Hermana Viridiana 2:00; letter ~122.2–125s; vows line from 2:05 (125s); Está bien, Madre from 2:11 (131s). Tail shifted to preserve inter-cue gaps from cue 6 onward. Run: node scripts/fix-viridiana-opening-anchors.mjs; OCR sync skips first 5 cues (see sync-burned-in-ocr.mjs).",
+  "scriptSource": "Spanish: OpenAI Whisper (base) on IA Viridiana.mp4; English glosses Script Savant where keyed. Opening pinned to IA wall clock / English burned-in: Hermana Viridiana 2:00; letter ~122.2–125s; vows line from 2:05 (125s); Está bien, Madre from 2:11 (131s). Tail shifted to preserve inter-cue gaps from cue 6 onward. Run: node scripts/fix-viridiana-opening-anchors.mjs; OCR sync skips first 5 cues (see sync-burned-in-ocr.mjs).\nContent review (2026-04): English lines corrected vs. Script Savant where needed; bogus repeated tail cues removed. Per-word glosses: video player + src/lib/es-learner-lexicon.ts. Run: node scripts/repair-viridiana-review.mjs",
   "cues": [
     {
       "start": 120,
@@ -137,7 +137,7 @@
       "end": 159.32,
       "words": [
         {
-          "t": "Ha pagado sus estudios, la ha sostenido y acaba de enviar su dote.",
+          "t": "Ha pagado tus estudios y tu manutención, y acaba de enviar tu dote.",
           "en": "He has paid for your studies and your maintenance, and he has just sent your dowry."
         }
       ]
@@ -147,7 +147,7 @@
       "end": 162.62,
       "words": [
         {
-          "t": "¿Qué más quiere?",
+          "t": "¿Tan poco te importa, Viridiana?",
           "en": "Does that mean so little to you, Viridiana?"
         }
       ]
@@ -168,7 +168,7 @@
       "words": [
         {
           "t": "El retiro empezará pronto.",
-          "en": "It's too late for him to start the retreat."
+          "en": "The retreat will start soon."
         }
       ]
     },
@@ -178,7 +178,7 @@
       "words": [
         {
           "t": "Así que puedes marcharte mañana por la mañana.",
-          "en": "So he can go tomorrow itself."
+          "en": "So you may leave tomorrow morning."
         }
       ]
     },
@@ -187,8 +187,8 @@
       "end": 175.09,
       "words": [
         {
-          "t": "En su celda encontrará todo lo necesario para el viaje.",
-          "en": "Everything you need for the journey has been put in your cell."
+          "t": "En tu celda he hecho poner todo lo necesario para el viaje.",
+          "en": "I’ve had everything necessary for the journey put in your cell."
         }
       ]
     },
@@ -198,7 +198,7 @@
       "words": [
         {
           "t": "Procure ser afectuosa con él.",
-          "en": "Go get yourself ready, and try to show him some affection."
+          "en": "Try to be affectionate with him."
         }
       ]
     },
@@ -248,7 +248,7 @@
       "words": [
         {
           "t": "Déjelo, señorita.",
-          "en": "Hello."
+          "en": "Leave it, miss."
         }
       ]
     },
@@ -258,7 +258,7 @@
       "words": [
         {
           "t": "Buenos días.",
-          "en": "Hello."
+          "en": "Good morning."
         }
       ]
     },
@@ -317,17 +317,7 @@
       "end": 243.35,
       "words": [
         {
-          "t": "",
-          "en": "How are you?"
-        }
-      ]
-    },
-    {
-      "start": 246.49,
-      "end": 246.89,
-      "words": [
-        {
-          "t": "¿Cómo está, tío?",
+          "t": "Sí, tío. ¿Qué tal está usted?",
           "en": "Yes, Uncle. How are you?"
         }
       ]
@@ -427,8 +417,8 @@
       "end": 263.86,
       "words": [
         {
-          "t": "Solo tengo permiso para unos días.",
-          "en": "I’ve been given permission to stay only a few days."
+          "t": "Solo me han dado permiso para quedarme unos días.",
+          "en": "I’ve only been given permission to stay a few days."
         }
       ]
     },
@@ -437,8 +427,8 @@
       "end": 265.86,
       "words": [
         {
-          "t": "¿Te costó mucho conseguirlo.",
-          "en": "Did you spend a lot of time getting it?"
+          "t": "¿Te costó mucho conseguirlo?",
+          "en": "Was it hard to get?"
         }
       ]
     },
@@ -458,7 +448,7 @@
       "words": [
         {
           "t": "Vine por orden de la superiora.",
-          "en": "No. Mother Superior told me to come."
+          "en": "I came on the mother superior’s orders."
         }
       ]
     },
@@ -468,7 +458,7 @@
       "words": [
         {
           "t": "Tampoco te interesaba verme",
-          "en": "I came for orders from the superior."
+          "en": "You weren’t interested in seeing me either."
         }
       ]
     },
@@ -478,7 +468,7 @@
       "words": [
         {
           "t": "que te lo tuvieron que ordenar.",
-          "en": "I was not interested in seeing what you had to order."
+          "en": "that they had to order you to."
         }
       ]
     },
@@ -497,8 +487,8 @@
       "end": 277.84,
       "words": [
         {
-          "t": "Yo no se mentir, tío.",
-          "en": "I cannot lie."
+          "t": "Yo no sé mentir, tío.",
+          "en": "I can’t lie, Uncle."
         }
       ]
     },
@@ -508,7 +498,7 @@
       "words": [
         {
           "t": "Le tengo respeto y agradecimiento",
-          "en": "I respect and thank you for the matter."
+          "en": "I respect him and I’m grateful"
         }
       ]
     },
@@ -518,7 +508,7 @@
       "words": [
         {
           "t": "porque en lo material se lo debo todo.",
-          "en": "I owe it to you."
+          "en": "because materially I owe him everything."
         }
       ]
     },
@@ -528,7 +518,7 @@
       "words": [
         {
           "t": "Pero en lo demás...",
-          "en": "You have no feelings toward …"
+          "en": "But otherwise…"
         }
       ]
     },
@@ -538,7 +528,7 @@
       "words": [
         {
           "t": "Ningún cariño humano.",
-          "en": "You have no feelings toward …"
+          "en": "No human affection."
         }
       ]
     },
@@ -618,7 +608,7 @@
       "words": [
         {
           "t": "Tienes muy abandonados los campos, tío.",
-          "en": "Too late."
+          "en": "You’ve let the fields go, Uncle."
         }
       ]
     },
@@ -628,7 +618,7 @@
       "words": [
         {
           "t": "Desde hace 20 años,",
-          "en": "You're not very abandoned in the fields, ma'am."
+          "en": "For twenty years now,"
         }
       ]
     },
@@ -638,7 +628,7 @@
       "words": [
         {
           "t": "las hierbas se han hecho dueñas de todo.",
-          "en": "It's been 20 years since you've done all this."
+          "en": "the weeds have taken over everything."
         }
       ]
     },
@@ -648,7 +638,7 @@
       "words": [
         {
           "t": "Y en la casa, aparte del primer piso,",
-          "en": "There are spiders all over the house except on the first floor."
+          "en": "And in the house, except on the first floor,"
         }
       ]
     },
@@ -658,7 +648,7 @@
       "words": [
         {
           "t": "se reproducen muy bien las arañas.",
-          "en": "There are spiders all over the house except on the first floor."
+          "en": "the spiders breed very well."
         }
       ]
     },
@@ -748,7 +738,7 @@
       "words": [
         {
           "t": "¿Cómo te parece esa tu tía?",
-          "en": "How like your aunt you are, even in your walk."
+          "en": "What do you think of your aunt?"
         }
       ]
     },
@@ -758,7 +748,7 @@
       "words": [
         {
           "t": "Hasta el mismo modo de andar.",
-          "en": "How like your aunt you are, even in your walk."
+          "en": "Even the way you walk."
         }
       ]
     },
@@ -768,7 +758,7 @@
       "words": [
         {
           "t": "Ya lo sé, tío.",
-          "en": "I know, Uncle, you’ve told me that already."
+          "en": "I know, Uncle."
         }
       ]
     },
@@ -778,7 +768,7 @@
       "words": [
         {
           "t": "Ya me lo ha dicho usted antes.",
-          "en": "I know, Uncle, you’ve told me that already."
+          "en": "You’ve told me that before."
         }
       ]
     },
@@ -788,257 +778,7 @@
       "words": [
         {
           "t": "Hasta en la voz también.",
-          "en": "You see it, and your voice too."
-        }
-      ]
-    },
-    {
-      "start": 379.86,
-      "end": 381.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 381.86,
-      "end": 382.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 382.86,
-      "end": 383.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 383.86,
-      "end": 385.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 385.86,
-      "end": 386.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 386.86,
-      "end": 387.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 387.86,
-      "end": 388.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 388.86,
-      "end": 389.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 389.86,
-      "end": 390.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 390.86,
-      "end": 391.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 391.86,
-      "end": 392.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 392.86,
-      "end": 393.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 393.86,
-      "end": 394.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 394.86,
-      "end": 395.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 395.86,
-      "end": 396.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 396.86,
-      "end": 397.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 397.86,
-      "end": 398.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 398.86,
-      "end": 399.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 399.86,
-      "end": 400.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 400.86,
-      "end": 402.86,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 403.14,
-      "end": 403.54,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 403.86,
-      "end": 405.38,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 405.38,
-      "end": 406.38,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Get up."
-        }
-      ]
-    },
-    {
-      "start": 406.38,
-      "end": 407.38,
-      "words": [
-        {
-          "t": "¿ AMDán?",
-          "en": "Come on."
-        }
-      ]
-    },
-    {
-      "start": 407.38,
-      "end": 409.2,
-      "words": [
-        {
-          "t": "¿Qué pasa?",
-          "en": "Come on."
+          "en": "Even in the voice."
         }
       ]
     }

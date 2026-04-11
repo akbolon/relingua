@@ -4,6 +4,8 @@ export type SubWord = {
   en: string;
   /** Full pronunciation guide for the original line or phrase (hover). */
   pron?: string;
+  /** When a word was split from a sentence cue and has no lexicon entry, full-line English. */
+  fullLineEn?: string;
 };
 
 export type SubCue = {
