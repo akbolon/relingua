@@ -1,111 +1,27 @@
-"use client";
-
-import Link from "next/link";
-import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
 import { SiteHeader } from "@/components/site-header";
+import { AuthShowcase } from "@/components/auth-showcase";
+import { RegisterForm } from "./register-form";
 
 export default function RegisterPage() {
-  const router = useRouter();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
-  const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
-
-  async function onSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setError(null);
-    setLoading(true);
-    const res = await fetch("/api/register", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password, name: name || undefined }),
-    });
-    const data = (await res.json()) as { error?: string };
-    setLoading(false);
-    if (!res.ok) {
-      setError(typeof data.error === "string" ? data.error : "Could not register.");
-      return;
-    }
-    const sign = await signIn("credentials", {
-      email,
-      password,
-      redirect: false,
-      callbackUrl: "/browse",
-    });
-    if (sign?.error) {
-      setError("Account created but sign-in failed. Try logging in.");
-      return;
-    }
-    router.push("/browse");
-    router.refresh();
-  }
-
   return (
     <div className="page-gradient min-h-screen">
       <SiteHeader />
-      <main className="mx-auto flex max-w-md flex-col gap-6 px-4 py-12 sm:px-6">
-        <div>
+      <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
+        <div className="mb-8 lg:mb-10">
           <div className="rule-ornament mb-4 max-w-xs" aria-hidden>
             <span className="rule-ornament-dot">·</span>
           </div>
-          <h1 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
-            Create account
+          <h1 className="text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">
+            Create your account
           </h1>
-          <p className="mt-2 text-sm text-muted">
-            Already registered?{" "}
-            <Link href="/login" className="link-accent font-medium underline underline-offset-4">
-              Sign in
-            </Link>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
+            Join in a minute. Browse the library on the complimentary tier, or subscribe for the full
+            catalog — still without ads anywhere on Relingua.
           </p>
         </div>
-        <div className="glass-panel rounded-2xl p-6">
-          <form onSubmit={onSubmit} className="flex flex-col gap-4">
-            <label className="flex flex-col gap-1 text-sm">
-              <span className="font-medium text-slate-800 dark:text-slate-200">Name (optional)</span>
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="glass-input rounded-xl border border-white/35 bg-white/50 px-3 py-2.5 text-slate-900 outline-none ring-sky-500 focus:ring-2 dark:border-slate-400/50 dark:bg-slate-800/75 dark:text-slate-50 dark:placeholder:text-slate-300"
-              />
-            </label>
-            <label className="flex flex-col gap-1 text-sm">
-              <span className="font-medium text-slate-800 dark:text-slate-200">Email</span>
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="glass-input rounded-xl border border-white/35 bg-white/50 px-3 py-2.5 text-slate-900 outline-none ring-sky-500 focus:ring-2 dark:border-slate-400/50 dark:bg-slate-800/75 dark:text-slate-50 dark:placeholder:text-slate-300"
-              />
-            </label>
-            <label className="flex flex-col gap-1 text-sm">
-              <span className="font-medium text-slate-800 dark:text-slate-200">Password</span>
-              <input
-                type="password"
-                required
-                minLength={8}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="glass-input rounded-xl border border-white/35 bg-white/50 px-3 py-2.5 text-slate-900 outline-none ring-sky-500 focus:ring-2 dark:border-slate-400/50 dark:bg-slate-800/75 dark:text-slate-50 dark:placeholder:text-slate-300"
-              />
-            </label>
-            {error ? (
-              <p className="text-sm font-medium text-red-700 dark:text-red-300" role="alert">
-                {error}
-              </p>
-            ) : null}
-            <button
-              type="submit"
-              disabled={loading}
-              className="mt-2 rounded-2xl bg-sky-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-sky-500 disabled:opacity-60"
-            >
-              {loading ? "Creating…" : "Create account"}
-            </button>
-          </form>
+        <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
+          <RegisterForm />
+          <AuthShowcase heading="Pictures, not pop-ups" />
         </div>
       </main>
     </div>

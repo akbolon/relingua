@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { SUBSCRIPTION_PRICE_LABEL } from "@/lib/pricing";
 
 type Props = {
   hasCustomer: boolean;
@@ -53,7 +54,7 @@ export function BillingButtons({ hasCustomer, subscribed, devUnlimited }: Props)
           disabled={loading !== null}
           className="rounded-2xl bg-sky-600 px-4 py-2 text-sm font-medium text-white hover:bg-sky-500 disabled:opacity-60"
         >
-          {loading === "sub" ? "Redirecting…" : "Subscribe ($20 / month)"}
+          {loading === "sub" ? "Redirecting…" : `Subscribe (${SUBSCRIPTION_PRICE_LABEL})`}
         </button>
       ) : null}
       {hasCustomer ? (

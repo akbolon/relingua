@@ -23,16 +23,24 @@ export function HomeHeroCta() {
         href="/browse"
         className="rounded-2xl bg-sky-600 px-5 py-2.5 text-sm font-medium text-white shadow-lg shadow-sky-900/25 transition hover:bg-sky-500 dark:shadow-sky-950/40"
       >
-        Library
+        Browse films
       </Link>
       {authed ? (
         <Link href="/account" className="glass-btn rounded-2xl px-5 py-2.5 text-sm font-medium">
           Account
         </Link>
       ) : (
-        <Link href="/login" className="glass-btn rounded-2xl px-5 py-2.5 text-sm font-medium">
-          Sign in
-        </Link>
+        <>
+          <Link
+            href="/register"
+            className="rounded-2xl border border-sky-500/50 bg-white/70 px-5 py-2.5 text-sm font-semibold text-sky-800 shadow-sm transition hover:bg-white dark:border-sky-400/40 dark:bg-slate-800/80 dark:text-sky-100 dark:hover:bg-slate-800"
+          >
+            Sign up free
+          </Link>
+          <Link href="/login" className="glass-btn rounded-2xl px-5 py-2.5 text-sm font-medium">
+            Sign in
+          </Link>
+        </>
       )}
     </div>
   );

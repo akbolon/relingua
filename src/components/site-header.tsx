@@ -53,9 +53,17 @@ export function SiteHeader() {
               </button>
             </>
           ) : (
-            <Link href="/login" className="glass-btn rounded-2xl px-3 py-1.5 text-sm">
-              Sign in
-            </Link>
+            <>
+              <Link
+                href="/register"
+                className="rounded-2xl px-3 py-1.5 text-sm font-medium text-slate-800 hover:bg-white/35 dark:text-slate-100 dark:hover:bg-white/10"
+              >
+                Sign up
+              </Link>
+              <Link href="/login" className="glass-btn rounded-2xl px-3 py-1.5 text-sm">
+                Sign in
+              </Link>
+            </>
           )}
           {mounted ? (
             <button

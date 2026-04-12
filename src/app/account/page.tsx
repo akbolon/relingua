@@ -81,8 +81,7 @@ export default async function AccountPage() {
             ) : (
               <>
                 You are on the complimentary tier: one film per calendar month.
-                Subscribe for twenty U.S. dollars per month to unlock the full
-                library anytime.
+                Subscribe for five U.S. dollars per month to unlock the full library anytime.
               </>
             )}
           </p>
