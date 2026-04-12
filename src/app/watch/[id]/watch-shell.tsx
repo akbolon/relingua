@@ -22,6 +22,7 @@ export function WatchShell({ movieId, src, poster, subtitleUrl, title }: Props) 
 
   return (
     <VideoPlayer
+      movieId={movieId}
       src={src}
       poster={poster}
       subtitleUrl={subtitleUrl}

@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useVoiceSyncedSubtitle, subtitleLanguageLabel } from "@/hooks/use-voice-synced-subtitle";
+import { useViridianaSpeechRecognition } from "@/hooks/use-viridiana-speech-recognition";
+import { useViridianaSubtitleTts } from "@/hooks/use-viridiana-subtitle-tts";
 import { expandSubWordsForDisplay } from "@/lib/expand-subtitle-words";
 import type { SubtitleFile, SubWord } from "@/types/subtitles";
 
@@ -9,6 +11,8 @@ import type { SubtitleFile, SubWord } from "@/types/subtitles";
 const TIME_SYNC_MS = 50;
 
 type Props = {
+  /** When `viridiana`, enables optional speech-check + subtitle read-aloud. */
+  movieId?: string;
   src: string;
   poster?: string;
   subtitleUrl: string;
@@ -65,7 +69,7 @@ function bufferedAhead(v: HTMLVideoElement): number {
   }
 }
 
-export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Props) {
+export function VideoPlayer({ movieId, src, poster, subtitleUrl, title, onPlayStart }: Props) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [videoEl, setVideoEl] = useState<HTMLVideoElement | null>(null);
   const attachVideo = useCallback((node: HTMLVideoElement | null) => {
@@ -85,6 +89,10 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
   const [subsOn, setSubsOn] = useState(true);
   /** Follow real audio energy: show line when speech starts, hide after silence (Web Audio). */
   const [voiceSync, setVoiceSync] = useState(true);
+  /** Viridiana: read JSON Spanish line aloud when the timed cue changes. */
+  const [viridianaReadAloud, setViridianaReadAloud] = useState(false);
+  /** Viridiana: Web Speech mic listener vs. script (similar ⇒ treat SR as sloppy; UI stays on script). */
+  const [viridianaSpeechCheck, setViridianaSpeechCheck] = useState(false);
   const [scrubPreview, setScrubPreview] = useState<number | null>(null);
   const settingsRef = useRef<HTMLDivElement | null>(null);
   const [controlsVisible, setControlsVisible] = useState(true);
@@ -118,6 +126,31 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
     if (!subsOn || !subs?.cues?.length) return null;
     return subs.cues.find((c) => t >= c.start && t < c.end) ?? null;
   }, [subs, subsOn, t]);
+
+  const isViridiana = movieId === "viridiana";
+
+  const scriptLineForSpeech = useMemo(() => {
+    if (!jsonActiveCue?.words?.length) return "";
+    return jsonActiveCue.words
+      .map((w) => w.t)
+      .join(" ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }, [jsonActiveCue]);
+
+  useViridianaSubtitleTts({
+    enabled: viridianaReadAloud,
+    movieId,
+    playing,
+    jsonActiveCue,
+  });
+
+  const viridianaSr = useViridianaSpeechRecognition({
+    enabled: viridianaSpeechCheck,
+    movieId,
+    playing,
+    scriptLine: scriptLineForSpeech,
+  });
 
   const activeCue = useVoiceSyncedSubtitle(videoEl, jsonActiveCue, {
     voiceSync,
@@ -548,6 +581,57 @@ export function VideoPlayer({ src, poster, subtitleUrl, title, onPlayStart }: Pr
                     />
                     Sync to speech (hide in silence)
                   </label>
+                  {isViridiana ? (
+                    <div className="mt-2 border-t border-white/15 pt-2">
+                      <p className="mb-1.5 text-[0.65rem] font-semibold uppercase tracking-wide text-white/60">
+                        Viridiana · speech
+                      </p>
+                      <label className="flex cursor-pointer items-center gap-2 text-sm text-white/95">
+                        <input
+                          type="checkbox"
+                          checked={viridianaReadAloud}
+                          onChange={(e) => setViridianaReadAloud(e.target.checked)}
+                          className="h-4 w-4 rounded border-white/40 accent-sky-400 dark:accent-sky-300"
+                        />
+                        Read Spanish subtitles aloud
+                      </label>
+                      <label
+                        className={`mt-2 flex cursor-pointer items-center gap-2 text-sm text-white/95 ${!viridianaSr.supported ? "opacity-50" : ""}`}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={viridianaSpeechCheck}
+                          disabled={!viridianaSr.supported}
+                          onChange={(e) => setViridianaSpeechCheck(e.target.checked)}
+                          className="h-4 w-4 rounded border-white/40 accent-sky-400 dark:accent-sky-300"
+                        />
+                        Mic: match speech to script
+                      </label>
+                      {!viridianaSr.supported ? (
+                        <p className="mt-0.5 text-[0.6rem] text-white/40">
+                          Not available in this browser (try Chrome or Edge).
+                        </p>
+                      ) : null}
+                      <p className="mt-1 text-[0.62rem] leading-snug text-white/45">
+                        Uses your microphone (browser cannot transcribe the video track). If what it
+                        hears is close to the subtitle line, we treat it as recognizer noise and keep the
+                        on-screen script.
+                      </p>
+                      {viridianaSpeechCheck && viridianaSr.supported ? (
+                        <p className="mt-1 text-[0.62rem] leading-snug text-white/55">
+                          {viridianaSr.listening ? "Listening… " : "Paused "}
+                          {viridianaSr.alignsWithScript
+                            ? "· heard ≈ script"
+                            : viridianaSr.lastHeard
+                              ? "· comparing…"
+                              : ""}
+                          {viridianaSr.error ? (
+                            <span className="text-rose-300/95"> · {viridianaSr.error}</span>
+                          ) : null}
+                        </p>
+                      ) : null}
+                    </div>
+                  ) : null}
                   {subs?.locale ? (
                     <p className="mt-1.5 text-[0.65rem] leading-snug text-white/50">
                       Subtitle language: {subtitleLanguageLabel(subs.locale)} ({subs.locale}) — thresholds
