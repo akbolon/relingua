@@ -1,29 +1,44 @@
 import "dotenv/config";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
-import { PrismaClient } from "../../prisma/generated/client";
+import type { PrismaClient } from "../../prisma/generated/client/client";
+import { PrismaClient as PrismaClientCtor } from "../../prisma/generated/client/client";
 
 const globalForPrisma = globalThis as unknown as {
-  prisma: PrismaClient;
-  pool: Pool;
+  prisma?: PrismaClient;
+  pool?: Pool;
 };
 
-const pool =
-  globalForPrisma.pool ??
-  new Pool({ connectionString: process.env.DATABASE_URL });
+function getClient(): PrismaClient {
+  const url = process.env.DATABASE_URL;
+  if (!url) {
+    throw new Error(
+      "DATABASE_URL is not set. Add it to .env.local (local) or Vercel project env (deploy).",
+    );
+  }
 
-const adapter = new PrismaPg(pool);
+  if (!globalForPrisma.pool) {
+    globalForPrisma.pool = new Pool({ connectionString: url });
+  }
 
-export const prisma =
-  globalForPrisma.prisma ??
-  new PrismaClient({
-    adapter,
-    log: process.env.NODE_ENV === "development" ? ["error", "warn"] : ["error"],
-  });
+  if (!globalForPrisma.prisma) {
+    const adapter = new PrismaPg(globalForPrisma.pool);
+    globalForPrisma.prisma = new PrismaClientCtor({
+      adapter,
+      log:
+        process.env.NODE_ENV === "development" ? ["error", "warn"] : ["error"],
+    });
+  }
 
-if (process.env.NODE_ENV !== "production") {
-  globalForPrisma.prisma = prisma;
-  globalForPrisma.pool = pool;
+  return globalForPrisma.prisma;
 }
+
+export const prisma = new Proxy({} as PrismaClient, {
+  get(_target, prop, receiver) {
+    const client = getClient();
+    const value = Reflect.get(client as object, prop, receiver);
+    return typeof value === "function" ? value.bind(client) : value;
+  },
+});
 
 export default prisma;

@@ -11,6 +11,7 @@ type Props = {
 };
 
 export function BillingButtons({ hasCustomer, subscribed, devUnlimited }: Props) {
+  void process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!;
   const [loading, setLoading] = useState<null | "sub" | "portal">(null);
   const [message, setMessage] = useState<string | null>(null);
 
