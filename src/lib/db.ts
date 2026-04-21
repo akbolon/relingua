@@ -1,8 +1,7 @@
 import "dotenv/config";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
-import type { PrismaClient } from "../../prisma/generated/client/client";
-import { PrismaClient as PrismaClientCtor } from "../../prisma/generated/client/client";
+import { PrismaClient } from "../../prisma/generated/client";
 
 const globalForPrisma = globalThis as unknown as {
   prisma?: PrismaClient;
@@ -23,7 +22,7 @@ function getClient(): PrismaClient {
 
   if (!globalForPrisma.prisma) {
     const adapter = new PrismaPg(globalForPrisma.pool);
-    globalForPrisma.prisma = new PrismaClientCtor({
+    globalForPrisma.prisma = new PrismaClient({
       adapter,
       log:
         process.env.NODE_ENV === "development" ? ["error", "warn"] : ["error"],
